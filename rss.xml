@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Stephen Quick]]></title><description><![CDATA[Stephen Quick]]></description><link>https://stepquick.net/</link><generator>RSS for Node</generator><lastBuildDate>Tue, 07 Aug 2018 18:13:51 GMT</lastBuildDate><item><title><![CDATA[Removing Disqus]]></title><description><![CDATA[I’ve learned Disqus is starting to support their free version of comments with ads, so I will be removing them. Just doesn’t seem that…]]></description><link>https://stepquick.net//removing-disqus/</link><guid isPermaLink="false">https://stepquick.net//removing-disqus/</guid><pubDate>Wed, 25 Jan 2017 18:49:17 GMT</pubDate><content:encoded>&lt;p&gt;I’ve learned Disqus is starting to support their free version of comments with ads, so I will be removing them. Just doesn’t seem that important anymore.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Configuration for using MariaDB with Laravel and El Capitan]]></title><description><![CDATA[I wanted to play around with  Laravel  on my mac without having to use a VM, like  homestead . I decided to try out  Laravel Valet , which…]]></description><link>https://stepquick.net//quick-config-for-mariadb-and-laravel/</link><guid isPermaLink="false">https://stepquick.net//quick-config-for-mariadb-and-laravel/</guid><pubDate>Mon, 29 Aug 2016 00:12:38 GMT</pubDate><content:encoded>&lt;p&gt;I wanted to play around with &lt;a href=&quot;http://www.laravel.com&quot;&gt;Laravel&lt;/a&gt; on my mac without having to use a VM, like &lt;a href=&quot;http://www.laravel.com/docs/homestead&quot;&gt;homestead&lt;/a&gt;. I decided to try out &lt;a href=&quot;http://laravel.com/docs/valet&quot;&gt;Laravel Valet&lt;/a&gt;, which doesn’t need a VM for setup, just &lt;a href=&quot;http://brew.sh/&quot;&gt;brew&lt;/a&gt;. This however doesn’t include a db by default. I decided to use &lt;a href=&quot;https://mariadb.com/&quot;&gt;MariaDB&lt;/a&gt; due to its ease of use.&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Stephen Quick]]></title><description><![CDATA[Stephen Quick]]></description><link>https://stepquick.net</link><generator>RSS for Node</generator><lastBuildDate>Tue, 07 Aug 2018 20:31:40 GMT</lastBuildDate><item><title><![CDATA[Removing Disqus]]></title><description><![CDATA[I’ve learned Disqus is starting to support their free version of comments with ads, so I will be removing them. Just doesn’t seem that…]]></description><link>https://stepquick.net/removing-disqus/</link><guid isPermaLink="false">https://stepquick.net/removing-disqus/</guid><pubDate>Wed, 25 Jan 2017 18:49:17 GMT</pubDate><content:encoded>&lt;p&gt;I’ve learned Disqus is starting to support their free version of comments with ads, so I will be removing them. Just doesn’t seem that important anymore.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Configuration for using MariaDB with Laravel and El Capitan]]></title><description><![CDATA[I wanted to play around with  Laravel  on my mac without having to use a VM, like  homestead . I decided to try out  Laravel Valet , which…]]></description><link>https://stepquick.net/quick-config-for-mariadb-and-laravel/</link><guid isPermaLink="false">https://stepquick.net/quick-config-for-mariadb-and-laravel/</guid><pubDate>Mon, 29 Aug 2016 00:12:38 GMT</pubDate><content:encoded>&lt;p&gt;I wanted to play around with &lt;a href=&quot;http://www.laravel.com&quot;&gt;Laravel&lt;/a&gt; on my mac without having to use a VM, like &lt;a href=&quot;http://www.laravel.com/docs/homestead&quot;&gt;homestead&lt;/a&gt;. I decided to try out &lt;a href=&quot;http://laravel.com/docs/valet&quot;&gt;Laravel Valet&lt;/a&gt;, which doesn’t need a VM for setup, just &lt;a href=&quot;http://brew.sh/&quot;&gt;brew&lt;/a&gt;. This however doesn’t include a db by default. I decided to use &lt;a href=&quot;https://mariadb.com/&quot;&gt;MariaDB&lt;/a&gt; due to its ease of use.&lt;/p&gt;
 &lt;h2&gt;Installation&lt;/h2&gt;
 &lt;p&gt;Since I have brew installed it’s super easy to configure:&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;brew install mariadb
 unset TMPDIR
 brew services start mariadb
@@ -13,29 +13,29 @@ mysql_install_db&lt;/code&gt;&lt;/pre&gt;
 &lt;h2&gt;Create User/Database&lt;/h2&gt;
 &lt;p&gt;After I had it setup and logged in, I ran a few commands to create a database and user to access it. Since laravel includes a default config for a homestead db and user, I decided to just stick with those.&lt;/p&gt;
 &lt;p&gt;First login to the server &lt;code class=&quot;language-text&quot;&gt;mysql -uroot&lt;/code&gt;, then run these commands:&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;  create database homestead;
   create user &amp;#39;homestead&amp;#39;@&amp;#39;localhost&amp;#39; identified by &amp;#39;secret&amp;#39;;
   GRANT ALL PRIVILEGES ON homestead.* to &amp;#39;homestead&amp;#39;@&amp;#39;localhost&amp;#39; WITH GRANT OPTION;&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
-&lt;p&gt;This gives the proper permissions I need to run laravel locally.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Disable GPG for Octopress Deploy]]></title><description><![CDATA[I’ve noticed that Octopress Deploy doesn’t appear to allow deployment using Git if GPG is enabled. What I had to do to get around it is…]]></description><link>https://stepquick.net//disable-gpg-for-deployment/</link><guid isPermaLink="false">https://stepquick.net//disable-gpg-for-deployment/</guid><pubDate>Fri, 05 Aug 2016 04:47:13 GMT</pubDate><content:encoded>&lt;p&gt;I’ve noticed that Octopress Deploy doesn’t appear to allow deployment using Git if GPG is enabled. What I had to do to get around it is temporarily disable GPG.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;
+&lt;p&gt;This gives the proper permissions I need to run laravel locally.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Disable GPG for Octopress Deploy]]></title><description><![CDATA[I’ve noticed that Octopress Deploy doesn’t appear to allow deployment using Git if GPG is enabled. What I had to do to get around it is…]]></description><link>https://stepquick.net/disable-gpg-for-deployment/</link><guid isPermaLink="false">https://stepquick.net/disable-gpg-for-deployment/</guid><pubDate>Fri, 05 Aug 2016 04:47:13 GMT</pubDate><content:encoded>&lt;p&gt;I’ve noticed that Octopress Deploy doesn’t appear to allow deployment using Git if GPG is enabled. What I had to do to get around it is temporarily disable GPG.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;git config --global commit.gpgsign false&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
-&lt;p&gt;After disabling it I can run &lt;code class=&quot;language-text&quot;&gt;octopress deploy&lt;/code&gt; to commit my new changes to the live site. Doesn’t appear to be any issues listed for it, so if you come across this that’s what I ended up having to do to get deploy to work.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[How to disable Chrome Web Security for development]]></title><description><![CDATA[Recently I’ve been developing an AngularJS application that requires access to an api from another sub domain. Since the API is another sub…]]></description><link>https://stepquick.net//how-to-disable-chrome-web-security-for-development/</link><guid isPermaLink="false">https://stepquick.net//how-to-disable-chrome-web-security-for-development/</guid><pubDate>Tue, 26 Jul 2016 21:45:01 GMT</pubDate><content:encoded>&lt;p&gt;Recently I’ve been developing an AngularJS application that requires access to an api from another sub domain. Since the API is another sub domain, Chrome complains that it is a &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS&quot;&gt;CORS&lt;/a&gt; violation, automatically disallowing the request. This causes the application to hang forever because the route is dependent on calling this api first. What I decided to do was look up how to circumvent CORS in Google Chrome to test that it works correctly. I only need to do this locally, since I already authorized the live production version to work correctly.&lt;/p&gt;
+&lt;p&gt;After disabling it I can run &lt;code class=&quot;language-text&quot;&gt;octopress deploy&lt;/code&gt; to commit my new changes to the live site. Doesn’t appear to be any issues listed for it, so if you come across this that’s what I ended up having to do to get deploy to work.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[How to disable Chrome Web Security for development]]></title><description><![CDATA[Recently I’ve been developing an AngularJS application that requires access to an api from another sub domain. Since the API is another sub…]]></description><link>https://stepquick.net/how-to-disable-chrome-web-security-for-development/</link><guid isPermaLink="false">https://stepquick.net/how-to-disable-chrome-web-security-for-development/</guid><pubDate>Tue, 26 Jul 2016 21:45:01 GMT</pubDate><content:encoded>&lt;p&gt;Recently I’ve been developing an AngularJS application that requires access to an api from another sub domain. Since the API is another sub domain, Chrome complains that it is a &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS&quot;&gt;CORS&lt;/a&gt; violation, automatically disallowing the request. This causes the application to hang forever because the route is dependent on calling this api first. What I decided to do was look up how to circumvent CORS in Google Chrome to test that it works correctly. I only need to do this locally, since I already authorized the live production version to work correctly.&lt;/p&gt;
 &lt;p&gt;The command I found was from a &lt;a href=&quot;http://stackoverflow.com/q/3102819/1612852&quot;&gt;Stack Overflow&lt;/a&gt; request.&lt;/p&gt;
 &lt;p&gt;On Mac: &lt;code class=&quot;language-text&quot;&gt;open -a Google\ Chrome --args --disable-web-security --user-data-dir&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;On Linux: &lt;code class=&quot;language-text&quot;&gt;google-chrome --args --disable-web-security --user-data-dir&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;On Windows: &lt;code class=&quot;language-text&quot;&gt;chrome.exe --args --disable-web-security --user-data-dir&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;The later versions of Chrome say &lt;code class=&quot;language-text&quot;&gt;--disable-web-security&lt;/code&gt; has been depreciated, but it still works. The flag &lt;code class=&quot;language-text&quot;&gt;--use-data-dir&lt;/code&gt; appears to be required for CORS to be disabled.&lt;/p&gt;
 &lt;h3&gt;Downside&lt;/h3&gt;
-&lt;p&gt;Currently working on learning more about how to disable in Firefox, Safari, and ie11/edge. I may just commit to using Chrome locally, and checking the production version from the rest of the browsers.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Upgraded to Octopress 3]]></title><description><![CDATA[I finally got around to upgrading to  Octopress 3  and honestly it’s a noticeable difference. For starters, it’s very clean, and doesn’t…]]></description><link>https://stepquick.net//upgraded-to-octopress-3/</link><guid isPermaLink="false">https://stepquick.net//upgraded-to-octopress-3/</guid><pubDate>Wed, 16 Sep 2015 04:52:08 GMT</pubDate><content:encoded>&lt;p&gt;I finally got around to upgrading to &lt;a href=&quot;http://www.github.com/octopress/octopress.git&quot;&gt;Octopress 3&lt;/a&gt; and honestly it’s a noticeable difference.&lt;/p&gt;
+&lt;p&gt;Currently working on learning more about how to disable in Firefox, Safari, and ie11/edge. I may just commit to using Chrome locally, and checking the production version from the rest of the browsers.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Upgraded to Octopress 3]]></title><description><![CDATA[I finally got around to upgrading to  Octopress 3  and honestly it’s a noticeable difference. For starters, it’s very clean, and doesn’t…]]></description><link>https://stepquick.net/upgraded-to-octopress-3/</link><guid isPermaLink="false">https://stepquick.net/upgraded-to-octopress-3/</guid><pubDate>Wed, 16 Sep 2015 04:52:08 GMT</pubDate><content:encoded>&lt;p&gt;I finally got around to upgrading to &lt;a href=&quot;http://www.github.com/octopress/octopress.git&quot;&gt;Octopress 3&lt;/a&gt; and honestly it’s a noticeable difference.&lt;/p&gt;
 &lt;p&gt;For starters, it’s very clean, and doesn’t include nearly as much boilerplate as the older version does. It also seems to include default jekyll commands, as well as a default jekyll theme. Deploy also works amazing, it’s exactly what I was wanting. I hated having issues with deploying from multiple computers.&lt;/p&gt;
 &lt;p&gt;I also need to do some house cleaning for this site. A few things that stick out are:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Convert to using a more handmade theme/something nicer. Jekyll default theme is fairly nice, but I have to add more stuff that I enjoyed from the older octopress theme.&lt;/li&gt;
 &lt;li&gt;Add more content, I’ve got a bunch of things I’d like to remember from working recently, and this is as good a place as any to store these things.&lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Installing Homestead on Ubuntu]]></title><description><![CDATA[This is a piece I’m writing more of as a reminder. I really like the use I get out of  homestead . I tend to use it for more than just…]]></description><link>https://stepquick.net//installing-homestead-on-ubuntu/</link><guid isPermaLink="false">https://stepquick.net//installing-homestead-on-ubuntu/</guid><pubDate>Wed, 16 Sep 2015 03:25:22 GMT</pubDate><content:encoded>&lt;p&gt;This is a piece I’m writing more of as a reminder. I really like the use I get out of &lt;a href=&quot;http://www.laravel.com/docs/5.1/homestead&quot;&gt;homestead&lt;/a&gt;. I tend to use it for more than just laravel, but some ruby projects as well, since it provides a really flexible starting point for not just php but Ruby projects as well.&lt;/p&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Installing Homestead on Ubuntu]]></title><description><![CDATA[This is a piece I’m writing more of as a reminder. I really like the use I get out of  homestead . I tend to use it for more than just…]]></description><link>https://stepquick.net/installing-homestead-on-ubuntu/</link><guid isPermaLink="false">https://stepquick.net/installing-homestead-on-ubuntu/</guid><pubDate>Wed, 16 Sep 2015 03:25:22 GMT</pubDate><content:encoded>&lt;p&gt;This is a piece I’m writing more of as a reminder. I really like the use I get out of &lt;a href=&quot;http://www.laravel.com/docs/5.1/homestead&quot;&gt;homestead&lt;/a&gt;. I tend to use it for more than just laravel, but some ruby projects as well, since it provides a really flexible starting point for not just php but Ruby projects as well.&lt;/p&gt;
 &lt;h4&gt;Step 1 - Install Vagrant/Virtualbox&lt;/h4&gt;
 &lt;p&gt;Homestead is built with portability in mind, so your options are either &lt;a href=&quot;https://www.virtualbox.org/&quot;&gt;Virtualbox&lt;/a&gt; or &lt;a href=&quot;http://www.vmware.com/products/desktop-virtualization/&quot;&gt;VMWare&lt;/a&gt; I’m going with virtualbox because it’s readily available and I’ve lost track of whether or not VMWare has a linux product. You’ll also need &lt;a href=&quot;http://vagrantup.com&quot;&gt;Vagrant&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;To install both, you could use Software Center included with Ubuntu, but if you’re more of a terminal person.&lt;/p&gt;
@@ -45,18 +45,18 @@ mysql_install_db&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;$ php -v&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;I think php is included with all newest versions of Ubuntu, but it doesn’t hurt to check.&lt;/p&gt;
 &lt;p&gt;After this you’ll want to install &lt;a href=&quot;https://getcomposer.org/&quot;&gt;composer&lt;/a&gt;, a dependency management tool for php.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;$ curl -sS https://getcomposer.org/installer | php &amp;amp;&amp;amp; sudo mv composer.phar /usr/local/bin/composer&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;p&gt;This will download composer, and move it to your local bin, so you can call it from command line.&lt;/p&gt;
 &lt;h4&gt;Step 3 - Install Homestead/Add composer to $path&lt;/h4&gt;
 &lt;p&gt;Homestead can be installed locally or can be installed in composers global bin allowing it to be access throughout the terminal without having to be in the vagrant directory. I use the global require which is easier than remembering the directory the vagrant file is located in.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;$ composer global require &amp;quot;laravel/homestead=~2.0&amp;quot;&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;p&gt;This will install correctly, however if you don’t have composer set in the $PATH file, you may not be able to run the commands.&lt;/p&gt;
 &lt;p&gt;Run:&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;$ echo &amp;#39;export PATH=&amp;quot;$PATH:~/.composer/vendor/bin&amp;quot;&amp;#39; &amp;gt;&amp;gt; ~/.bashrc &amp;amp;&amp;amp; source ~/.bashrc&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;p&gt;This will export the directory for composer to the front of the Homestead. Commands for homestead should start working, if not, restart terminal.&lt;/p&gt;
@@ -70,34 +70,34 @@ mysql_install_db&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Homestead also allows you to give a list of app names and databases, that each application will resolve to on your host machine. Once you run &lt;code class=&quot;language-text&quot;&gt;homestead up&lt;/code&gt; Homestead will generate nginx configuration files and databases for each of these sites.&lt;/p&gt;
 &lt;h4&gt;C. Set up SSH on host machine&lt;/h4&gt;
 &lt;p&gt;Next you’ll want to generate an ssh key for the Virtual Machine to communicate with your host machine.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;$ mkdir ~/.ssh &amp;amp;&amp;amp; chmod 700 $_ &amp;amp;&amp;amp; ssh-keygen -t rsa&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;p&gt;This will ask if you want a passphrase for more protection, which is optional.&lt;/p&gt;
 &lt;h4&gt;(Optional) - Upgrade Ruby on Ubuntu&lt;/h4&gt;
 &lt;p&gt;I don’t quite remember if this is optional or not, but &lt;a href=&quot;https://www.ruby-lang.org/en/&quot;&gt;Ruby&lt;/a&gt; may need to be upgraded to use homestead mainly because it uses Ruby in some of it’s configuration and the version included with Ubuntu may be out of date. I use &lt;a href=&quot;http://rvm.io&quot;&gt;rvm&lt;/a&gt; to manage Ruby.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;$ gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
 $ \curl -sSL https://get.rvm.io | bash -s stable --ruby=2.2.3&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;p&gt;It has an install flag to install ruby as well, and at the time it’s 2.2.3. After the install remember to run source on the local home directory file to get it ruby updated, otherwise reopen your terminal.&lt;/p&gt;
 &lt;h4&gt;Step 5 - Run Homestead finally.&lt;/h4&gt;
 &lt;p&gt;Now that this is all set up, you should be able to start it running&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;$ homestead up&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;p&gt;This will import the base vagrant image and set up the provisioning homestead has too. Once the terminal is idle, you can test it works by running:&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;$ homestead ssh&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;p&gt;This is an alias to ssh without having to remember all the login information. The ssh key set up earlier makes it much easier too.&lt;/p&gt;
 &lt;p&gt;Also be sure to add this to your hosts file:&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;127.0.0.1 homestead.app&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;p&gt;Test by going in your browser to &lt;a href=&quot;http://homestead.app:8000&quot;&gt;http://homestead.app:8000&lt;/a&gt;. Homestead forwards port 80 to 8000 to avoid port collisions.&lt;/p&gt;
 &lt;h3&gt;Conclusion&lt;/h3&gt;
-&lt;p&gt;I think this is a good starting point. I’ll add on as I see fit.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Use different branch as master with Git]]></title><description><![CDATA[I came across this as I found it to be important. Currently  Degree Search  is split into three branches: Master: Current live version 3.…]]></description><link>https://stepquick.net//use-different-branch-as-master-with-git/</link><guid isPermaLink="false">https://stepquick.net//use-different-branch-as-master-with-git/</guid><pubDate>Tue, 24 Mar 2015 21:26:33 GMT</pubDate><content:encoded>&lt;p&gt;I came across this as I found it to be important. Currently &lt;a href=&quot;http://degreesearch.arizona.edu&quot;&gt;Degree Search&lt;/a&gt; is split into three branches:&lt;/p&gt;
+&lt;p&gt;I think this is a good starting point. I’ll add on as I see fit.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Use different branch as master with Git]]></title><description><![CDATA[I came across this as I found it to be important. Currently  Degree Search  is split into three branches: Master: Current live version 3.…]]></description><link>https://stepquick.net/use-different-branch-as-master-with-git/</link><guid isPermaLink="false">https://stepquick.net/use-different-branch-as-master-with-git/</guid><pubDate>Tue, 24 Mar 2015 21:26:33 GMT</pubDate><content:encoded>&lt;p&gt;I came across this as I found it to be important. Currently &lt;a href=&quot;http://degreesearch.arizona.edu&quot;&gt;Degree Search&lt;/a&gt; is split into three branches:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Master: Current live version&lt;/li&gt;
 &lt;li&gt;3.0: Different version, stopped work once laravel 5 was released&lt;/li&gt;
@@ -106,32 +106,32 @@ $ \curl -sSL https://get.rvm.io | bash -s stable --ruby=2.2.3&lt;/code&gt;&lt;/p
 &lt;p&gt;At this point I no longer wanted the current version to be what I work on anymore, so I decided to change branches. However there doesn’t appear to be very straightforward, especially since the 5.0 branch doesn’t have a shared history from master, I pushed it remotely from my local dev environment.&lt;/p&gt;
 &lt;h3&gt;Note: please make a backup branch of master before doing this, it’s easier this way&lt;/h3&gt;
 &lt;p&gt;Following this &lt;a href=&quot;http://stackoverflow.com/a/2763118/1612852&quot;&gt;Stack Overflow&lt;/a&gt; I was able to find something that not only merged the master history, but also replaced the files with my current dev branch. While on the master branch I ran these commands:&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;git checkout yourbranchname
 git merge --strategy=ours master
 git checkout master
 git merge yourbranchname&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;p&gt;The writer of the answer also suggests more detailed messaging in the commit, so you could instead do this:&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;git checkout yourbranchname
 git merge --strategy=ours --no-commit master
 git commit # add information to the template merge message
 git checkout master
 git merge yourbranchname&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
-&lt;p&gt;This solved my issues of having to deal with the master branch, considering it’s being migrated to a newer version. All that was left after this was to switch to the backup older branch for the live site and test the new master branch. Other than a few things that got wiped away in the branch switch, everything merged correctly.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Switch between PHP and HHVM in Terminal]]></title><description><![CDATA[This is something I’m trying to remember, and it’s something that’s been answered before  here . I’ve beginning to experiment with HHVM as…]]></description><link>https://stepquick.net//switch-between-php-and-hhvm/</link><guid isPermaLink="false">https://stepquick.net//switch-between-php-and-hhvm/</guid><pubDate>Fri, 20 Feb 2015 22:46:49 GMT</pubDate><content:encoded>&lt;p&gt;This is something I’m trying to remember, and it’s something that’s been answered before &lt;a href=&quot;http://stackoverflow.com/questions/22830662/reverting-back-to-php-from-hhvm&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This solved my issues of having to deal with the master branch, considering it’s being migrated to a newer version. All that was left after this was to switch to the backup older branch for the live site and test the new master branch. Other than a few things that got wiped away in the branch switch, everything merged correctly.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Switch between PHP and HHVM in Terminal]]></title><description><![CDATA[This is something I’m trying to remember, and it’s something that’s been answered before  here . I’ve beginning to experiment with HHVM as…]]></description><link>https://stepquick.net/switch-between-php-and-hhvm/</link><guid isPermaLink="false">https://stepquick.net/switch-between-php-and-hhvm/</guid><pubDate>Fri, 20 Feb 2015 22:46:49 GMT</pubDate><content:encoded>&lt;p&gt;This is something I’m trying to remember, and it’s something that’s been answered before &lt;a href=&quot;http://stackoverflow.com/questions/22830662/reverting-back-to-php-from-hhvm&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;I’ve beginning to experiment with HHVM as an alternative to using PHP, so I figured this would be useful to try out. Switching out the language that’s called when using PHP on the terminal is as simple as using this command:&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;sudo /usr/bin/update-alternatives --install /usr/bin/php php /usr/bin/hhvm 60&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;p&gt;This will do it without any input, and you should be able to check by running. &lt;code class=&quot;language-text&quot;&gt;php -v&lt;/code&gt;. If you get hhvm version stuff, you should be good.&lt;/p&gt;
 &lt;p&gt;My next important question was how to switch back to using PHP. Again, simple:&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;sudo /usr/bin/update-alternatives --config php&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;p&gt;It will then ask you to select from a list of options. My options were:&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;There are 2 choices for the alternative php (providing /usr/bin/php).
 
   Selection    Path            Priority   Status
@@ -141,7 +141,7 @@ git merge yourbranchname&lt;/code&gt;&lt;/pre&gt;
 * 2            /usr/bin/php5    50        manual mode
 
 Press enter to keep the current choice[*], or type selection number:&lt;/code&gt;&lt;/pre&gt;
-      &lt;/div&gt;</content:encoded></item><item><title><![CDATA[Migration from Dreamhost to Namecheap and Github]]></title><description><![CDATA[I recently decided that I no longer needed to use DreamHost for hosting my website now that I’ve been using Octopress. The initial setup for…]]></description><link>https://stepquick.net//migration-from-dreamhost-to-namecheap-and-github/</link><guid isPermaLink="false">https://stepquick.net//migration-from-dreamhost-to-namecheap-and-github/</guid><pubDate>Wed, 28 Jan 2015 23:56:33 GMT</pubDate><content:encoded>&lt;p&gt;I recently decided that I no longer needed to use DreamHost for hosting my website now that I’ve been using Octopress.&lt;/p&gt;
+      &lt;/div&gt;</content:encoded></item><item><title><![CDATA[Migration from Dreamhost to Namecheap and Github]]></title><description><![CDATA[I recently decided that I no longer needed to use DreamHost for hosting my website now that I’ve been using Octopress. The initial setup for…]]></description><link>https://stepquick.net/migration-from-dreamhost-to-namecheap-and-github/</link><guid isPermaLink="false">https://stepquick.net/migration-from-dreamhost-to-namecheap-and-github/</guid><pubDate>Wed, 28 Jan 2015 23:56:33 GMT</pubDate><content:encoded>&lt;p&gt;I recently decided that I no longer needed to use DreamHost for hosting my website now that I’ve been using Octopress.&lt;/p&gt;
 &lt;p&gt;The initial setup for this appears to be quite straightforward, but it is advised that you follow the exact directions otherwise you will have issues. I had some initially, and I ended up having to destroy my repository and start over again.&lt;/p&gt;
 &lt;p&gt;Instructions can be found &lt;a href=&quot;http://octopress.org/docs/deploying/github/&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
 &lt;h3&gt;Side effects:&lt;/h3&gt;
@@ -149,9 +149,9 @@ Press enter to keep the current choice[*], or type selection number:&lt;/code&gt
 &lt;p&gt;I also noticed that this process doesn’t really seem to enjoy posting from more than one computer. I found out the hard way and I ended up having to blast the repository completely and start from scratch. I found that once you run &lt;code class=&quot;language-text&quot;&gt;rake setup_github_pages&lt;/code&gt; and tried to generate and deploy the site it would say something along the lines of being out of sync.&lt;/p&gt;
 &lt;h3&gt;Solution:&lt;/h3&gt;
 &lt;p&gt;After running &lt;code class=&quot;language-text&quot;&gt;rake setup_github_pages&lt;/code&gt;, don’t run generate or deploy, but instead go into the new &lt;code class=&quot;language-text&quot;&gt;_deploy&lt;/code&gt; folder and run &lt;code class=&quot;language-text&quot;&gt;git pull origin master&lt;/code&gt;. It should merge your current master branch into the folder. There will be an index merge conflict, which is easy to delete the old one. Doing this should allow you to run &lt;code class=&quot;language-text&quot;&gt;rake deploy&lt;/code&gt; successfully to commit the blog.&lt;/p&gt;
-&lt;p&gt;If you don’t plan on maintaining this blog with more than one computer, then this probably isn’t the biggest problem for you.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Use Varnish with Nginx and Ubuntu]]></title><description><![CDATA[Feels like I haven’t updated this blog in a while, so I’ll add a tutorial that I learned about a bit ago when trying to address speeds with…]]></description><link>https://stepquick.net//use-varnish-with-nginx-and-ubuntu/</link><guid isPermaLink="false">https://stepquick.net//use-varnish-with-nginx-and-ubuntu/</guid><pubDate>Tue, 27 Jan 2015 10:42:55 GMT</pubDate><content:encoded>&lt;p&gt;Feels like I haven’t updated this blog in a while, so I’ll add a tutorial that I learned about a bit ago when trying to address speeds with Drupal.&lt;/p&gt;
+&lt;p&gt;If you don’t plan on maintaining this blog with more than one computer, then this probably isn’t the biggest problem for you.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Use Varnish with Nginx and Ubuntu]]></title><description><![CDATA[Feels like I haven’t updated this blog in a while, so I’ll add a tutorial that I learned about a bit ago when trying to address speeds with…]]></description><link>https://stepquick.net/use-varnish-with-nginx-and-ubuntu/</link><guid isPermaLink="false">https://stepquick.net/use-varnish-with-nginx-and-ubuntu/</guid><pubDate>Tue, 27 Jan 2015 10:42:55 GMT</pubDate><content:encoded>&lt;p&gt;Feels like I haven’t updated this blog in a while, so I’ll add a tutorial that I learned about a bit ago when trying to address speeds with Drupal.&lt;/p&gt;
 &lt;p&gt;For starters this was done on an Ubuntu VM. From this &lt;a href=&quot;https://www.varnish-cache.org/installation/ubuntu&quot;&gt;website&lt;/a&gt;, follow the tutorial to install Varnish:&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;apt-get install apt-transport-https
 curl https://repo.varnish-cache.org/ubuntu/GPG-key.txt | apt-key add -
 echo &amp;quot;deb https://repo.varnish-cache.org/ubuntu/ precise varnish-4.0&amp;quot; &amp;gt;&amp;gt; /etc/apt/sources.list.d/varnish-cache.list
@@ -159,7 +159,7 @@ apt-get update
 apt-get install varnish&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;p&gt;Edit this file:  &lt;code class=&quot;language-text&quot;&gt;/etc/default/varnish&lt;/code&gt;, under Alternative 2, configure the beginning port &lt;code class=&quot;language-text&quot;&gt;:6082&lt;/code&gt; to be &lt;code class=&quot;language-text&quot;&gt;:80&lt;/code&gt; like below:&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;DAEMON_OPTS=&amp;quot;-a :80 \
          -T localhost:6082 \
          -f /etc/varnish/default.vcl \
@@ -167,7 +167,7 @@ apt-get install varnish&lt;/code&gt;&lt;/pre&gt;
          -s malloc,256m&amp;quot;&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;p&gt;Next edit the file located at &lt;code class=&quot;language-text&quot;&gt;/etc/varnish/default.vcl&lt;/code&gt;. Change to port to from &lt;code class=&quot;language-text&quot;&gt;80&lt;/code&gt; to &lt;code class=&quot;language-text&quot;&gt;8080&lt;/code&gt; like below:&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;backend default {
     .host = &amp;quot;127.0.0.1&amp;quot;;
     .port = &amp;quot;8080&amp;quot;;
@@ -181,7 +181,7 @@ apt-get install varnish&lt;/code&gt;&lt;/pre&gt;
 &lt;h3&gt;Notes:&lt;/h3&gt;
 &lt;p&gt;If you’re using this on a vagrant and have ports forwarded, for example I use homestead for laravel, you will need to change the forwarded port from 8000 to 8080, otherwise it won’t work properly, and nginx will likely not show your sites.&lt;/p&gt;
 &lt;h3&gt;Finished, now test:&lt;/h3&gt;
-&lt;p&gt;To test, you can run &lt;code class=&quot;language-text&quot;&gt;varnishstat&lt;/code&gt;, and that should give you data live as you access the domain affected by varnish.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Notifications Using Gulp-Notify on Vagrant with Terminal-Notifier]]></title><description><![CDATA[Update: 3/3/2015: I can confirm that this does in fact work with homestead and elixir. However, I notice that the server hangs at…]]></description><link>https://stepquick.net//use-gulp-notify-with-terminal-notifier/</link><guid isPermaLink="false">https://stepquick.net//use-gulp-notify-with-terminal-notifier/</guid><pubDate>Mon, 08 Sep 2014 18:52:52 GMT</pubDate><content:encoded>&lt;blockquote&gt;
+&lt;p&gt;To test, you can run &lt;code class=&quot;language-text&quot;&gt;varnishstat&lt;/code&gt;, and that should give you data live as you access the domain affected by varnish.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Notifications Using Gulp-Notify on Vagrant with Terminal-Notifier]]></title><description><![CDATA[Update: 3/3/2015: I can confirm that this does in fact work with homestead and elixir. However, I notice that the server hangs at…]]></description><link>https://stepquick.net/use-gulp-notify-with-terminal-notifier/</link><guid isPermaLink="false">https://stepquick.net/use-gulp-notify-with-terminal-notifier/</guid><pubDate>Mon, 08 Sep 2014 18:52:52 GMT</pubDate><content:encoded>&lt;blockquote&gt;
 &lt;h2&gt;Update: 3/3/2015:&lt;/h2&gt;
 &lt;p&gt;I can confirm that this does in fact work with homestead and elixir. However, I notice that the server hangs at provisioning on terminal. It doesn’t freeze, it continues to load, but it is one little weirdness that I’ve found.&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -190,22 +190,22 @@ apt-get install varnish&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;I develop using a Vagrant VM, so while installing most of this stuff on the host machine will work fine, I want it to be mostly kept to the VM. The tests are also running against the VM’s databases, not the local machine, so it makes more sense to keep dev separate from the Host Mac OSX.&lt;/p&gt;
 &lt;h4&gt;1. Install terminal-notifier&lt;/h4&gt;
 &lt;p&gt;I used homebrew, so I just ran update and installed terminal-notifier:&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;brew update &amp;amp;&amp;amp; brew install terminal-notifier&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;p&gt;This added terminal-notifier to my applications folder, it also linked the app to my $PATH, which allows me to call it from the terminal.&lt;/p&gt;
 &lt;h4&gt;2. Install Vagrant-Notify&lt;/h4&gt;
 &lt;p&gt;I will be using terminal-notifier for this, since it’s the stock notification app for Mac. This piece was a bit weird when initially installing. It worked best for me when I installed the plugin with the Vagrant vm off, it will give me an error about ruby running if the machine was already running. Killing the rogue ruby task with activity monitor would fix this as well.&lt;/p&gt;
 &lt;p&gt;From inside the folder with your Vagrant:&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;vagrant plugin install vagrant-notify&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;p&gt;This piece will require another file called &lt;code class=&quot;language-text&quot;&gt;notify-send&lt;/code&gt;, preferably saved in &lt;code class=&quot;language-text&quot;&gt;usr\local\bin&lt;/code&gt;&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;terminal-notifier -appIcon &amp;quot;$2&amp;quot; -title &amp;quot;$4&amp;quot; -message &amp;quot;$5&amp;quot;&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;p&gt;Make sure this file has no extension and is executable:&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;sudo chmod +x /usr/local/bin/notify-send&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;p&gt;This is the part where I couldn’t quite get it to work like in the tutorial I included, so I ended up moving around the numbers that were being submitted to the script from gulp. These are the numbers that worked for me, YMMV. I believe the gulp-notify sends more by default now.&lt;/p&gt;
@@ -224,29 +224,29 @@ npm install gulp-phpunit —save-dev&lt;/p&gt;
 &lt;p&gt;You can run &lt;code class=&quot;language-text&quot;&gt;gulp&lt;/code&gt;, or you can use &lt;code class=&quot;language-text&quot;&gt;gulp test&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;Which should return a notification of some sort. This will likely not be the best way to address phpunit tests, especially since currently there are only 3 tests. That’s not a lot, but if the project was much bigger, say 30-40 tests, I can see this being a dumb idea. I’ll likely not use this for larger projects, or at least implement a count that only runs the tests every so often.&lt;/p&gt;
 &lt;h2&gt;Troubleshooting&lt;/h2&gt;
-&lt;p&gt;The difficult part about this was getting the script to return the proper notifications. It initially wouldn’t give the message, and instead was using the default img that is included with the script. I ended up moving the numbers around and that seemed to address the issue.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Force regeneration on jekyll watch]]></title><description><![CDATA[I noticed that after migrating dev work to my new Vagrant vm, jekyll doesn’t seem to want to regenerate posts whenever I make a change and…]]></description><link>https://stepquick.net//force-regeneration-on-jekyll-watch/</link><guid isPermaLink="false">https://stepquick.net//force-regeneration-on-jekyll-watch/</guid><pubDate>Fri, 15 Aug 2014 17:22:52 GMT</pubDate><content:encoded>&lt;p&gt;I noticed that after migrating dev work to my new Vagrant vm, jekyll doesn’t seem to want to regenerate posts whenever I make a change and try to preview it. The simple change I found from a &lt;a href=&quot;http://stackoverflow.com/questions/19822319/jekyll-regeneration-doesnt-work-inside-vagrant&quot;&gt;stackoverflow&lt;/a&gt; post is instead of calling just jeykll build —watch, use jekyll build —watch —force_polling.&lt;/p&gt;
+&lt;p&gt;The difficult part about this was getting the script to return the proper notifications. It initially wouldn’t give the message, and instead was using the default img that is included with the script. I ended up moving the numbers around and that seemed to address the issue.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Force regeneration on jekyll watch]]></title><description><![CDATA[I noticed that after migrating dev work to my new Vagrant vm, jekyll doesn’t seem to want to regenerate posts whenever I make a change and…]]></description><link>https://stepquick.net/force-regeneration-on-jekyll-watch/</link><guid isPermaLink="false">https://stepquick.net/force-regeneration-on-jekyll-watch/</guid><pubDate>Fri, 15 Aug 2014 17:22:52 GMT</pubDate><content:encoded>&lt;p&gt;I noticed that after migrating dev work to my new Vagrant vm, jekyll doesn’t seem to want to regenerate posts whenever I make a change and try to preview it. The simple change I found from a &lt;a href=&quot;http://stackoverflow.com/questions/19822319/jekyll-regeneration-doesnt-work-inside-vagrant&quot;&gt;stackoverflow&lt;/a&gt; post is instead of calling just jeykll build —watch, use jekyll build —watch —force_polling.&lt;/p&gt;
 &lt;p&gt;I replace the this line in the rakefile:&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;jekyllPid = Process.spawn({&amp;quot;OCTOPRESS_ENV&amp;quot;=&amp;gt;&amp;quot;preview&amp;quot;}, &amp;quot;jekyll build --watch&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;p&gt;with:&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;jekyllPid = Process.spawn({&amp;quot;OCTOPRESS_ENV&amp;quot;=&amp;gt;&amp;quot;preview&amp;quot;}, &amp;quot;jekyll build --watch --force_polling&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
-&lt;p&gt;Both generate rake watch and rake preview use this line, so make sure to replace both. This seems to have solved my issue with rake preview/watch. The question also has an answer suggesting that vagrant uses a special driver for the file syncing between guest and host machines, making the regeneration not work properly, so that’s something to keep in mind.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Fetching Upstream changes]]></title><description><![CDATA[I found this very useful in merging changes for Octopress, granted I ended up having to wipe the entire project out anyways. This way I’m…]]></description><link>https://stepquick.net//adding-upstream/</link><guid isPermaLink="false">https://stepquick.net//adding-upstream/</guid><pubDate>Wed, 23 Jul 2014 18:39:49 GMT</pubDate><content:encoded>&lt;p&gt;I found this very useful in merging changes for Octopress, granted I ended up having to wipe the entire project out anyways.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;
+&lt;p&gt;Both generate rake watch and rake preview use this line, so make sure to replace both. This seems to have solved my issue with rake preview/watch. The question also has an answer suggesting that vagrant uses a special driver for the file syncing between guest and host machines, making the regeneration not work properly, so that’s something to keep in mind.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Fetching Upstream changes]]></title><description><![CDATA[I found this very useful in merging changes for Octopress, granted I ended up having to wipe the entire project out anyways. This way I’m…]]></description><link>https://stepquick.net/adding-upstream/</link><guid isPermaLink="false">https://stepquick.net/adding-upstream/</guid><pubDate>Wed, 23 Jul 2014 18:39:49 GMT</pubDate><content:encoded>&lt;p&gt;I found this very useful in merging changes for Octopress, granted I ended up having to wipe the entire project out anyways.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;git remote add upstream https://github.com/imathis/octopress.git&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;p&gt;This way I’m able to fetch anything that happens to the master of octopress by simply running&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;git fetch upstream&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;p&gt;If I want to go ahead and merge:&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;git merge upstream/master&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
-&lt;p&gt;I can’t tell if there’s a difference between using https:// or git://, so I’m sticking to what github uses as an example.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Start nginx at launch on Mavericks Mac OS]]></title><description><![CDATA[For the longest time I couldn’t get the piece to work, but I finally figured it out using launchctl as a somewhat basis for troubleshooting…]]></description><link>https://stepquick.net//start-nginx-at-launch-on-mavericks/</link><guid isPermaLink="false">https://stepquick.net//start-nginx-at-launch-on-mavericks/</guid><pubDate>Mon, 28 Apr 2014 16:38:24 GMT</pubDate><content:encoded>&lt;p&gt;For the longest time I couldn’t get the piece to work, but I finally figured it out using launchctl as a somewhat basis for troubleshooting. I used homebrew to install nginx which is easier and works for the most part. First the instructions on how to install nginx using homebrew:&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;
+&lt;p&gt;I can’t tell if there’s a difference between using https:// or git://, so I’m sticking to what github uses as an example.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Start nginx at launch on Mavericks Mac OS]]></title><description><![CDATA[For the longest time I couldn’t get the piece to work, but I finally figured it out using launchctl as a somewhat basis for troubleshooting…]]></description><link>https://stepquick.net/start-nginx-at-launch-on-mavericks/</link><guid isPermaLink="false">https://stepquick.net/start-nginx-at-launch-on-mavericks/</guid><pubDate>Mon, 28 Apr 2014 16:38:24 GMT</pubDate><content:encoded>&lt;p&gt;For the longest time I couldn’t get the piece to work, but I finally figured it out using launchctl as a somewhat basis for troubleshooting. I used homebrew to install nginx which is easier and works for the most part. First the instructions on how to install nginx using homebrew:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;brew update &amp;amp;&amp;amp; brew install nginx&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;p&gt;Next what you want to do is have launchctl start nginx automatically for you. You can do this in several ways, but I’ll cover two:&lt;/p&gt;
@@ -256,11 +256,11 @@ npm install gulp-phpunit —save-dev&lt;/p&gt;
 sudo ln -sfv /usr/local/opt/nginx/*.plist /Library/LaunchDaemons&lt;/p&gt;
 &lt;p&gt;Homebrew places a symbolic link of the nginx folder inside opt making it easier for symbolic links, at least in my opinion anyways. The reasoning to remember for this is:&lt;/p&gt;
 &lt;h2&gt;Option 2 - Just copy it to the folder&lt;/h2&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;sudo cp /usr/local/opt/nginx/*.plist /Library/LaunchDaemons&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;h4&gt;Bonus - Ensure proper file permissions:&lt;/h4&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;sudo chown root:wheel /Library/LaunchDaemons/homebrew.mxcl.nginx.plist - Credit to &amp;lt;a href=&amp;quot;http://localhost:4000/blog/2014/04/28/start-nginx-at-launch-on-mavericks/#comment-1767708094&amp;quot;&amp;gt;Burak&amp;lt;/a&amp;gt;&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;p&gt;The reasoning behind this:&lt;/p&gt;
@@ -269,7 +269,7 @@ sudo ln -sfv /usr/local/opt/nginx/*.plist /Library/LaunchDaemons&lt;/p&gt;
 &lt;li&gt;Sudo is used because nginx needs root permissions. Especially if you opt to change the default port from 8080 to 80.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;Next what you want to do is have launchctl load the file for you automatically:&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;sudo launchctl load -w /Library/LaunchDaemons/homebrew.mxcl.nginx.plist&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;ol&gt;
@@ -277,22 +277,22 @@ sudo ln -sfv /usr/local/opt/nginx/*.plist /Library/LaunchDaemons&lt;/p&gt;
 &lt;li&gt;You need to use the &lt;code class=&quot;language-text&quot;&gt;-w&lt;/code&gt; option, otherwise it won’t load.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;To troubleshoot the file loading use this:&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;sudo launchctl list | grep &amp;#39;homebrew&amp;#39;&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;p&gt;You should get a list that shows homebrew.mxcl.nginx&lt;/p&gt;
 &lt;h2&gt;Option 3 - Just load it when you need it&lt;/h2&gt;
 &lt;p&gt;If you don’t care about automatic use the normal commands for it:&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;sudo nginx -s stop
 sudo nginx
 sudo nginx -s reload&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
-&lt;p&gt;This actually took me a bit to figure out, so I decided to make a post for future reference.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Homebrew and PHP 5.5.11 snag]]></title><description><![CDATA[Upgrading Notes I updated from 5.5.8 to 5.5.11 today. After the upgrade, I noticed that anything using fpm/php had stopped working with…]]></description><link>https://stepquick.net//homebrew-and-php-5-dot-5-11/</link><guid isPermaLink="false">https://stepquick.net//homebrew-and-php-5-dot-5-11/</guid><pubDate>Mon, 14 Apr 2014 22:52:02 GMT</pubDate><content:encoded>&lt;h2&gt;Upgrading Notes&lt;/h2&gt;
+&lt;p&gt;This actually took me a bit to figure out, so I decided to make a post for future reference.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Homebrew and PHP 5.5.11 snag]]></title><description><![CDATA[Upgrading Notes I updated from 5.5.8 to 5.5.11 today. After the upgrade, I noticed that anything using fpm/php had stopped working with…]]></description><link>https://stepquick.net/homebrew-and-php-5-dot-5-11/</link><guid isPermaLink="false">https://stepquick.net/homebrew-and-php-5-dot-5-11/</guid><pubDate>Mon, 14 Apr 2014 22:52:02 GMT</pubDate><content:encoded>&lt;h2&gt;Upgrading Notes&lt;/h2&gt;
 &lt;p&gt;I updated from 5.5.8 to 5.5.11 today. After the upgrade, I noticed that anything using fpm/php had stopped working with nginx, I was getting a Bad Gateway Error. Checking my console I noticed fpm had spewed out a few errors since the update time, indicating that it wasn’t working. I tried running php-fpm from the command line, and it started right up with no problems, all my php sites worked after that. This gave me the impression that something with my plist file, the file for starting php automatically, wasn’t working correctly. That’s when I decided to make a note of this in an article.&lt;/p&gt;
 &lt;h4&gt;In other words:&lt;/h4&gt;
 &lt;p&gt;If you are upgrading from 5.5.8 to 5.5.11 using the command &lt;code class=&quot;language-text&quot;&gt;brew upgrade&lt;/code&gt; be aware that the .plist file used in .11 might be spelled differently than what’s in .8. This, depending on how your environment is setup could break your php-fpm, and possibly php. Make sure to swap out the file names by running these commands first:&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;launchctl unload ~/Library/LaunchAgents/homebrew-php.josegonzalez.php55.plist &amp;amp;&amp;amp; rm ~/Library/LaunchAgents/homebrew-php.josegonzalez.php55.plist
 ln -sfv /usr/local/opt/php55/*.plist ~/Library/LaunchAgents &amp;amp;&amp;amp; launchctl load homebrew.mxcl.php55.plist&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
@@ -304,36 +304,36 @@ ln -sfv /usr/local/opt/php55/*.plist ~/Library/LaunchAgents &amp;amp;&amp;amp; l
 &lt;li&gt;
 &lt;p&gt;My plist prior to 5.5.11 was always a variant of this: &lt;code class=&quot;language-text&quot;&gt;homebrew-php.josegonzalez.php5x.plist&lt;/code&gt;. After the upgrade it’s now named &lt;code class=&quot;language-text&quot;&gt;homebrew.mxcl.php55.plist&lt;/code&gt;.&lt;/p&gt;
 &lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[gist test]]></title><description><![CDATA[I wanted to try posting gists as a test. It seems to work fairly well, but for some reason I was having problems with it not finding it…]]></description><link>https://stepquick.net//gist-test/</link><guid isPermaLink="false">https://stepquick.net//gist-test/</guid><pubDate>Sun, 02 Mar 2014 06:21:27 GMT</pubDate><content:encoded>&lt;p&gt;I wanted to try posting gists as a test. It seems to work fairly well, but for some reason I was having problems with it not finding it resulting in a 301 error.&lt;/p&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[gist test]]></title><description><![CDATA[I wanted to try posting gists as a test. It seems to work fairly well, but for some reason I was having problems with it not finding it…]]></description><link>https://stepquick.net/gist-test/</link><guid isPermaLink="false">https://stepquick.net/gist-test/</guid><pubDate>Sun, 02 Mar 2014 06:21:27 GMT</pubDate><content:encoded>&lt;p&gt;I wanted to try posting gists as a test. It seems to work fairly well, but for some reason I was having problems with it not finding it resulting in a 301 error.&lt;/p&gt;
 &lt;p&gt;Here’s a codeblock example:&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;python&quot;&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-python&quot;&gt;&lt;code class=&quot;language-python&quot;&gt;puts &lt;span class=&quot;token string&quot;&gt;&quot;Hi!&quot;&lt;/span&gt; unless sad&lt;/code&gt;&lt;/pre&gt;
-      &lt;/div&gt;</content:encoded></item><item><title><![CDATA[RVM missing on Mac]]></title><description><![CDATA[Turns out that I messed something installing dotfiles, which is the only thing I can think of at the moment that would cause this. What…]]></description><link>https://stepquick.net//rvm-troubles-on-mac/</link><guid isPermaLink="false">https://stepquick.net//rvm-troubles-on-mac/</guid><pubDate>Wed, 26 Feb 2014 19:47:13 GMT</pubDate><content:encoded>&lt;p&gt;Turns out that I messed something installing dotfiles, which is the only thing I can think of at the moment that would cause this. What happened was the Mac I’m using didn’t notice that I had ruby and rvm installed in my home folder, so it started using the version of ruby installed in Homebrew. That meant something had altered my .bash_profile so I decided to check it out.&lt;/p&gt;
+      &lt;/div&gt;</content:encoded></item><item><title><![CDATA[RVM missing on Mac]]></title><description><![CDATA[Turns out that I messed something installing dotfiles, which is the only thing I can think of at the moment that would cause this. What…]]></description><link>https://stepquick.net/rvm-troubles-on-mac/</link><guid isPermaLink="false">https://stepquick.net/rvm-troubles-on-mac/</guid><pubDate>Wed, 26 Feb 2014 19:47:13 GMT</pubDate><content:encoded>&lt;p&gt;Turns out that I messed something installing dotfiles, which is the only thing I can think of at the moment that would cause this. What happened was the Mac I’m using didn’t notice that I had ruby and rvm installed in my home folder, so it started using the version of ruby installed in Homebrew. That meant something had altered my .bash_profile so I decided to check it out.&lt;/p&gt;
 &lt;p&gt;I checked my bash_profile, which originally that’s where the link for rvm was installed.&lt;/p&gt;
 &lt;p&gt;The three locations are either ~.bashrc, ~.bash_profile, or ~.profile, either of these three would need to be checked.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;[[ -s &amp;quot;$HOME/.rvm/scripts/rvm&amp;quot; ]] &amp;amp;&amp;amp; source &amp;quot;$HOME/.rvm/scripts/rvm&amp;quot;&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;p&gt;This appeared to solve my issue and I was able to get back to using ruby.&lt;/p&gt;
 &lt;p&gt;Update: I was having another issue where rvm kept using the system installed ruby version. I set the new version 2.1.1 to be default, which seems to have resolved my issue. It was pretty annoying.&lt;/p&gt;
 &lt;p&gt;I tried setting it again using this command:&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;rvm get stable --auto-dotfiles&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;p&gt;It temporarily works, closing the terminal appears to reset it back to the original issue. So I tried setting a default with RVM using:&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;rvm use 2.1.1 default&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;p&gt;This solved my issue, and instead of using the local copy, it uses the .rvm version. However here is what’s shown if I echo &lt;code class=&quot;language-text&quot;&gt;$PATH&lt;/code&gt;:&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;/Users/QuickMirror/Dropbox/dotfiles:/Users/QuickMirror/.rvm/gems/ruby-2.1.1/bin:/Users/QuickMirror/.rvm/gems/ruby-2.1.1@global/bin:/Users/QuickMirror/.rvm/rubies/ruby-2.1.1/bin:/Users/QuickMirror/bin:$HOME/Dropbox/dotfiles:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/QuickMirror/.rvm/bin&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;p&gt;As you can see dotfiles still shows up in from which actually made me realize, I was using &lt;code class=&quot;language-text&quot;&gt;.path&lt;/code&gt; as an older alternative to try and get dotfiles to work, so I ended up removing that piece which solved my &lt;code class=&quot;language-text&quot;&gt;$PATH&lt;/code&gt; issue. Echoing &lt;code class=&quot;language-text&quot;&gt;$PATH&lt;/code&gt; now shows the proper order:&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;/Users/QuickMirror/.rvm/gems/ruby-2.1.1/bin:/Users/QuickMirror/.rvm/gems/ruby-2.1.1@global/bin:/Users/QuickMirror/.rvm/rubies/ruby-2.1.1/bin:/Users/QuickMirror/bin:$HOME/Dropbox/dotfiles:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/QuickMirror/.rvm/bin&lt;/code&gt;&lt;/pre&gt;
-      &lt;/div&gt;</content:encoded></item><item><title><![CDATA[How to remove MySQL installation on Mac]]></title><description><![CDATA[Note: Original article from 2012, I don’t use MAMP anymore, I use a vagrant/local mysql installation via homebrew. I don’t know if this is…]]></description><link>https://stepquick.net//how-to-remove-mysql-installation-on-mac/</link><guid isPermaLink="false">https://stepquick.net//how-to-remove-mysql-installation-on-mac/</guid><pubDate>Mon, 17 Feb 2014 22:22:00 GMT</pubDate><content:encoded>&lt;p&gt;Note: Original article from 2012, I don’t use MAMP anymore, I use a vagrant/local mysql installation via homebrew.&lt;/p&gt;
+      &lt;/div&gt;</content:encoded></item><item><title><![CDATA[How to remove MySQL installation on Mac]]></title><description><![CDATA[Note: Original article from 2012, I don’t use MAMP anymore, I use a vagrant/local mysql installation via homebrew. I don’t know if this is…]]></description><link>https://stepquick.net/how-to-remove-mysql-installation-on-mac/</link><guid isPermaLink="false">https://stepquick.net/how-to-remove-mysql-installation-on-mac/</guid><pubDate>Mon, 17 Feb 2014 22:22:00 GMT</pubDate><content:encoded>&lt;p&gt;Note: Original article from 2012, I don’t use MAMP anymore, I use a vagrant/local mysql installation via homebrew.&lt;/p&gt;
 &lt;p&gt;I don’t know if this is important anymore, the original article I linked to is broken, but here’s the original commands:&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;sudo rm /usr/local/share/mysql
 sudo rm -rf /usr/local/share/mysql*
 sudo rm -rf /Library/StartupItems/MySQLCOM
@@ -346,6 +346,6 @@ sudo rm -rf /var/db/receipts/com.mysql.*&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;This is for when MAMP is used for your web server purposes. It might work for overall mysql installations(mysql is under the share folder after all), but it’s been a while since I’ve used MAMP. I’m going to make it a point to actually update my articles in the future.&lt;/p&gt;
 &lt;p&gt;Tip:
 Use this command to find everything related to mysql.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;sudo find / | grep -i mysql&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;</content:encoded></item></channel></rss>

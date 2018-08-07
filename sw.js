@@ -37,7 +37,7 @@
 /* eslint-disable indent, no-unused-vars, no-multiple-empty-lines, max-nested-callbacks, space-before-function-paren, quotes, comma-spacing */
 'use strict';
 
-var precacheConfig = [["/0-4322ee66d659c1c87bc7.js","10c1118472d50f4b698cf1d581e192de"],["/app-02ed17d07792080a1fc6.js","3e541529f93a35e1abf7623e0680a85a"],["/component---node-modules-gatsby-plugin-offline-app-shell-js-3ee632af18bf41b5d8fa.js","7a235d952935c7a5244ff36b81864d10"],["/component---src-pages-index-js-e4c907f5f10ad5c6e720.js","dc1c45635a4d9a8e221b6594cad628fd"],["/index.html","cda301477c8ecf83baa373c59dc86e2b"],["/offline-plugin-app-shell-fallback/index.html","f87c16fa8bf3ae1d67aed621c14c885c"],["/static/d/209/path---index-6a9-G5p8LXfj2yS2QzR5bMBXQEhB9s.json","2b20345def89c405621cbcab7c099446"],["/webpack-runtime-f0028249b533b9cac3c9.js","eccf9561a6de889a9822b464f81dd655"]];
+var precacheConfig = [["/app-02ed17d07792080a1fc6.js","3e541529f93a35e1abf7623e0680a85a"],["/app-e46d70ed7fbea8a540ef.js","d23dc2cae104add4ccb44b67037fbd4a"],["/commons-4a609cd1349a6e5bd236.js","8628906a788fad6a155d488e199b68ff"],["/index.html","d3d0dbe926a3cba0c9f03d73bf3f2836"],["/offline-plugin-app-shell-fallback/index.html","8de6e6cc8f8b9b7efb4498cb01d7035f"]];
 var cacheName = 'sw-precache-v3-gatsby-plugin-offline-' + (self.registration ? self.registration.scope : '');
 
 
@@ -135,7 +135,7 @@ var urlsToCacheKeys = new Map(
     var relativeUrl = item[0];
     var hash = item[1];
     var absoluteUrl = new URL(relativeUrl, self.location);
-    var cacheKey = createCacheKey(absoluteUrl, hashParamName, hash, /(.*js$|\/static\/)/);
+    var cacheKey = createCacheKey(absoluteUrl, hashParamName, hash, /(.\w{8}.woff2)/);
     return [absoluteUrl.toString(), cacheKey];
   })
 );
