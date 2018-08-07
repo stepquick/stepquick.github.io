@@ -1,21 +1,19 @@
 import React from 'react'
-import { Link } from 'gatsby'
+import Link from 'gatsby-link'
 import get from 'lodash/get'
 import Helmet from 'react-helmet'
 
 import Bio from '../components/Bio'
-import Layout from '../components/layout'
 import { rhythm } from '../utils/typography'
 
 class BlogIndex extends React.Component {
   render() {
     const siteTitle = get(this, 'props.data.site.siteMetadata.title')
     const posts = get(this, 'props.data.allMarkdownRemark.edges')
-
     return (
-      <Layout location={this.props.location}>
-        <Bio/>
+      <div>
         <Helmet title={siteTitle} />
+        <Bio />
         {posts.map(({ node }) => {
           const title = get(node, 'frontmatter.title') || node.fields.slug
           return (
@@ -34,7 +32,7 @@ class BlogIndex extends React.Component {
             </div>
           )
         })}
-      </Layout>
+      </div>
     )
   }
 }
@@ -56,7 +54,7 @@ export const pageQuery = graphql`
             slug
           }
           frontmatter {
-            date(formatString: "MMMM DD, YYYY")
+            date(formatString: "DD MMMM, YYYY")
             title
           }
         }

@@ -1,22 +1,19 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-import { Link } from 'gatsby'
+import Link from 'gatsby-link'
 import get from 'lodash/get'
 
 import Bio from '../components/Bio'
-import Layout from '../components/layout'
 import { rhythm, scale } from '../utils/typography'
-
-import "prismjs/themes/prism-solarizedlight.css";
 
 class BlogPostTemplate extends React.Component {
   render() {
     const post = this.props.data.markdownRemark
     const siteTitle = get(this.props, 'data.site.siteMetadata.title')
-    const { previous, next } = this.props.pageContext
+    const { previous, next } = this.props.pathContext
 
     return (
-      <Layout location={this.props.location}>
+      <div>
         <Helmet title={`${post.frontmatter.title} | ${siteTitle}`} />
         <h1>{post.frontmatter.title}</h1>
         <p
@@ -46,23 +43,22 @@ class BlogPostTemplate extends React.Component {
             padding: 0,
           }}
         >
-          {previous && (
-            <li>
+          <li>
+            {previous && (
               <Link to={previous.fields.slug} rel="prev">
                 ← {previous.frontmatter.title}
               </Link>
-            </li>
-          )}
-
-          {next && (
-            <li>
+            )}
+          </li>
+          <li>
+            {next && (
               <Link to={next.fields.slug} rel="next">
                 {next.frontmatter.title} →
               </Link>
-            </li>
-          )}
+            )}
+          </li>
         </ul>
-      </Layout>
+      </div>
     )
   }
 }
