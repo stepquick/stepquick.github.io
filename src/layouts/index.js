@@ -3,6 +3,8 @@ import Link from 'gatsby-link'
 
 import { rhythm, scale } from '../utils/typography'
 
+import '../styles/rainbow.css';
+
 class Template extends React.Component {
     render() {
         const { location, children } = this.props
@@ -21,6 +23,7 @@ class Template extends React.Component {
                         marginBottom: rhythm(1.5),
                         marginTop: 0,
                     }}
+                    className="gradient-text"
                 >
                     <Link
                         style={{
@@ -42,6 +45,7 @@ class Template extends React.Component {
                         marginTop: 0,
                         marginBottom: rhythm(-1),
                     }}
+                    className = "gradient-text"
                 >
                     <Link
                         style={{
