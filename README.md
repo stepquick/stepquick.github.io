@@ -1,9 +1,9 @@
-# gatsby-starter-blog
-Gatsby starter for creating a blog
+#Stepquick.net
 
-Install this starter (assuming Gatsby is installed) by running from your CLI:
+Built using GatsbyJs.
 
-`gatsby new gatsby-blog https://github.com/gatsbyjs/gatsby-starter-blog`
-
-## Running in development
-`gatsby develop`
+<p align="center">
+  <a href="https://www.gatsbyjs.org">
+    <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
+  </a>
+</p>

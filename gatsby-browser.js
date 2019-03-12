@@ -1,4 +1,3 @@
-// gatsby-browser.js
-require('prismjs/themes/prism-solarizedlight.css')
-
-exports.onClientEntry = () => { };
+// custom typefaces
+import "typeface-montserrat"
+import "typeface-merriweather"
