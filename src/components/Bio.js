@@ -37,9 +37,7 @@ function Bio() {
                 borderRadius: `50%`,
               }}
             />
-            <p>
-              Written by <strong>{author}</strong>, a software developer based in Houston, Texas.
-            </p>
+            <p>Written by <strong>{author}</strong>, a software developer based in Houston, Texas.<br/><a href="/resume">Resume.</a></p>
           </div>
         )
       }}

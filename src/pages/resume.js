@@ -1,10 +1,11 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 
-import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm } from "../utils/typography"
+
+import "../styles/job.css";
 
 class BlogIndex extends React.Component {
   render() {
@@ -14,28 +15,29 @@ class BlogIndex extends React.Component {
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
+        <h1>Resume</h1>
         <SEO
-          title="All posts"
-          keywords={[`blog`, `gatsby`, `javascript`, `react`]}
+          title="Resume"
+          keywords={[`resume`, `developer`, `web`]}
         />
-        <Bio />
         {posts.map(({ node }) => {
-          const title = node.frontmatter.title || node.fields.slug
+          const title = node.frontmatter.title
           return (
-            <div key={node.fields.slug}>
+            <div>
               <h3
                 style={{
                   marginBottom: rhythm(1 / 4),
                 }}
               >
-                <Link className = "gradient-text" style={{ boxShadow: `none` }} to={node.fields.slug}>
-                  {title}
-                </Link>
+                {title}
               </h3>
-              <small>{node.frontmatter.date}</small>
-              <p
+              <p class="job-location">
+                <small>{node.frontmatter.company}, {node.frontmatter.location}</small>
+                <small>{node.frontmatter.startdate} - {node.frontmatter.enddate ?  node.frontmatter.enddate : "Current"}</small>
+              </p>
+              <div className="job-description"
                 dangerouslySetInnerHTML={{
-                  __html: node.frontmatter.description || node.excerpt,
+                  __html: node.html,
                 }}
               />
             </div>
@@ -56,17 +58,17 @@ export const pageQuery = graphql`
       }
     }
     allMarkdownRemark(
-      sort: { fields: [frontmatter___date], order: DESC },
-      filter: { fileAbsolutePath: { regex: "/blog/"} } ) {
+        sort: { fields: [frontmatter___startdate], order: DESC },
+        filter: { fileAbsolutePath: { regex: "/jobs/"} }) {
       edges {
         node {
-          excerpt
-          fields {
-            slug
-          }
+          html
           frontmatter {
-            date(formatString: "MMMM DD, YYYY")
+            startdate(formatString: "MM/YYYY")
+            enddate(formatString: "MM/YYYY")
             title
+            location
+            company
           }
         }
       }

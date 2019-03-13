@@ -1,0 +1,17 @@
+.job-description ul{
+    list-style-position: inside;
+}
+.job-description ul li {
+    margin-bottom: .25em;
+}
+
+.job-description ul li,
+.job-description p{
+    font-size: .90em;
+}
+
+.job-location {
+    margin-bottom: .75em;
+    display: flex;
+    justify-content: space-between;
+}
