@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Stephen Quick]]></title><description><![CDATA[A web developer based in Houston, TX.]]></description><link>https://stepquick.net/</link><generator>RSS for Node</generator><lastBuildDate>Wed, 13 Mar 2019 23:43:48 GMT</lastBuildDate><item><title><![CDATA[Application Analyst/Developer, Senior]]></title><description><![CDATA[Developed ReactJS application for reserving rooms at Oxford College for use with iPad Developed application for Organic farm to manage…]]></description><link>https://stepquick.net//application-analyst/</link><guid isPermaLink="false">https://stepquick.net//application-analyst/</guid><content:encoded>&lt;ul&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Stephen Quick]]></title><description><![CDATA[A web developer based in Houston, TX.]]></description><link>https://stepquick.net/</link><generator>RSS for Node</generator><lastBuildDate>Mon, 25 Mar 2019 23:18:13 GMT</lastBuildDate><item><title><![CDATA[Application Analyst/Developer, Senior]]></title><description><![CDATA[Developed ReactJS application for reserving rooms at Oxford College for use with iPad Developed application for Organic farm to manage…]]></description><link>https://stepquick.net//application-analyst/</link><guid isPermaLink="false">https://stepquick.net//application-analyst/</guid><content:encoded>&lt;ul&gt;
 &lt;li&gt;Developed ReactJS application for reserving rooms at Oxford College for use with iPad&lt;/li&gt;
 &lt;li&gt;Developed application for Organic farm to manage customers and seasons which is used by 60 customers.&lt;/li&gt;
 &lt;li&gt;Providing technical support for Faculty, Staff and the Students of Oxford College by providing troubleshooting and performance/security analysis for applications and websites&lt;/li&gt;
@@ -36,7 +36,77 @@
 &lt;li&gt;Helped create multiple versions of email based templates for mass email distribution&lt;/li&gt;
 &lt;li&gt;Created Union Application Administration panel for Student Union Hiring App using php and bootstrap CSS&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Tools used: PHP, Javascript, AngularJS, HTML, CSS, Nginx/Apache, Linux, AWS, Vagrant, MySQL/MariaDB, Webpack&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Removing Disqus]]></title><description><![CDATA[I’ve learned Disqus is starting to support their free version of comments with ads, so I will be removing them. Just doesn’t seem that…]]></description><link>https://stepquick.net//removing-disqus/</link><guid isPermaLink="false">https://stepquick.net//removing-disqus/</guid><pubDate>Wed, 25 Jan 2017 18:49:17 GMT</pubDate><content:encoded>&lt;p&gt;I’ve learned Disqus is starting to support their free version of comments with ads, so I will be removing them. Just doesn’t seem that important anymore.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Configuration for using MariaDB with Laravel and El Capitan]]></title><description><![CDATA[I wanted to play around with  Laravel  on my mac without having to use a VM, like  homestead . I decided to try out  Laravel Valet , which…]]></description><link>https://stepquick.net//quick-config-for-mariadb-and-laravel/</link><guid isPermaLink="false">https://stepquick.net//quick-config-for-mariadb-and-laravel/</guid><pubDate>Mon, 29 Aug 2016 00:12:38 GMT</pubDate><content:encoded>&lt;p&gt;I wanted to play around with &lt;a href=&quot;http://www.laravel.com&quot;&gt;Laravel&lt;/a&gt; on my mac without having to use a VM, like &lt;a href=&quot;http://www.laravel.com/docs/homestead&quot;&gt;homestead&lt;/a&gt;. I decided to try out &lt;a href=&quot;http://laravel.com/docs/valet&quot;&gt;Laravel Valet&lt;/a&gt;, which doesn’t need a VM for setup, just &lt;a href=&quot;http://brew.sh/&quot;&gt;brew&lt;/a&gt;. This however doesn’t include a db by default. I decided to use &lt;a href=&quot;https://mariadb.com/&quot;&gt;MariaDB&lt;/a&gt; due to its ease of use.&lt;/p&gt;
+&lt;p&gt;Tools used: PHP, Javascript, AngularJS, HTML, CSS, Nginx/Apache, Linux, AWS, Vagrant, MySQL/MariaDB, Webpack&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Creating an online resume using GatsbyJS 2.x]]></title><description><![CDATA[I thought it would be good to have a working example of a resume using a similar structure to how GatsbyJS generates blog entries. I started…]]></description><link>https://stepquick.net//creating-a-resume-with-gatsby-2/</link><guid isPermaLink="false">https://stepquick.net//creating-a-resume-with-gatsby-2/</guid><pubDate>Wed, 13 Mar 2019 18:39:49 GMT</pubDate><content:encoded>&lt;p&gt;I thought it would be good to have a working example of a resume using a similar structure to how GatsbyJS generates blog entries. I started my research with gatsby docs however I ended up using a list of google searches for similar questions.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://stackoverflow.com/questions/50242492/gatsby-multiple-content-types&quot;&gt;StackOverflow - Gatsby: Multiple Content Types&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://desktopofsamuel.com/building-gatsby-with-multiple-post-type&quot;&gt;Samuel W - Building Gatsby With Multiple Post Type&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I chose to use the &lt;a href=&quot;https://github.com/gatsbyjs/gatsby-starter-blog#v2&quot;&gt;gatsby default starter blog&lt;/a&gt; since it’s super simple and gives a good idea of how to use the graphql. Using the layout of the content folder at the base of the theme, I chose to create a folder called jobs and structure it similarly to the default blog folder.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;content
+——blogs
+    —— Blog Post #1
+		——index.md
+——jobs
+	——Job #1
+		——index.md	&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Each job will be somewhat structured like the blog entries:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;title: &amp;quot;Application Analyst/Developer, Senior&amp;quot;
+startdate: 2017-01-01
+enddate: 2018-04-30
+location: &amp;quot;Oxford, GA&amp;quot;
+company: &amp;quot;Emory University&amp;quot;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;I will be using the dates for ordering the content, as well as using enddate value to determine what is my current job. I chose to go simpler and did not include a category filter on the each markdown file. I will be using graphql to filter by path, which works for my example.&lt;/p&gt;
+&lt;p&gt;For this to work, I did the same as Samuel W and added to my &lt;code class=&quot;language-text&quot;&gt;gatsby-config.js&lt;/code&gt;:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;{
+	resolve: `gatsby-source-filesystem`,
+	options: {
+		path: `${__dirname}/content/jobs`,
+		name: `jobs`,
+	},
+},&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Using this allows graphql to find my list of jobs. However, using it just this way will have the posts and jobs show up all together on the index page, which I don’t want. I don’t need to add anything to the &lt;code class=&quot;language-text&quot;&gt;gatsby-node.js&lt;/code&gt;. These jobs will only be listed on my resume, and don’t need their own additional pages. &lt;/p&gt;
+&lt;p&gt;Here’s the query I created using graphiql:&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/907ca8e16fca259fa65ff5ff874f2c94/e5364/graphql.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 43.556280587275694%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAJABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAQAF/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEAMQAAAB3mQmP//EABQQAQAAAAAAAAAAAAAAAAAAACD/2gAIAQEAAQUCX//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8BP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8BP//EABQQAQAAAAAAAAAAAAAAAAAAACD/2gAIAQEABj8CX//EABgQAAIDAAAAAAAAAAAAAAAAAAEQABEx/9oACAEBAAE/IQJSGP8A/9oADAMBAAIAAwAAABDjD//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8QP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8QP//EABoQAAICAwAAAAAAAAAAAAAAAAARECExQXH/2gAIAQEAAT8QseuiCME//9k=&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;GraphQL&quot;
+        title=&quot;&quot;
+        src=&quot;/static/907ca8e16fca259fa65ff5ff874f2c94/4b3ab/graphql.jpg&quot;
+        srcset=&quot;/static/907ca8e16fca259fa65ff5ff874f2c94/f8bb1/graphql.jpg 148w,
+/static/907ca8e16fca259fa65ff5ff874f2c94/900ac/graphql.jpg 295w,
+/static/907ca8e16fca259fa65ff5ff874f2c94/4b3ab/graphql.jpg 590w,
+/static/907ca8e16fca259fa65ff5ff874f2c94/78641/graphql.jpg 885w,
+/static/907ca8e16fca259fa65ff5ff874f2c94/38a35/graphql.jpg 1180w,
+/static/907ca8e16fca259fa65ff5ff874f2c94/e5364/graphql.jpg 1226w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;Source for the page is &lt;a href=&quot;https://github.com/stepquick/stepquick.github.io/blob/source/src/pages/resume.js&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;It’s similar to how index.js works, however I am filtering for “/jobs/” path instead. This means I needed to adjust my &lt;code class=&quot;language-text&quot;&gt;src/pages/index.js&lt;/code&gt; to filter the results, otherwise I would get both jobs and the blog entries.&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;filter: { fileAbsolutePath: { regex: &amp;quot;/blog/&amp;quot;} }&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;I also don’t need to worry about linking to the jobs, I will only be printing them out to the generated page. &lt;/p&gt;
+&lt;p&gt;The results turned out nicely with relatively little css to modify it. You can see the live page here: &lt;a href=&quot;https://stepquick.net/resume&quot;&gt;resume&lt;/a&gt;.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Removing Disqus]]></title><description><![CDATA[I’ve learned Disqus is starting to support their free version of comments with ads, so I will be removing them. Just doesn’t seem that…]]></description><link>https://stepquick.net//removing-disqus/</link><guid isPermaLink="false">https://stepquick.net//removing-disqus/</guid><pubDate>Wed, 25 Jan 2017 18:49:17 GMT</pubDate><content:encoded>&lt;p&gt;I’ve learned Disqus is starting to support their free version of comments with ads, so I will be removing them. Just doesn’t seem that important anymore.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Configuration for using MariaDB with Laravel and El Capitan]]></title><description><![CDATA[I wanted to play around with  Laravel  on my mac without having to use a VM, like  homestead . I decided to try out  Laravel Valet , which…]]></description><link>https://stepquick.net//quick-config-for-mariadb-and-laravel/</link><guid isPermaLink="false">https://stepquick.net//quick-config-for-mariadb-and-laravel/</guid><pubDate>Mon, 29 Aug 2016 00:12:38 GMT</pubDate><content:encoded>&lt;p&gt;I wanted to play around with &lt;a href=&quot;http://www.laravel.com&quot;&gt;Laravel&lt;/a&gt; on my mac without having to use a VM, like &lt;a href=&quot;http://www.laravel.com/docs/homestead&quot;&gt;homestead&lt;/a&gt;. I decided to try out &lt;a href=&quot;http://laravel.com/docs/valet&quot;&gt;Laravel Valet&lt;/a&gt;, which doesn’t need a VM for setup, just &lt;a href=&quot;http://brew.sh/&quot;&gt;brew&lt;/a&gt;. This however doesn’t include a db by default. I decided to use &lt;a href=&quot;https://mariadb.com/&quot;&gt;MariaDB&lt;/a&gt; due to its ease of use.&lt;/p&gt;
 &lt;h2&gt;Installation&lt;/h2&gt;
 &lt;p&gt;Since I have brew installed it’s super easy to configure:&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;brew install mariadb
