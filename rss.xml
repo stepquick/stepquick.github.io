@@ -1,13 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Stephen Quick]]></title><description><![CDATA[A web developer based in Houston, TX.]]></description><link>https://stepquick.net/</link><generator>RSS for Node</generator><lastBuildDate>Mon, 25 Mar 2019 23:18:13 GMT</lastBuildDate><item><title><![CDATA[Application Analyst/Developer, Senior]]></title><description><![CDATA[Developed ReactJS application for reserving rooms at Oxford College for use with iPad Developed application for Organic farm to manage…]]></description><link>https://stepquick.net//application-analyst/</link><guid isPermaLink="false">https://stepquick.net//application-analyst/</guid><content:encoded>&lt;ul&gt;
-&lt;li&gt;Developed ReactJS application for reserving rooms at Oxford College for use with iPad&lt;/li&gt;
-&lt;li&gt;Developed application for Organic farm to manage customers and seasons which is used by 60 customers.&lt;/li&gt;
-&lt;li&gt;Providing technical support for Faculty, Staff and the Students of Oxford College by providing troubleshooting and performance/security analysis for applications and websites&lt;/li&gt;
-&lt;li&gt;Consulting with Oxford IT Management and Oxford Staff to development applications for on-campus use&lt;/li&gt;
-&lt;li&gt;Created application for Organic Farm for managing student sign ups for work used by over 20 students in this semester.&lt;/li&gt;
-&lt;li&gt;Migrated third party payments system Firstdata, used for our financial applications, to Payeezy for continued support in our applications. &lt;/li&gt;
-&lt;li&gt;Developed group fitness application for Oxford College community to enroll in fitness classes and manage their schedules.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Tools used: Coldfusion, HTML, CSS, Javascript, jQuery, ReactJS, Vagrant, MySQL/MariaDB, Webpack&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Software Developer]]></title><description><![CDATA[Developed and maintain external facing website  http://app.dao.hctx.net , a lemp stack using Drupal 8, Ubuntu, Nginx, and PHP. Created drag…]]></description><link>https://stepquick.net//software-developer/</link><guid isPermaLink="false">https://stepquick.net//software-developer/</guid><content:encoded>&lt;ul&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Stephen Quick]]></title><description><![CDATA[A web developer based in Houston, TX.]]></description><link>https://stepquick.net/</link><generator>RSS for Node</generator><lastBuildDate>Sun, 07 Apr 2019 02:45:36 GMT</lastBuildDate><item><title><![CDATA[Software Developer]]></title><description><![CDATA[Developed and maintain external facing website  http://app.dao.hctx.net , a lemp stack using Drupal 8, Ubuntu, Nginx, and PHP. Created drag…]]></description><link>https://stepquick.net//software-developer/</link><guid isPermaLink="false">https://stepquick.net//software-developer/</guid><content:encoded>&lt;ul&gt;
 &lt;li&gt;Developed and maintain external facing website &lt;a href=&quot;http://app.dao.hctx.net&quot;&gt;http://app.dao.hctx.net&lt;/a&gt;, a lemp stack using Drupal 8, Ubuntu, Nginx, and PHP.&lt;/li&gt;
 &lt;li&gt;Created drag and drop file uploading implementation for Asset Forfeiture cms. Used for uploading files associated to cases in Asset Forfeiture department. Used jquery, css and html5fileuploader.js&lt;/li&gt;
 &lt;li&gt;Maintain and troubleshoot bugs on existing projects.&lt;/li&gt;
@@ -16,7 +7,16 @@
 &lt;li&gt;Migrated 20+ web applications from aging windows server 2008 to windows server 2016 to improve responsiveness and security, as well as creating individual ad users for running each of the applications.&lt;/li&gt;
 &lt;li&gt;Planned and developed migration plan for Public Integrity coldfusion application to asp.net core api project, with asp.net core mvc.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Tools used: C#, ASP.NET, SQL, Server administration, AD, RDC, Ubuntu, PHP, Nginx, Mysql&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Technical Analyst]]></title><description><![CDATA[Software/Hardware Installation Network Troubleshooting Supporting Faculty/Staff/Student computers Providing Campus support and helping…]]></description><link>https://stepquick.net//technical-analyst/</link><guid isPermaLink="false">https://stepquick.net//technical-analyst/</guid><content:encoded>&lt;ul&gt;
+&lt;p&gt;Tools used: C#, ASP.NET, SQL, Server administration, AD, RDC, Ubuntu, PHP, Nginx, Mysql&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Application Analyst/Developer, Senior]]></title><description><![CDATA[Developed ReactJS application for reserving rooms at Oxford College for use with iPad Developed application for Organic farm to manage…]]></description><link>https://stepquick.net//application-analyst/</link><guid isPermaLink="false">https://stepquick.net//application-analyst/</guid><content:encoded>&lt;ul&gt;
+&lt;li&gt;Developed ReactJS application for reserving rooms at Oxford College for use with iPad&lt;/li&gt;
+&lt;li&gt;Developed application for Organic farm to manage customers and seasons which is used by 60 customers.&lt;/li&gt;
+&lt;li&gt;Providing technical support for Faculty, Staff and the Students of Oxford College by providing troubleshooting and performance/security analysis for applications and websites&lt;/li&gt;
+&lt;li&gt;Consulting with Oxford IT Management and Oxford Staff to development applications for on-campus use&lt;/li&gt;
+&lt;li&gt;Created application for Organic Farm for managing student sign ups for work used by over 20 students in this semester.&lt;/li&gt;
+&lt;li&gt;Migrated third party payments system Firstdata, used for our financial applications, to Payeezy for continued support in our applications. &lt;/li&gt;
+&lt;li&gt;Developed group fitness application for Oxford College community to enroll in fitness classes and manage their schedules.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Tools used: Coldfusion, HTML, CSS, Javascript, jQuery, ReactJS, Vagrant, MySQL/MariaDB, Webpack&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Technical Analyst]]></title><description><![CDATA[Software/Hardware Installation Network Troubleshooting Supporting Faculty/Staff/Student computers Providing Campus support and helping…]]></description><link>https://stepquick.net//technical-analyst/</link><guid isPermaLink="false">https://stepquick.net//technical-analyst/</guid><content:encoded>&lt;ul&gt;
 &lt;li&gt;Software/Hardware Installation&lt;/li&gt;
 &lt;li&gt;Network Troubleshooting&lt;/li&gt;
 &lt;li&gt;Supporting Faculty/Staff/Student computers&lt;/li&gt;
@@ -36,7 +36,189 @@
 &lt;li&gt;Helped create multiple versions of email based templates for mass email distribution&lt;/li&gt;
 &lt;li&gt;Created Union Application Administration panel for Student Union Hiring App using php and bootstrap CSS&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Tools used: PHP, Javascript, AngularJS, HTML, CSS, Nginx/Apache, Linux, AWS, Vagrant, MySQL/MariaDB, Webpack&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Creating an online resume using GatsbyJS 2.x]]></title><description><![CDATA[I thought it would be good to have a working example of a resume using a similar structure to how GatsbyJS generates blog entries. I started…]]></description><link>https://stepquick.net//creating-a-resume-with-gatsby-2/</link><guid isPermaLink="false">https://stepquick.net//creating-a-resume-with-gatsby-2/</guid><pubDate>Wed, 13 Mar 2019 18:39:49 GMT</pubDate><content:encoded>&lt;p&gt;I thought it would be good to have a working example of a resume using a similar structure to how GatsbyJS generates blog entries. I started my research with gatsby docs however I ended up using a list of google searches for similar questions.&lt;/p&gt;
+&lt;p&gt;Tools used: PHP, Javascript, AngularJS, HTML, CSS, Nginx/Apache, Linux, AWS, Vagrant, MySQL/MariaDB, Webpack&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Notes from using TFS for continuous deploymentb]]></title><description><![CDATA[These are the notes I kept while experimenting with using TFS for automating deployment at my job. While these are a little about after the…]]></description><link>https://stepquick.net//notes-from-using-tfs-continuous-integration/</link><guid isPermaLink="false">https://stepquick.net//notes-from-using-tfs-continuous-integration/</guid><pubDate>Sat, 06 Apr 2019 23:56:33 GMT</pubDate><content:encoded>&lt;p&gt;These are the notes I kept while experimenting with using TFS for automating deployment at my job. While these are a little about after the fact, but I felt it would be useful for someone looking to automate their asp projects.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Use PAT (Personal Access Tokens) authentication&lt;/li&gt;
+&lt;li&gt;You can easily update the tfs agent if you run it as a service &lt;/li&gt;
+&lt;li&gt;For private nuget feed, make sure your build agent has permission to use it&lt;/li&gt;
+&lt;li&gt;dotnet restore and caching issues&lt;/li&gt;
+&lt;li&gt;What account to use for the agent? &lt;/li&gt;
+&lt;li&gt;Update TFS regularly&lt;/li&gt;
+&lt;li&gt;TFVC &amp;#x3C; GIT&lt;/li&gt;
+&lt;li&gt;The power of continuous integration&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;1. Use PAT (Personal Access Tokens) authentication&lt;/h3&gt;
+&lt;p&gt;When I started with configuring the agents, by default it was using Windows Authentication as the default auth type. However, through tutorials using a PAT seems to be the best way to have this set up. The personal access token was set up using my user under TFS, and I set it to expire after a year and only has access to the agent feed. At the time of this blog you can learn more about PAT using the Microsoft Docs: &lt;a href=&quot;https://docs.microsoft.com/en-us/azure/devops/pipelines/agents/v2-windows?view=azure-devops&quot;&gt;here&lt;/a&gt;. It also looks like as of the newest version of self-hosted TFS, PAT is the default authentication type for agent configuration now.&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/8c0d64c90a06ed671cb21f1fb7a38332/0db0f/pat.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 26.53846153846154%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAFABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAEF/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEAMQAAAB3aFB/8QAFBABAAAAAAAAAAAAAAAAAAAAEP/aAAgBAQABBQJ//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPwE//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPwE//8QAFBABAAAAAAAAAAAAAAAAAAAAEP/aAAgBAQAGPwJ//8QAFRABAQAAAAAAAAAAAAAAAAAAEQD/2gAIAQEAAT8hCIv/2gAMAwEAAgADAAAAEHAP/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPxA//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPxA//8QAGRABAAMBAQAAAAAAAAAAAAAAAQARUZFh/9oACAEBAAE/EAgbbvYenspr2f/Z&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;PAT&quot;
+        title=&quot;&quot;
+        src=&quot;/static/8c0d64c90a06ed671cb21f1fb7a38332/4b3ab/pat.jpg&quot;
+        srcset=&quot;/static/8c0d64c90a06ed671cb21f1fb7a38332/f8bb1/pat.jpg 148w,
+/static/8c0d64c90a06ed671cb21f1fb7a38332/900ac/pat.jpg 295w,
+/static/8c0d64c90a06ed671cb21f1fb7a38332/4b3ab/pat.jpg 590w,
+/static/8c0d64c90a06ed671cb21f1fb7a38332/78641/pat.jpg 885w,
+/static/8c0d64c90a06ed671cb21f1fb7a38332/38a35/pat.jpg 1180w,
+/static/8c0d64c90a06ed671cb21f1fb7a38332/0db0f/pat.jpg 1560w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;h3&gt;2. You can easily update the agent if you run it as a service&lt;/h3&gt;
+&lt;p&gt;I didn’t realize this initially, but running the agent as a service allows you to modify the agent directly services.msc on the host computer. This allows you to set the typical stuff, including changing a password and restarting the user. It came in quite handy experimenting with what user to use for the agent.&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/abdde967398a485d2fdcf741b2e5bed6/7fcec/agent-as-service.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 42.0125786163522%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAIABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAIF/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEAMQAAAB2bCgf//EABYQAQEBAAAAAAAAAAAAAAAAAAEREP/aAAgBAQABBQKCy5//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/AT//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/AT//xAAVEAEBAAAAAAAAAAAAAAAAAAAQ4f/aAAgBAQAGPwKv/8QAGRABAAMBAQAAAAAAAAAAAAAAAQARIUFR/9oACAEBAAE/IUxeeImGNSp//9oADAMBAAIAAwAAABDzz//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8QP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8QP//EABsQAQACAgMAAAAAAAAAAAAAAAEAESExYZGh/9oACAEBAAE/ELwrWHwDcUiSXdXOVdT/2Q==&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;Agent Config under Services&quot;
+        title=&quot;&quot;
+        src=&quot;/static/abdde967398a485d2fdcf741b2e5bed6/4b3ab/agent-as-service.jpg&quot;
+        srcset=&quot;/static/abdde967398a485d2fdcf741b2e5bed6/f8bb1/agent-as-service.jpg 148w,
+/static/abdde967398a485d2fdcf741b2e5bed6/900ac/agent-as-service.jpg 295w,
+/static/abdde967398a485d2fdcf741b2e5bed6/4b3ab/agent-as-service.jpg 590w,
+/static/abdde967398a485d2fdcf741b2e5bed6/78641/agent-as-service.jpg 885w,
+/static/abdde967398a485d2fdcf741b2e5bed6/38a35/agent-as-service.jpg 1180w,
+/static/abdde967398a485d2fdcf741b2e5bed6/7fcec/agent-as-service.jpg 1590w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;h3&gt;3. For private nuget feed, make sure your build agent has permission to use it&lt;/h3&gt;
+&lt;p&gt;Initially I attempted to run the build agent using Network Service, which was the default user. Even selecting the proper permissions for the private nuget feed (azure artifacts) hosted by my jobs tfs instance, I ended up not being able to get the user to authenticate properly every time I ran a new build. I ended up using my user for running the agent, as well as using my personal pat. This seems to work better but coming across this stack overflow question &lt;a href=&quot;https://stackoverflow.com/questions/26313455/the-account-running-the-tfs-build-service-nt-authority-network-service-needs-t&quot;&gt;here&lt;/a&gt; I might need to target the domain\computer specifically.&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/0248830e1866a8d3ea8060b0afb2147b/f6f78/permission.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 43.082524271844655%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAJABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAEF/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEAMQAAAB3qAH/8QAFBABAAAAAAAAAAAAAAAAAAAAIP/aAAgBAQABBQJf/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPwE//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPwE//8QAFBABAAAAAAAAAAAAAAAAAAAAIP/aAAgBAQAGPwJf/8QAFRABAQAAAAAAAAAAAAAAAAAAASD/2gAIAQEAAT8hK//aAAwDAQACAAMAAAAQc8//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/ED//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/ED//xAAZEAACAwEAAAAAAAAAAAAAAAAAASAxUXH/2gAIAQEAAT8Q6Zoqh//Z&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;Permission View for Nuget Feed&quot;
+        title=&quot;&quot;
+        src=&quot;/static/0248830e1866a8d3ea8060b0afb2147b/4b3ab/permission.jpg&quot;
+        srcset=&quot;/static/0248830e1866a8d3ea8060b0afb2147b/f8bb1/permission.jpg 148w,
+/static/0248830e1866a8d3ea8060b0afb2147b/900ac/permission.jpg 295w,
+/static/0248830e1866a8d3ea8060b0afb2147b/4b3ab/permission.jpg 590w,
+/static/0248830e1866a8d3ea8060b0afb2147b/78641/permission.jpg 885w,
+/static/0248830e1866a8d3ea8060b0afb2147b/38a35/permission.jpg 1180w,
+/static/0248830e1866a8d3ea8060b0afb2147b/f6f78/permission.jpg 1648w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;h3&gt;4. Dotnet restore has permission issues with cached private nuget feeds&lt;/h3&gt;
+&lt;p&gt;This may be related to me switch back and forth between branches on TFVC on my build definitions, so I’m making an note. Sometimes my build agent fails the build for not being able to access the private nuget feed (azure artifacts), which shouldn’t be the case considering my user is the owner for the private nuget feed. I think it may be related to switching which branch builds. That could be related, but my solution seems to fix it:&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/b3beb9c0469a59d6476155e7edf7577e/d67ac/nuget-restore.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 35.65573770491803%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAHABQDASIAAhEBAxEB/8QAFwABAAMAAAAAAAAAAAAAAAAAAAEDBf/EABQBAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhADEAAAAdqwJB//xAAXEAADAQAAAAAAAAAAAAAAAAABAhAi/9oACAEBAAEFAl0J/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPwE//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPwE//8QAFRABAQAAAAAAAAAAAAAAAAAAEBH/2gAIAQEABj8Cr//EABgQAAMBAQAAAAAAAAAAAAAAAAABESFx/9oACAEBAAE/IXwVdIQ//9oADAMBAAIAAwAAABDwD//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8QP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8QP//EABsQAQABBQEAAAAAAAAAAAAAAAEhABARMVFh/9oACAEBAAE/EBIgVjaFO+VlZ//Z&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;Nuget Restore task&quot;
+        title=&quot;&quot;
+        src=&quot;/static/b3beb9c0469a59d6476155e7edf7577e/4b3ab/nuget-restore.jpg&quot;
+        srcset=&quot;/static/b3beb9c0469a59d6476155e7edf7577e/f8bb1/nuget-restore.jpg 148w,
+/static/b3beb9c0469a59d6476155e7edf7577e/900ac/nuget-restore.jpg 295w,
+/static/b3beb9c0469a59d6476155e7edf7577e/4b3ab/nuget-restore.jpg 590w,
+/static/b3beb9c0469a59d6476155e7edf7577e/78641/nuget-restore.jpg 885w,
+/static/b3beb9c0469a59d6476155e7edf7577e/d67ac/nuget-restore.jpg 976w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;Toggling in between these steps (nuget restore) and (dotnet restore) seems to work really well for clearing this up. I think it’s really something related to caching between the different branches.&lt;/p&gt;
+&lt;h3&gt;5. What account should I use for the agent?&lt;/h3&gt;
+&lt;p&gt;I ultimately chose my user for running the agent because:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;My user has access to tfs, including our private nuget feed.&lt;/li&gt;
+&lt;li&gt;I can easily make a PAT for it just for being used by the agent.&lt;/li&gt;
+&lt;li&gt;Using my user account was easier than figuring out how the network service user works. I think this meant using the domain/name for the feed. This however may not be ideal for my job.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Long term, it may make more sense to create a specific user for this, and the feed, but it becomes more complicated.&lt;/p&gt;
+&lt;h3&gt;6. Update TFS regularly&lt;/h3&gt;
+&lt;p&gt;When I started using my jobs TFS instance, it was 6 months out of date. Updating to the latest version (2018 Update 3) added a lot of additional functionality that came in handy, so I would recommend that if you can, update the tfs instance, it will help. I have noticed the vm controlling this tfs does have more noticeable performance issues.&lt;/p&gt;
+&lt;h3&gt;7. TFVC &amp;#x3C; Git&lt;/h3&gt;
+&lt;p&gt;My jobs codebase is primarily in a monolith Team Foundation Version Control repo. The long term goal I would want to see is splitting out projects into separate Git repos. TFS can also host these in addition to TFVC making it super convenient to store them together. My takeaways from the migration to TFS Git are:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Git feels less complicated with its branching system.&lt;/li&gt;
+&lt;li&gt;Branches in TFVC are folders, not branches.
+a. Those “branches” from TFVC complicate project builds:
+b. note: I was never able to use path triggers for a tfvc based build because my project relies on npm to install js dependencies. This step requires specifying a folder, which I can only specify one branch at a time, making it harder to minimize redundancy. &lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;8. The power of continuous integration&lt;/h3&gt;
+&lt;p&gt;Being able to merge into dev or master and have a build automatically deploy is pretty magical. However this comes with a built of a learning curve; It took me over a few weeks to iron out all the issues I faced creating an continous integration plan. I still feel like it was worth investigating; no more manual publishing, no more manual testing. TFS can automate all this. &lt;/p&gt;</content:encoded></item><item><title><![CDATA[Creating an online resume using GatsbyJS 2.x]]></title><description><![CDATA[I thought it would be good to have a working example of a resume using a similar structure to how GatsbyJS generates blog entries. I started…]]></description><link>https://stepquick.net//creating-a-resume-with-gatsby-2/</link><guid isPermaLink="false">https://stepquick.net//creating-a-resume-with-gatsby-2/</guid><pubDate>Wed, 13 Mar 2019 18:39:49 GMT</pubDate><content:encoded>&lt;p&gt;I thought it would be good to have a working example of a resume using a similar structure to how GatsbyJS generates blog entries. I started my research with gatsby docs however I ended up using a list of google searches for similar questions.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://stackoverflow.com/questions/50242492/gatsby-multiple-content-types&quot;&gt;StackOverflow - Gatsby: Multiple Content Types&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://desktopofsamuel.com/building-gatsby-with-multiple-post-type&quot;&gt;Samuel W - Building Gatsby With Multiple Post Type&lt;/a&gt;&lt;/li&gt;
