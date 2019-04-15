@@ -1,5 +1,5 @@
 ---
-title: "Notes from using TFS for continuous deploymentb"
+title: "Notes from using TFS for continuous deployment"
 date: 2019-04-06 16:56:33-07:00
 ---
 
