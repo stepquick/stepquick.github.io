@@ -20,10 +20,10 @@ class BlogIndex extends React.Component {
           title="Resume"
           keywords={[`resume`, `developer`, `web`]}
         />
-        {posts.map(({ node }) => {
+        {posts.map(({ node }, index) => {
           const title = node.frontmatter.title
           return (
-            <div>
+            <div key={index}>
               <h3
                 style={{
                   marginBottom: rhythm(1 / 4),
@@ -31,7 +31,7 @@ class BlogIndex extends React.Component {
               >
                 {title}
               </h3>
-              <p class="job-location">
+              <p className="job-location">
                 <small>{node.frontmatter.company}, {node.frontmatter.location}</small>
                 <small>{node.frontmatter.startdate} - {node.frontmatter.enddate ?  node.frontmatter.enddate : "Current"}</small>
               </p>
