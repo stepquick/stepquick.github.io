@@ -1,22 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Stephen Quick]]></title><description><![CDATA[A web developer based in Houston, TX.]]></description><link>https://stepquick.net</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 14 Jan 2020 21:22:40 GMT</lastBuildDate><item><title><![CDATA[Technical Analyst]]></title><description><![CDATA[Software/Hardware Installation Network Troubleshooting Supporting Faculty/Staff/Student computers Providing Campus support and helping…]]></description><link>https://stepquick.net/technical-analyst/</link><guid isPermaLink="false">https://stepquick.net/technical-analyst/</guid><content:encoded>&lt;ul&gt;
-&lt;li&gt;Software/Hardware Installation&lt;/li&gt;
-&lt;li&gt;Network Troubleshooting&lt;/li&gt;
-&lt;li&gt;Supporting Faculty/Staff/Student computers&lt;/li&gt;
-&lt;li&gt;Providing Campus support and helping around campus such as offices and classrooms&lt;/li&gt;
-&lt;li&gt;Replacing parts on computers such as the Monitor, Memory, or Hard Drives&lt;/li&gt;
-&lt;li&gt;Filling out tickets to keep a detailed history of every client.&lt;/li&gt;
-&lt;li&gt;Ensuring quality customer service&lt;/li&gt;
-&lt;li&gt;Maintaining Inventory of Faculty machines, Imaging computers.&lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Application Analyst/Developer, Senior]]></title><description><![CDATA[Developed ReactJS application for reserving rooms at Oxford College for use with iPad Developed application for Organic farm to manage…]]></description><link>https://stepquick.net/application-analyst/</link><guid isPermaLink="false">https://stepquick.net/application-analyst/</guid><content:encoded>&lt;ul&gt;
-&lt;li&gt;Developed ReactJS application for reserving rooms at Oxford College for use with iPad&lt;/li&gt;
-&lt;li&gt;Developed application for Organic farm to manage customers and seasons which is used by 60 customers.&lt;/li&gt;
-&lt;li&gt;Providing technical support for Faculty, Staff and the Students of Oxford College by providing troubleshooting and performance/security analysis for applications and websites&lt;/li&gt;
-&lt;li&gt;Consulting with Oxford IT Management and Oxford Staff to development applications for on-campus use&lt;/li&gt;
-&lt;li&gt;Created application for Organic Farm for managing student sign ups for work used by over 20 students in this semester.&lt;/li&gt;
-&lt;li&gt;Migrated third party payments system Firstdata, used for our financial applications, to Payeezy for continued support in our applications. &lt;/li&gt;
-&lt;li&gt;Developed group fitness application for Oxford College community to enroll in fitness classes and manage their schedules.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Tools used: Coldfusion, HTML, CSS, Javascript, jQuery, ReactJS, Vagrant, MySQL/MariaDB, Webpack&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Software Developer]]></title><description><![CDATA[Developed and maintain external facing website http://app.dao.hctx.net, a lemp stack using Drupal 8, Ubuntu, Nginx, and PHP. Created drag…]]></description><link>https://stepquick.net/software-developer/</link><guid isPermaLink="false">https://stepquick.net/software-developer/</guid><content:encoded>&lt;ul&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Stephen Quick]]></title><description><![CDATA[A web developer based in Houston, TX.]]></description><link>https://stepquick.net</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 24 Jan 2020 20:36:27 GMT</lastBuildDate><item><title><![CDATA[Software Developer]]></title><description><![CDATA[Developed and maintain external facing website http://app.dao.hctx.net, a lemp stack using Drupal 8, Ubuntu, Nginx, and PHP. Created drag…]]></description><link>https://stepquick.net/software-developer/</link><guid isPermaLink="false">https://stepquick.net/software-developer/</guid><content:encoded>&lt;ul&gt;
 &lt;li&gt;Developed and maintain external facing website &lt;a href=&quot;http://app.dao.hctx.net&quot;&gt;http://app.dao.hctx.net&lt;/a&gt;, a lemp stack using Drupal 8, Ubuntu, Nginx, and PHP.&lt;/li&gt;
 &lt;li&gt;Created drag and drop file uploading implementation for Asset Forfeiture cms. Used for uploading files associated to cases in Asset Forfeiture department. Used jquery, css and html5fileuploader.js&lt;/li&gt;
 &lt;li&gt;Maintain and troubleshoot bugs on existing projects.&lt;/li&gt;
@@ -25,7 +7,25 @@
 &lt;li&gt;Migrated 20+ web applications from aging windows server 2008 to windows server 2016 to improve responsiveness and security, as well as creating individual ad users for running each of the applications.&lt;/li&gt;
 &lt;li&gt;Planned and developed migration plan for Public Integrity coldfusion application to asp.net core api project, with asp.net core mvc.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Tools used: C#, ASP.NET, SQL, Server administration, AD, RDC, Ubuntu, PHP, Nginx, Mysql&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Web Developer, Senior]]></title><description><![CDATA[Providing web support and development to Student Affairs departments such as UA Online, Advising Resource Center, VETs, and the Student…]]></description><link>https://stepquick.net/web-developer-senior/</link><guid isPermaLink="false">https://stepquick.net/web-developer-senior/</guid><content:encoded>&lt;ul&gt;
+&lt;p&gt;Tools used: C#, ASP.NET, SQL, Server administration, AD, RDC, Ubuntu, PHP, Nginx, Mysql&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Application Analyst/Developer, Senior]]></title><description><![CDATA[Developed ReactJS application for reserving rooms at Oxford College for use with iPad Developed application for Organic farm to manage…]]></description><link>https://stepquick.net/application-analyst/</link><guid isPermaLink="false">https://stepquick.net/application-analyst/</guid><content:encoded>&lt;ul&gt;
+&lt;li&gt;Developed ReactJS application for reserving rooms at Oxford College for use with iPad&lt;/li&gt;
+&lt;li&gt;Developed application for Organic farm to manage customers and seasons which is used by 60 customers.&lt;/li&gt;
+&lt;li&gt;Providing technical support for Faculty, Staff and the Students of Oxford College by providing troubleshooting and performance/security analysis for applications and websites&lt;/li&gt;
+&lt;li&gt;Consulting with Oxford IT Management and Oxford Staff to development applications for on-campus use&lt;/li&gt;
+&lt;li&gt;Created application for Organic Farm for managing student sign ups for work used by over 20 students in this semester.&lt;/li&gt;
+&lt;li&gt;Migrated third party payments system Firstdata, used for our financial applications, to Payeezy for continued support in our applications. &lt;/li&gt;
+&lt;li&gt;Developed group fitness application for Oxford College community to enroll in fitness classes and manage their schedules.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Tools used: Coldfusion, HTML, CSS, Javascript, jQuery, ReactJS, Vagrant, MySQL/MariaDB, Webpack&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Technical Analyst]]></title><description><![CDATA[Software/Hardware Installation Network Troubleshooting Supporting Faculty/Staff/Student computers Providing Campus support and helping…]]></description><link>https://stepquick.net/technical-analyst/</link><guid isPermaLink="false">https://stepquick.net/technical-analyst/</guid><content:encoded>&lt;ul&gt;
+&lt;li&gt;Software/Hardware Installation&lt;/li&gt;
+&lt;li&gt;Network Troubleshooting&lt;/li&gt;
+&lt;li&gt;Supporting Faculty/Staff/Student computers&lt;/li&gt;
+&lt;li&gt;Providing Campus support and helping around campus such as offices and classrooms&lt;/li&gt;
+&lt;li&gt;Replacing parts on computers such as the Monitor, Memory, or Hard Drives&lt;/li&gt;
+&lt;li&gt;Filling out tickets to keep a detailed history of every client.&lt;/li&gt;
+&lt;li&gt;Ensuring quality customer service&lt;/li&gt;
+&lt;li&gt;Maintaining Inventory of Faculty machines, Imaging computers.&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Web Developer, Senior]]></title><description><![CDATA[Providing web support and development to Student Affairs departments such as UA Online, Advising Resource Center, VETs, and the Student…]]></description><link>https://stepquick.net/web-developer-senior/</link><guid isPermaLink="false">https://stepquick.net/web-developer-senior/</guid><content:encoded>&lt;ul&gt;
 &lt;li&gt;Providing web support and development to Student Affairs departments such as UA Online, Advising Resource Center, VETs, and the Student Union.&lt;/li&gt;
 &lt;li&gt;Development and maintenance of Student Elections application, with an average of 4000 students per election using AngularJS and PHP.&lt;/li&gt;
 &lt;li&gt;Migration of older projects into source control, and maintenance of legacy projects to find glaring security vulnerabilities&lt;/li&gt;
@@ -36,7 +36,83 @@
 &lt;li&gt;Helped create multiple versions of email based templates for mass email distribution&lt;/li&gt;
 &lt;li&gt;Created Union Application Administration panel for Student Union Hiring App using php and bootstrap CSS&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Tools used: PHP, Javascript, AngularJS, HTML, CSS, Nginx/Apache, Linux, AWS, Vagrant, MySQL/MariaDB, Webpack&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Notes from using TFS for continuous deployment]]></title><description><![CDATA[These are the notes I kept while experimenting with using TFS for automating deployment at my job. While these are a little about after the…]]></description><link>https://stepquick.net/notes-from-using-tfs-continuous-integration/</link><guid isPermaLink="false">https://stepquick.net/notes-from-using-tfs-continuous-integration/</guid><pubDate>Sat, 06 Apr 2019 23:56:33 GMT</pubDate><content:encoded>&lt;p&gt;These are the notes I kept while experimenting with using TFS for automating deployment at my job. While these are a little about after the fact, but I felt it would be useful for someone looking to automate their asp projects.&lt;/p&gt;
+&lt;p&gt;Tools used: PHP, Javascript, AngularJS, HTML, CSS, Nginx/Apache, Linux, AWS, Vagrant, MySQL/MariaDB, Webpack&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Confirming unsaved changes on html forms using JS]]></title><description><![CDATA[For a recently project I thought it would be a good idea to implement a check to confirm if there were any unsaved changes for a page, since…]]></description><link>https://stepquick.net/confirming-unsaved-changes-on-html-forms-using-js/</link><guid isPermaLink="false">https://stepquick.net/confirming-unsaved-changes-on-html-forms-using-js/</guid><pubDate>Fri, 24 Jan 2020 13:00:00 GMT</pubDate><content:encoded>&lt;p&gt;For a recently project I thought it would be a good idea to implement a check to confirm if there were any unsaved changes for a page, since most of the pages are forms. JS to the rescue; with browsers nowadays, it’s really easy to access forms input fields. So this JS will target newer browsers, but I will include jQuery equivalent that works with older browsers.&lt;/p&gt;
+&lt;h3&gt;JS: FormData&lt;/h3&gt;
+&lt;p&gt;I chose to use &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/API/FormData&quot;&gt;FormData&lt;/a&gt;, since it will return a collection of all inputs for the form. FormData includes the &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/API/FormData/getAll&quot;&gt;getAll&lt;/a&gt; function that will allow you to inspect all the inputs. I also chose to use a string comparison because it’s simple and I don’t have a lot of fields (5-10) to compare. &lt;/p&gt;
+&lt;p&gt;In addition to FormData, I also &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams/toString&quot;&gt;URLSearchParams().toString()&lt;/a&gt; can take FormData and create the string for me. &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;let initialData = new URLSearchParams(new FormData(document.forms[0]));	
+document.addEventListener(&amp;quot;beforeunload&amp;quot;, () =&amp;gt; {
+    if (initialData.toString() !== new URLSearchParams(document.forms[0]).toString()) {
+        const unsaved_changes_warning = &amp;quot;Changes you made may not be saved.&amp;quot;;
+        evt.returnValue = unsaved_changes_warning;
+        return unsaved_changes_warning;
+    }
+});&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; This doesn’t work for older browsers. Please check browser support, but this should work all the way to at least newer edge (EdgeHTML, not Chromium). Chrome, Firefox, and the newer browsers should handle this no problem.&lt;/p&gt;
+&lt;h3&gt;jQuery: $(form).serialize();&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;https://api.jquery.com/serialize/&quot;&gt;Serialize&lt;/a&gt; is similar output as above JS, it will return a delimited string of all inputs found on form element passed to jQuery. It’s super easy to compare using an initial stored value and the changes too. It’s a little simpler to do it this way.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;let initialData = $(formId).serialize();	
+$(document).on(&amp;quot;beforeunload&amp;quot;, () =&amp;gt; {
+    if (initialData !== $(form).serialize()) {
+        const unsaved_changes_warning = &amp;quot;Changes you made may not be saved.&amp;quot;;
+        evt.returnValue = unsaved_changes_warning;
+        return unsaved_changes_warning;
+    }
+});&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; This should work with any newer browser, including EdgeHTML based edge, and ie9-11, this function has been around in jQuery for a while.&lt;/p&gt;
+&lt;h3&gt;Aside: What are edge cases where does this not work?&lt;/h3&gt;
+&lt;p&gt;This will trigger on form submission too. This will interrupt any navigation away from the page, including form submissions. It will likely always be called before beforeunload events. So I have more JS examples to resolve this, albeit a hack.
+
+&lt;strong&gt;JS:&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;const form = document.forms[0];
+form.addEventListener(&amp;quot;submit&amp;quot;, () =&amp;gt; {
+    initialData = new URLSearchParams(new FormData(form)).toString());
+});&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;jQuery:&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;const form = $(formId);
+form.on(&amp;quot;submit&amp;quot;, () =&amp;gt; {
+    initialData = form.serialize();
+});&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;If it feels a little hacky, that’s because it is. I personally don’t see a problem with allowing the the page to post though. Overwriting initialData on submit should not introduced bugs since the page will end up redirecting back if there’s a validation error, allowing the js to run again. However this does introduce an issue.
+&lt;/p&gt;
+&lt;p&gt;How are you to deal with the form after there’s a failed request or failed validation? &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;In this example, I’ll be using a c# code behind page as an example.&lt;/strong&gt; With the way this JS is structured, if you submit the form, the c# code could possibly redirect back to the page to have you correct it, or failing validation. Since the page is reloaded, the initial data would be repopulated with the data from the previous request. That means if you click cancel or try to leave the page, you will lose your work, because the when the beforeunload event is ran, it will compare what is essentially the same data and allow it to pass. &lt;/p&gt;
+&lt;p&gt;Nothing was changed, however at this point it’s kinda an assumption that if you went back to this page, you might need to enter something to clear validation. That would then make the current form data different than initialData, and that would allow the check to work. It might also be unacceptable for this, and in that case I would recommend trying to possibly modify it more. I was thinking maybe find a way to persist the initial form data, ie the blank form the page started with. That too should allow the form to pass, but it couldn’t be just an empty string. It would need to be the current form with all inputs, but with no values. That way when you compare with the current form, the current form would show the persisted data, making the check fail and cause the alert.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;   let initialData = Array.from(new FormData(document.forms[0]), (e =&amp;gt; e[0]+&amp;quot;=&amp;quot;)).join(&amp;quot;&amp;amp;&amp;quot;);&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;This returns an string of all inputs with no initial value, which sounds good to me. But there also things to consider with this too. &lt;/p&gt;
+&lt;p&gt;What about hidden inputs, like an antiforgery token that are prepopulated? I wouldn’t include this field because it’s supposed to be filled already when the page is loaded.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;   let filters = new Set([&amp;quot;__RequestVerificationToken&amp;quot;]);
+   let arrayWithoutToken = (formdatastring) =&amp;gt; formdatastring.split(&amp;quot;&amp;amp;&amp;quot;).filter(e =&amp;gt; !filters.has(e.split(&amp;quot;=&amp;quot;)[0])).join(&amp;quot;&amp;amp;&amp;quot;);&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;This can be done other ways, but with how few fields my form uses, I didn’t think the hit splitting the string back into an array will be that negligible. &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt;  You could also use the filters directly on the array when you’re making it but I had issues with it returning the second field of the arrays too, with this additional, and possibly extra, step it ensures I only get back the modifies data I need. I will likely continue adjusting this to make it work better for me, but for now it suites my needs.&lt;/p&gt;
+&lt;h3&gt;All together&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;export default function Confirm() {
+    let filters = new Set([&amp;quot;__RequestVerificationToken&amp;quot;]);
+    let filteredArrayString = (array) =&amp;gt; array.split(&amp;quot;&amp;amp;&amp;quot;).filter(e =&amp;gt; !filters.has(e.split(&amp;quot;=&amp;quot;)[0])).join(&amp;quot;&amp;amp;&amp;quot;);
+    function init() {
+	    let initialData = Array.from(new FormData(document.forms[0]), (e =&amp;gt; e[0]+&amp;quot;=&amp;quot;)).join(&amp;quot;&amp;amp;&amp;quot;);	
+	    document.addEventListener(&amp;quot;beforeunload&amp;quot;, () =&amp;gt; {
+	        if (filteredArrayString(initialData) !== filteredArrayString(new URLSearchParams(document.forms[0]).toString())){
+	            const unsaved_changes_warning = &amp;quot;Changes you made may not be saved.&amp;quot;;
+	            evt.returnValue = unsaved_changes_warning;
+	            return unsaved_changes_warning;
+	        }
+             });
+             document.forms[0].addEventListener(&amp;quot;submit&amp;quot;, () =&amp;gt; {
+                 initialData = new URLSearchParams(new FormData(form)).toString());
+             });
+     }
+     init();
+     return {init}
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;Usage&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;lt;script type=&amp;quot;module&amp;quot;&amp;gt;
+    import Confirm from &amp;quot;./Confirm.js&amp;quot;;
+    
+    Confirm();
+&amp;lt;/script&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;Summary&lt;/h3&gt;
+&lt;p&gt;This works for most of my uses cases, and allows for some flexibility. If you need more filters, you can adjust the function to include arguments to pass the filters rather than include just the verification token. It’s possible not all your forms will include them, but they probably should. I plan on doing another post shortly about how I use similar functionality when closing modals.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Notes from using TFS for continuous deployment]]></title><description><![CDATA[These are the notes I kept while experimenting with using TFS for automating deployment at my job. While these are a little about after the…]]></description><link>https://stepquick.net/notes-from-using-tfs-continuous-integration/</link><guid isPermaLink="false">https://stepquick.net/notes-from-using-tfs-continuous-integration/</guid><pubDate>Sat, 06 Apr 2019 23:56:33 GMT</pubDate><content:encoded>&lt;p&gt;These are the notes I kept while experimenting with using TFS for automating deployment at my job. While these are a little about after the fact, but I felt it would be useful for someone looking to automate their asp projects.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Use PAT (Personal Access Tokens) authentication&lt;/li&gt;
 &lt;li&gt;You can easily update the tfs agent if you run it as a service &lt;/li&gt;
