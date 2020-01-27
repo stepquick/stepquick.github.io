@@ -83,7 +83,7 @@ This can be done other ways, but with how few fields my form uses, I didn't thin
         let filteredArrayString = (array) => array.split("&").filter(e => !filters.has(e.split("=")[0])).join("&");
 	    function init() {
 		    let initialData = Array.from(new FormData(document.forms[0]), (e => e[0]+"=")).join("&");	
-		    document.addEventListener("beforeunload", () => {
+		    window.addEventListener("beforeunload", (evt) => {
 		        if (filteredArrayString(initialData) !== filteredArrayString(new URLSearchParams(document.forms[0]).toString())){
 		            const unsaved_changes_warning = "Changes you made may not be saved.";
 		            evt.returnValue = unsaved_changes_warning;
@@ -91,11 +91,11 @@ This can be done other ways, but with how few fields my form uses, I didn't thin
 		        }
                  });
                  document.forms[0].addEventListener("submit", () => {
-	                 initialData = new URLSearchParams(new FormData(form)).toString());
+	                 initialData = new URLSearchParams(new FormData(form)).toString();
 	             });
 	     }
 	     init();
-	     return {init}
+	     return { init };
     }
 
 ### Usage
