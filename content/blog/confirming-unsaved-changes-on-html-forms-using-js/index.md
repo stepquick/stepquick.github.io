@@ -84,7 +84,7 @@ This can be done other ways, but with how few fields my form uses, I didn't thin
 	    function init() {
 		    let initialData = Array.from(new FormData(document.forms[0]), (e => e[0]+"=")).join("&");	
 		    window.addEventListener("beforeunload", (evt) => {
-		        if (filteredArrayString(initialData) !== filteredArrayString(new URLSearchParams(document.forms[0]).toString())){
+		        if (filteredArrayString(initialData) !== filteredArrayString(new URLSearchParams(new FormData(document.forms[0])).toString())){
 		            const unsaved_changes_warning = "Changes you made may not be saved.";
 		            evt.returnValue = unsaved_changes_warning;
 		            return unsaved_changes_warning;
