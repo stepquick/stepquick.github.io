@@ -53,7 +53,7 @@ form.on(&quot;submit&quot;, () =&gt; {
     let filteredArrayString = (array) =&gt; array.split(&quot;&amp;&quot;).filter(e =&gt; !filters.has(e.split(&quot;=&quot;)[0])).join(&quot;&amp;&quot;);
     function init() {
 	    let initialData = Array.from(new FormData(document.forms[0]), (e =&gt; e[0]+&quot;=&quot;)).join(&quot;&amp;&quot;);	
-	    document.addEventListener(&quot;beforeunload&quot;, () =&gt; {
+	    window.addEventListener(&quot;beforeunload&quot;, (evt) =&gt; {
 	        if (filteredArrayString(initialData) !== filteredArrayString(new URLSearchParams(document.forms[0]).toString())){
 	            const unsaved_changes_warning = &quot;Changes you made may not be saved.&quot;;
 	            evt.returnValue = unsaved_changes_warning;
@@ -61,11 +61,11 @@ form.on(&quot;submit&quot;, () =&gt; {
 	        }
              });
              document.forms[0].addEventListener(&quot;submit&quot;, () =&gt; {
-                 initialData = new URLSearchParams(new FormData(form)).toString());
+                 initialData = new URLSearchParams(new FormData(form)).toString();
              });
      }
      init();
-     return {init}
+     return { init };
 }</code></pre></div>
 <h3>Usage</h3>
 <div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">&lt;script type=&quot;module&quot;&gt;
