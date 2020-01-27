@@ -54,7 +54,7 @@ form.on(&quot;submit&quot;, () =&gt; {
     function init() {
 	    let initialData = Array.from(new FormData(document.forms[0]), (e =&gt; e[0]+&quot;=&quot;)).join(&quot;&amp;&quot;);	
 	    window.addEventListener(&quot;beforeunload&quot;, (evt) =&gt; {
-	        if (filteredArrayString(initialData) !== filteredArrayString(new URLSearchParams(document.forms[0]).toString())){
+	        if (filteredArrayString(initialData) !== filteredArrayString(new URLSearchParams(new FormData(document.forms[0])).toString())){
 	            const unsaved_changes_warning = &quot;Changes you made may not be saved.&quot;;
 	            evt.returnValue = unsaved_changes_warning;
 	            return unsaved_changes_warning;
