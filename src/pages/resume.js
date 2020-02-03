@@ -1,5 +1,5 @@
-import React from "react"
-import { Link, graphql } from "gatsby"
+import React, {useMemo} from "react"
+import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -7,9 +7,9 @@ import { rhythm } from "../utils/typography"
 
 import "../styles/job.css";
 
-const Resume = ({data, location}) => {
+const Resume = React.memo(({data, location}) => {
   const siteTitle = data.site.siteMetadata.title
-  const posts = data.allMarkdownRemark.edges
+  const posts = useMemo(() => data.allMarkdownRemark.edges);
 
   return (
     <Layout location={location} title={siteTitle}>
@@ -43,7 +43,7 @@ const Resume = ({data, location}) => {
       })}
     </Layout>
   )
-}
+});
 
 export default Resume
 
