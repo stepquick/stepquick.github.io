@@ -7,48 +7,45 @@ import { rhythm } from "../utils/typography"
 
 import "../styles/job.css";
 
-class BlogIndex extends React.Component {
-  render() {
-    const { data } = this.props
-    const siteTitle = data.site.siteMetadata.title
-    const posts = data.allMarkdownRemark.edges
+const Resume = ({data, location}) => {
+  const siteTitle = data.site.siteMetadata.title
+  const posts = data.allMarkdownRemark.edges
 
-    return (
-      <Layout location={this.props.location} title={siteTitle}>
-        <h1>Resume</h1>
-        <SEO
-          title="Resume"
-          keywords={[`resume`, `developer`, `web`]}
-        />
-        {posts.map(({ node }, index) => {
-          const title = node.frontmatter.title
-          return (
-            <div key={index}>
-              <h3
-                style={{
-                  marginBottom: rhythm(1 / 4),
-                }}
-              >
-                {title}
-              </h3>
-              <p className="job-location">
-                <small>{node.frontmatter.company}, {node.frontmatter.location}</small>
-                <small>{node.frontmatter.startdate} - {node.frontmatter.enddate ?  node.frontmatter.enddate : "Current"}</small>
-              </p>
-              <div className="job-description"
-                dangerouslySetInnerHTML={{
-                  __html: node.html,
-                }}
-              />
-            </div>
-          )
-        })}
-      </Layout>
-    )
-  }
+  return (
+    <Layout location={location} title={siteTitle}>
+      <h1>Resume</h1>
+      <SEO
+        title="Resume"
+        keywords={[`resume`, `developer`, `web`]}
+      />
+      {posts.map(({ node }, index) => {
+        const title = node.frontmatter.title
+        return (
+          <div key={index}>
+            <h3
+              style={{
+                marginBottom: rhythm(1 / 4),
+              }}
+            >
+              {title}
+            </h3>
+            <p className="job-location">
+              <small>{node.frontmatter.company}, {node.frontmatter.location}</small>
+              <small>{node.frontmatter.startdate} - {node.frontmatter.enddate ?  node.frontmatter.enddate : "Current"}</small>
+            </p>
+            <div className="job-description"
+              dangerouslySetInnerHTML={{
+                __html: node.html,
+              }}
+            />
+          </div>
+        )
+      })}
+    </Layout>
+  )
 }
 
-export default BlogIndex
+export default Resume
 
 export const pageQuery = graphql`
   query {

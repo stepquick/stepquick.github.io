@@ -21,7 +21,7 @@ function Bio() {
           <div
             style={{
               display: `flex`,
-              marginBottom: rhythm(2.5),
+              marginBottom: rhythm(2),
             }}
           >
             <Image
@@ -37,7 +37,14 @@ function Bio() {
                 borderRadius: `50%`,
               }}
             />
-            <p>Written by <strong>{author}</strong>, a software developer based in Houston, Texas.<br/><a href="/resume">Resume.</a></p>
+            <div>
+              <p style={{marginBottom: rhythm(.25)}}>Written by <strong>{author}</strong>, a software developer based in Houston, Texas.</p>
+              <p style={{display: `flex`, justifyContent: `flex-start`, flexFlow: "wrap"}}>
+                <a href="/resume" style={{marginRight:rhythm(1)}}>Resume.</a>
+                <a href="www.linkedin.com/in/stepquick" target="_blank" style={{marginRight:rhythm(1)}}>LinkedIn.</a>
+                <a href="https://github.com/stepquick" target="_blank">Github.</a>
+              </p>
+            </div>
           </div>
         )
       }}
