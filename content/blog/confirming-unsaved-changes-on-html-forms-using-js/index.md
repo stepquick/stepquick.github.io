@@ -3,7 +3,7 @@ title: "Confirming unsaved changes on html forms using JS"
 date: 2020-01-24 13:00:00-00:00
 ---
 
-For a recently project I thought it would be a good idea to implement a check to confirm if there were any unsaved changes for a page, since most of the pages are forms. JS to the rescue; with browsers nowadays, it's really easy to access forms input fields. So this JS will target newer browsers, but I will include jQuery equivalent that works with older browsers.
+For a work project I thought it would be a good idea to implement a check to confirm if there were any unsaved changes for a page, since most of the pages are forms. JS to the rescue; with browsers nowadays, it's really easy to access forms input fields. So this JS will target newer browsers, but I will include jQuery equivalent that works with older browsers.
 
  ### JS: FormData
 I chose to use [FormData](https://developer.mozilla.org/en-US/docs/Web/API/FormData), since it will return a collection of all inputs for the form. FormData includes the [getAll](https://developer.mozilla.org/en-US/docs/Web/API/FormData/getAll) function that will allow you to inspect all the inputs. I also chose to use a string comparison because it's simple and I don't have a lot of fields (5-10) to compare. 
