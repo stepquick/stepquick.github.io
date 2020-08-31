@@ -1,22 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Stephen Quick]]></title><description><![CDATA[A web developer based in Houston, TX.]]></description><link>https://stepquick.net</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 03 Feb 2020 20:24:57 GMT</lastBuildDate><item><title><![CDATA[Software Developer]]></title><description><![CDATA[Developed and maintain external facing website http://app.dao.hctx.net, a lemp stack using Drupal 8, Ubuntu, Nginx, and PHP. Created drag…]]></description><link>https://stepquick.net/software-developer/</link><guid isPermaLink="false">https://stepquick.net/software-developer/</guid><content:encoded>&lt;ul&gt;
-&lt;li&gt;Developed and maintain external facing website &lt;a href=&quot;http://app.dao.hctx.net&quot;&gt;http://app.dao.hctx.net&lt;/a&gt;, a lemp stack using Drupal 8, Ubuntu, Nginx, and PHP.&lt;/li&gt;
-&lt;li&gt;Created drag and drop file uploading implementation for Asset Forfeiture cms. Used for uploading files associated to cases in Asset Forfeiture department. Used jquery, css and html5fileuploader.js&lt;/li&gt;
-&lt;li&gt;Maintain and troubleshoot bugs on existing projects.&lt;/li&gt;
-&lt;li&gt;Participate in scrum and weekly deployments for projects.&lt;/li&gt;
-&lt;li&gt;Migrated 60+ dbs from 2008 sql server to new 2012/2017 sql server using backup/restore in ssms, and the database migration assistant&lt;/li&gt;
-&lt;li&gt;Migrated 20+ web applications from aging windows server 2008 to windows server 2016 to improve responsiveness and security, as well as creating individual ad users for running each of the applications.&lt;/li&gt;
-&lt;li&gt;Planned and developed migration plan for Public Integrity coldfusion application to asp.net core api project, with asp.net core mvc.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Tools used: C#, ASP.NET, SQL, Server administration, AD, RDC, Ubuntu, PHP, Nginx, Mysql&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Technical Analyst]]></title><description><![CDATA[Software/Hardware Installation Network Troubleshooting Supporting Faculty/Staff/Student computers Providing Campus support and helping…]]></description><link>https://stepquick.net/technical-analyst/</link><guid isPermaLink="false">https://stepquick.net/technical-analyst/</guid><content:encoded>&lt;ul&gt;
-&lt;li&gt;Software/Hardware Installation&lt;/li&gt;
-&lt;li&gt;Network Troubleshooting&lt;/li&gt;
-&lt;li&gt;Supporting Faculty/Staff/Student computers&lt;/li&gt;
-&lt;li&gt;Providing Campus support and helping around campus such as offices and classrooms&lt;/li&gt;
-&lt;li&gt;Replacing parts on computers such as the Monitor, Memory, or Hard Drives&lt;/li&gt;
-&lt;li&gt;Filling out tickets to keep a detailed history of every client.&lt;/li&gt;
-&lt;li&gt;Ensuring quality customer service&lt;/li&gt;
-&lt;li&gt;Maintaining Inventory of Faculty machines, Imaging computers.&lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Web Developer, Senior]]></title><description><![CDATA[Providing web support and development to Student Affairs departments such as UA Online, Advising Resource Center, VETs, and the Student…]]></description><link>https://stepquick.net/web-developer-senior/</link><guid isPermaLink="false">https://stepquick.net/web-developer-senior/</guid><content:encoded>&lt;ul&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Stephen Quick]]></title><description><![CDATA[A web developer based in Houston, TX.]]></description><link>https://stepquick.net</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 31 Aug 2020 18:05:45 GMT</lastBuildDate><item><title><![CDATA[Web Developer, Senior]]></title><description><![CDATA[Providing web support and development to Student Affairs departments such as UA Online, Advising Resource Center, VETs, and the Student…]]></description><link>https://stepquick.net/web-developer-senior/</link><guid isPermaLink="false">https://stepquick.net/web-developer-senior/</guid><content:encoded>&lt;ul&gt;
 &lt;li&gt;Providing web support and development to Student Affairs departments such as UA Online, Advising Resource Center, VETs, and the Student Union.&lt;/li&gt;
 &lt;li&gt;Development and maintenance of Student Elections application, with an average of 4000 students per election using AngularJS and PHP.&lt;/li&gt;
 &lt;li&gt;Migration of older projects into source control, and maintenance of legacy projects to find glaring security vulnerabilities&lt;/li&gt;
@@ -27,7 +9,25 @@
 &lt;li&gt;Helped create multiple versions of email based templates for mass email distribution&lt;/li&gt;
 &lt;li&gt;Created Union Application Administration panel for Student Union Hiring App using php and bootstrap CSS&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Tools used: PHP, Javascript, AngularJS, HTML, CSS, Nginx/Apache, Linux, AWS, Vagrant, MySQL/MariaDB, Webpack&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Application Analyst/Developer, Senior]]></title><description><![CDATA[Developed ReactJS application for reserving rooms at Oxford College for use with iPad Developed application for Organic farm to manage…]]></description><link>https://stepquick.net/application-analyst/</link><guid isPermaLink="false">https://stepquick.net/application-analyst/</guid><content:encoded>&lt;ul&gt;
+&lt;p&gt;Tools used: PHP, Javascript, AngularJS, HTML, CSS, Nginx/Apache, Linux, AWS, Vagrant, MySQL/MariaDB, Webpack&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Technical Analyst]]></title><description><![CDATA[Software/Hardware Installation Network Troubleshooting Supporting Faculty/Staff/Student computers Providing Campus support and helping…]]></description><link>https://stepquick.net/technical-analyst/</link><guid isPermaLink="false">https://stepquick.net/technical-analyst/</guid><content:encoded>&lt;ul&gt;
+&lt;li&gt;Software/Hardware Installation&lt;/li&gt;
+&lt;li&gt;Network Troubleshooting&lt;/li&gt;
+&lt;li&gt;Supporting Faculty/Staff/Student computers&lt;/li&gt;
+&lt;li&gt;Providing Campus support and helping around campus such as offices and classrooms&lt;/li&gt;
+&lt;li&gt;Replacing parts on computers such as the Monitor, Memory, or Hard Drives&lt;/li&gt;
+&lt;li&gt;Filling out tickets to keep a detailed history of every client.&lt;/li&gt;
+&lt;li&gt;Ensuring quality customer service&lt;/li&gt;
+&lt;li&gt;Maintaining Inventory of Faculty machines, Imaging computers.&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Software Developer]]></title><description><![CDATA[Developed and maintain external facing website http://app.dao.hctx.net, a lemp stack using Drupal 8, Ubuntu, Nginx, and PHP. Created drag…]]></description><link>https://stepquick.net/software-developer/</link><guid isPermaLink="false">https://stepquick.net/software-developer/</guid><content:encoded>&lt;ul&gt;
+&lt;li&gt;Developed and maintain external facing website &lt;a href=&quot;http://app.dao.hctx.net&quot;&gt;http://app.dao.hctx.net&lt;/a&gt;, a lemp stack using Drupal 8, Ubuntu, Nginx, and PHP.&lt;/li&gt;
+&lt;li&gt;Created drag and drop file uploading implementation for Asset Forfeiture cms. Used for uploading files associated to cases in Asset Forfeiture department. Used jquery, css and html5fileuploader.js&lt;/li&gt;
+&lt;li&gt;Maintain and troubleshoot bugs on existing projects.&lt;/li&gt;
+&lt;li&gt;Participate in scrum and weekly deployments for projects.&lt;/li&gt;
+&lt;li&gt;Migrated 60+ dbs from 2008 sql server to new 2012/2017 sql server using backup/restore in ssms, and the database migration assistant&lt;/li&gt;
+&lt;li&gt;Migrated 20+ web applications from aging windows server 2008 to windows server 2016 to improve responsiveness and security, as well as creating individual ad users for running each of the applications.&lt;/li&gt;
+&lt;li&gt;Planned and developed migration plan for Public Integrity coldfusion application to asp.net core api project, with asp.net core mvc.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Tools used: C#, ASP.NET, SQL, Server administration, AD, RDC, Ubuntu, PHP, Nginx, Mysql&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Application Analyst/Developer, Senior]]></title><description><![CDATA[Developed ReactJS application for reserving rooms at Oxford College for use with iPad Developed application for Organic farm to manage…]]></description><link>https://stepquick.net/application-analyst/</link><guid isPermaLink="false">https://stepquick.net/application-analyst/</guid><content:encoded>&lt;ul&gt;
 &lt;li&gt;Developed ReactJS application for reserving rooms at Oxford College for use with iPad&lt;/li&gt;
 &lt;li&gt;Developed application for Organic farm to manage customers and seasons which is used by 60 customers.&lt;/li&gt;
 &lt;li&gt;Providing technical support for Faculty, Staff and the Students of Oxford College by providing troubleshooting and performance/security analysis for applications and websites&lt;/li&gt;
@@ -60,7 +60,7 @@ $(document).on(&amp;quot;beforeunload&amp;quot;, () =&amp;gt; {
     }
 });&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; This should work with any newer browser, including EdgeHTML based edge, and ie9-11, this function has been around in jQuery for a while.&lt;/p&gt;
-&lt;h3&gt;Aside: What are edge cases where does this not work?&lt;/h3&gt;
+&lt;h3&gt;Aside: What are edge cases where this does not work?&lt;/h3&gt;
 &lt;p&gt;This will trigger on form submission too. This will interrupt any navigation away from the page, including form submissions. It will likely always be called before beforeunload events. So I have more JS examples to resolve this, albeit a hack.
 
 &lt;strong&gt;JS:&lt;/strong&gt;&lt;/p&gt;
@@ -127,30 +127,30 @@ form.on(&amp;quot;submit&amp;quot;, () =&amp;gt; {
 &lt;p&gt;When I started with configuring the agents, by default it was using Windows Authentication as the default auth type. However, through tutorials using a PAT seems to be the best way to have this set up. The personal access token was set up using my user under TFS, and I set it to expire after a year and only has access to the agent feed. At the time of this blog you can learn more about PAT using the Microsoft Docs: &lt;a href=&quot;https://docs.microsoft.com/en-us/azure/devops/pipelines/agents/v2-windows?view=azure-devops&quot;&gt;here&lt;/a&gt;. It also looks like as of the newest version of self-hosted TFS, PAT is the default authentication type for agent configuration now.&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/8c0d64c90a06ed671cb21f1fb7a38332/d335e/pat.jpg&quot;
+    href=&quot;/static/8c0d64c90a06ed671cb21f1fb7a38332/62522/pat.jpg&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 26.53846153846154%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAFABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAEF/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEAMQAAAB3aFB/8QAFBABAAAAAAAAAAAAAAAAAAAAEP/aAAgBAQABBQJ//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPwE//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPwE//8QAFBABAAAAAAAAAAAAAAAAAAAAEP/aAAgBAQAGPwJ//8QAFRABAQAAAAAAAAAAAAAAAAAAABH/2gAIAQEAAT8hiI//2gAMAwEAAgADAAAAEHAP/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPxA//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPxA//8QAGhABAAIDAQAAAAAAAAAAAAAAAQARUWGRcf/aAAgBAQABPxAIDbfsNnspl7P/2Q==&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 26.351351351351354%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAFABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAEF/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEAMQAAAB3aFB/8QAFBABAAAAAAAAAAAAAAAAAAAAEP/aAAgBAQABBQJ//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPwE//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPwE//8QAFBABAAAAAAAAAAAAAAAAAAAAEP/aAAgBAQAGPwJ//8QAFRABAQAAAAAAAAAAAAAAAAAAABH/2gAIAQEAAT8hiI//2gAMAwEAAgADAAAAEHAP/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPxA//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPxA//8QAGhABAAIDAQAAAAAAAAAAAAAAAQARUWGRcf/aAAgBAQABPxAIDbfsNnspl7P/2Q==&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;PAT&quot;
         title=&quot;PAT&quot;
-        src=&quot;/static/8c0d64c90a06ed671cb21f1fb7a38332/88218/pat.jpg&quot;
-        srcset=&quot;/static/8c0d64c90a06ed671cb21f1fb7a38332/7237a/pat.jpg 148w,
-/static/8c0d64c90a06ed671cb21f1fb7a38332/0cfdf/pat.jpg 295w,
-/static/8c0d64c90a06ed671cb21f1fb7a38332/88218/pat.jpg 590w,
-/static/8c0d64c90a06ed671cb21f1fb7a38332/77d57/pat.jpg 885w,
-/static/8c0d64c90a06ed671cb21f1fb7a38332/5a917/pat.jpg 1180w,
-/static/8c0d64c90a06ed671cb21f1fb7a38332/d335e/pat.jpg 1560w&quot;
+        src=&quot;/static/8c0d64c90a06ed671cb21f1fb7a38332/1c72d/pat.jpg&quot;
+        srcset=&quot;/static/8c0d64c90a06ed671cb21f1fb7a38332/a80bd/pat.jpg 148w,
+/static/8c0d64c90a06ed671cb21f1fb7a38332/1c91a/pat.jpg 295w,
+/static/8c0d64c90a06ed671cb21f1fb7a38332/1c72d/pat.jpg 590w,
+/static/8c0d64c90a06ed671cb21f1fb7a38332/a8a14/pat.jpg 885w,
+/static/8c0d64c90a06ed671cb21f1fb7a38332/fbd2c/pat.jpg 1180w,
+/static/8c0d64c90a06ed671cb21f1fb7a38332/62522/pat.jpg 1560w&quot;
         sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -161,30 +161,30 @@ form.on(&amp;quot;submit&amp;quot;, () =&amp;gt; {
 &lt;p&gt;I didn’t realize this initially, but running the agent as a service allows you to modify the agent directly services.msc on the host computer. This allows you to set the typical stuff, including changing a password and restarting the user. It came in quite handy experimenting with what user to use for the agent.&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/abdde967398a485d2fdcf741b2e5bed6/79916/agent-as-service.jpg&quot;
+    href=&quot;/static/abdde967398a485d2fdcf741b2e5bed6/fcd25/agent-as-service.jpg&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 42.0125786163522%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAIABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAIF/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEAMQAAAB2bCgf//EABYQAQEBAAAAAAAAAAAAAAAAAAEREP/aAAgBAQABBQKCy5//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/AT//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/AT//xAAVEAEBAAAAAAAAAAAAAAAAAAAQ4f/aAAgBAQAGPwKv/8QAGRABAAMBAQAAAAAAAAAAAAAAAQARIUFR/9oACAEBAAE/IUxeeImGNSp//9oADAMBAAIAAwAAABDzz//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8QP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8QP//EABsQAQACAgMAAAAAAAAAAAAAAAEAESExYZGh/9oACAEBAAE/ELwrWHwDcUiSXdXOVdT/2Q==&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 41.891891891891895%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAIABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAIF/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEAMQAAAB2bCgf//EABYQAQEBAAAAAAAAAAAAAAAAAAEREP/aAAgBAQABBQKCy5//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/AT//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/AT//xAAVEAEBAAAAAAAAAAAAAAAAAAAQ4f/aAAgBAQAGPwKv/8QAGRABAAMBAQAAAAAAAAAAAAAAAQARIUFR/9oACAEBAAE/IUxeeImGNSp//9oADAMBAAIAAwAAABDzz//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8QP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8QP//EABsQAQACAgMAAAAAAAAAAAAAAAEAESExYZGh/9oACAEBAAE/ELwrWHwDcUiSXdXOVdT/2Q==&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;Agent Config under Services&quot;
         title=&quot;Agent Config under Services&quot;
-        src=&quot;/static/abdde967398a485d2fdcf741b2e5bed6/88218/agent-as-service.jpg&quot;
-        srcset=&quot;/static/abdde967398a485d2fdcf741b2e5bed6/7237a/agent-as-service.jpg 148w,
-/static/abdde967398a485d2fdcf741b2e5bed6/0cfdf/agent-as-service.jpg 295w,
-/static/abdde967398a485d2fdcf741b2e5bed6/88218/agent-as-service.jpg 590w,
-/static/abdde967398a485d2fdcf741b2e5bed6/77d57/agent-as-service.jpg 885w,
-/static/abdde967398a485d2fdcf741b2e5bed6/5a917/agent-as-service.jpg 1180w,
-/static/abdde967398a485d2fdcf741b2e5bed6/79916/agent-as-service.jpg 1590w&quot;
+        src=&quot;/static/abdde967398a485d2fdcf741b2e5bed6/1c72d/agent-as-service.jpg&quot;
+        srcset=&quot;/static/abdde967398a485d2fdcf741b2e5bed6/a80bd/agent-as-service.jpg 148w,
+/static/abdde967398a485d2fdcf741b2e5bed6/1c91a/agent-as-service.jpg 295w,
+/static/abdde967398a485d2fdcf741b2e5bed6/1c72d/agent-as-service.jpg 590w,
+/static/abdde967398a485d2fdcf741b2e5bed6/a8a14/agent-as-service.jpg 885w,
+/static/abdde967398a485d2fdcf741b2e5bed6/fbd2c/agent-as-service.jpg 1180w,
+/static/abdde967398a485d2fdcf741b2e5bed6/fcd25/agent-as-service.jpg 1590w&quot;
         sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -195,30 +195,30 @@ form.on(&amp;quot;submit&amp;quot;, () =&amp;gt; {
 &lt;p&gt;Initially I attempted to run the build agent using Network Service, which was the default user. Even selecting the proper permissions for the private nuget feed (azure artifacts) hosted by my jobs tfs instance, I ended up not being able to get the user to authenticate properly every time I ran a new build. I ended up using my user for running the agent, as well as using my personal pat. This seems to work better but coming across this stack overflow question &lt;a href=&quot;https://stackoverflow.com/questions/26313455/the-account-running-the-tfs-build-service-nt-authority-network-service-needs-t&quot;&gt;here&lt;/a&gt; I might need to target the domain\computer specifically.&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/0248830e1866a8d3ea8060b0afb2147b/45952/permission.jpg&quot;
+    href=&quot;/static/0248830e1866a8d3ea8060b0afb2147b/2ed8b/permission.jpg&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 43.082524271844655%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAJABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAEF/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEAMQAAAB3qAH/8QAFBABAAAAAAAAAAAAAAAAAAAAIP/aAAgBAQABBQJf/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPwE//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPwE//8QAFBABAAAAAAAAAAAAAAAAAAAAIP/aAAgBAQAGPwJf/8QAFRABAQAAAAAAAAAAAAAAAAAAASD/2gAIAQEAAT8hK//aAAwDAQACAAMAAAAQc8//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/ED//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/ED//xAAZEAACAwEAAAAAAAAAAAAAAAAAASAxUXH/2gAIAQEAAT8Q6Zoqh//Z&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 43.24324324324324%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAJABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAEF/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEAMQAAAB3qAH/8QAFBABAAAAAAAAAAAAAAAAAAAAIP/aAAgBAQABBQJf/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPwE//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPwE//8QAFBABAAAAAAAAAAAAAAAAAAAAIP/aAAgBAQAGPwJf/8QAFRABAQAAAAAAAAAAAAAAAAAAASD/2gAIAQEAAT8hK//aAAwDAQACAAMAAAAQc8//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/ED//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/ED//xAAZEAACAwEAAAAAAAAAAAAAAAAAASAxUXH/2gAIAQEAAT8Q6Zoqh//Z&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;Permission View for Nuget Feed&quot;
         title=&quot;Permission View for Nuget Feed&quot;
-        src=&quot;/static/0248830e1866a8d3ea8060b0afb2147b/88218/permission.jpg&quot;
-        srcset=&quot;/static/0248830e1866a8d3ea8060b0afb2147b/7237a/permission.jpg 148w,
-/static/0248830e1866a8d3ea8060b0afb2147b/0cfdf/permission.jpg 295w,
-/static/0248830e1866a8d3ea8060b0afb2147b/88218/permission.jpg 590w,
-/static/0248830e1866a8d3ea8060b0afb2147b/77d57/permission.jpg 885w,
-/static/0248830e1866a8d3ea8060b0afb2147b/5a917/permission.jpg 1180w,
-/static/0248830e1866a8d3ea8060b0afb2147b/45952/permission.jpg 1648w&quot;
+        src=&quot;/static/0248830e1866a8d3ea8060b0afb2147b/1c72d/permission.jpg&quot;
+        srcset=&quot;/static/0248830e1866a8d3ea8060b0afb2147b/a80bd/permission.jpg 148w,
+/static/0248830e1866a8d3ea8060b0afb2147b/1c91a/permission.jpg 295w,
+/static/0248830e1866a8d3ea8060b0afb2147b/1c72d/permission.jpg 590w,
+/static/0248830e1866a8d3ea8060b0afb2147b/a8a14/permission.jpg 885w,
+/static/0248830e1866a8d3ea8060b0afb2147b/fbd2c/permission.jpg 1180w,
+/static/0248830e1866a8d3ea8060b0afb2147b/2ed8b/permission.jpg 1648w&quot;
         sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -229,29 +229,29 @@ form.on(&amp;quot;submit&amp;quot;, () =&amp;gt; {
 &lt;p&gt;This may be related to me switch back and forth between branches on TFVC on my build definitions, so I’m making an note. Sometimes my build agent fails the build for not being able to access the private nuget feed (azure artifacts), which shouldn’t be the case considering my user is the owner for the private nuget feed. I think it may be related to switching which branch builds. That could be related, but my solution seems to fix it:&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/b3beb9c0469a59d6476155e7edf7577e/aa683/nuget-restore.jpg&quot;
+    href=&quot;/static/b3beb9c0469a59d6476155e7edf7577e/03073/nuget-restore.jpg&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 35.65573770491803%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAHABQDASIAAhEBAxEB/8QAFwABAAMAAAAAAAAAAAAAAAAAAAEDBf/EABQBAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhADEAAAAdqwJB//xAAXEAADAQAAAAAAAAAAAAAAAAABAhAi/9oACAEBAAEFAl0J/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPwE//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPwE//8QAFRABAQAAAAAAAAAAAAAAAAAAEBH/2gAIAQEABj8Cr//EABgQAAMBAQAAAAAAAAAAAAAAAAABESFx/9oACAEBAAE/IXwVdIQ//9oADAMBAAIAAwAAABDwD//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8QP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8QP//EABsQAQACAgMAAAAAAAAAAAAAAAERIQAQMVFh/9oACAEBAAE/EBIgZrlSnfmS0//Z&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 35.810810810810814%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAHABQDASIAAhEBAxEB/8QAFwABAAMAAAAAAAAAAAAAAAAAAAEDBf/EABQBAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhADEAAAAdqwJB//xAAXEAADAQAAAAAAAAAAAAAAAAABAhAi/9oACAEBAAEFAl0J/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPwE//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPwE//8QAFRABAQAAAAAAAAAAAAAAAAAAEBH/2gAIAQEABj8Cr//EABgQAAMBAQAAAAAAAAAAAAAAAAABESFx/9oACAEBAAE/IXwVdIQ//9oADAMBAAIAAwAAABDwD//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8QP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8QP//EABsQAQACAgMAAAAAAAAAAAAAAAERIQAQMVFh/9oACAEBAAE/EBIgZrlSnfmS0//Z&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;Nuget Restore task&quot;
         title=&quot;Nuget Restore task&quot;
-        src=&quot;/static/b3beb9c0469a59d6476155e7edf7577e/88218/nuget-restore.jpg&quot;
-        srcset=&quot;/static/b3beb9c0469a59d6476155e7edf7577e/7237a/nuget-restore.jpg 148w,
-/static/b3beb9c0469a59d6476155e7edf7577e/0cfdf/nuget-restore.jpg 295w,
-/static/b3beb9c0469a59d6476155e7edf7577e/88218/nuget-restore.jpg 590w,
-/static/b3beb9c0469a59d6476155e7edf7577e/77d57/nuget-restore.jpg 885w,
-/static/b3beb9c0469a59d6476155e7edf7577e/aa683/nuget-restore.jpg 976w&quot;
+        src=&quot;/static/b3beb9c0469a59d6476155e7edf7577e/1c72d/nuget-restore.jpg&quot;
+        srcset=&quot;/static/b3beb9c0469a59d6476155e7edf7577e/a80bd/nuget-restore.jpg 148w,
+/static/b3beb9c0469a59d6476155e7edf7577e/1c91a/nuget-restore.jpg 295w,
+/static/b3beb9c0469a59d6476155e7edf7577e/1c72d/nuget-restore.jpg 590w,
+/static/b3beb9c0469a59d6476155e7edf7577e/a8a14/nuget-restore.jpg 885w,
+/static/b3beb9c0469a59d6476155e7edf7577e/03073/nuget-restore.jpg 976w&quot;
         sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
@@ -310,30 +310,30 @@ company: &amp;quot;Emory University&amp;quot;&lt;/code&gt;&lt;/pre&gt;&lt;/div&g
 &lt;p&gt;Here’s the query I created using graphiql:&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
     &gt;
       &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/907ca8e16fca259fa65ff5ff874f2c94/69033/graphql.jpg&quot;
+    href=&quot;/static/907ca8e16fca259fa65ff5ff874f2c94/ff688/graphql.jpg&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
   &gt;
     &lt;span
     class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 43.556280587275694%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAJABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAQAF/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEAMQAAAB3mQmP//EABQQAQAAAAAAAAAAAAAAAAAAACD/2gAIAQEAAQUCX//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8BP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8BP//EABQQAQAAAAAAAAAAAAAAAAAAACD/2gAIAQEABj8CX//EABgQAAIDAAAAAAAAAAAAAAAAAAEQABEx/9oACAEBAAE/IQJSGP8A/9oADAMBAAIAAwAAABDjD//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8QP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8QP//EABoQAAICAwAAAAAAAAAAAAAAAAARECExQXH/2gAIAQEAAT8QseuiCME//9k=&apos;); background-size: cover; display: block;&quot;
+    style=&quot;padding-bottom: 43.24324324324324%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAJABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAQAF/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEAMQAAAB3mQmP//EABQQAQAAAAAAAAAAAAAAAAAAACD/2gAIAQEAAQUCX//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8BP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8BP//EABQQAQAAAAAAAAAAAAAAAAAAACD/2gAIAQEABj8CX//EABgQAAIDAAAAAAAAAAAAAAAAAAEQABEx/9oACAEBAAE/IQJSGP8A/9oADAMBAAIAAwAAABDjD//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8QP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8QP//EABoQAAICAwAAAAAAAAAAAAAAAAARECExQXH/2gAIAQEAAT8QseuiCME//9k=&apos;); background-size: cover; display: block;&quot;
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
         alt=&quot;GraphQL&quot;
         title=&quot;GraphQL&quot;
-        src=&quot;/static/907ca8e16fca259fa65ff5ff874f2c94/88218/graphql.jpg&quot;
-        srcset=&quot;/static/907ca8e16fca259fa65ff5ff874f2c94/7237a/graphql.jpg 148w,
-/static/907ca8e16fca259fa65ff5ff874f2c94/0cfdf/graphql.jpg 295w,
-/static/907ca8e16fca259fa65ff5ff874f2c94/88218/graphql.jpg 590w,
-/static/907ca8e16fca259fa65ff5ff874f2c94/77d57/graphql.jpg 885w,
-/static/907ca8e16fca259fa65ff5ff874f2c94/5a917/graphql.jpg 1180w,
-/static/907ca8e16fca259fa65ff5ff874f2c94/69033/graphql.jpg 1226w&quot;
+        src=&quot;/static/907ca8e16fca259fa65ff5ff874f2c94/1c72d/graphql.jpg&quot;
+        srcset=&quot;/static/907ca8e16fca259fa65ff5ff874f2c94/a80bd/graphql.jpg 148w,
+/static/907ca8e16fca259fa65ff5ff874f2c94/1c91a/graphql.jpg 295w,
+/static/907ca8e16fca259fa65ff5ff874f2c94/1c72d/graphql.jpg 590w,
+/static/907ca8e16fca259fa65ff5ff874f2c94/a8a14/graphql.jpg 885w,
+/static/907ca8e16fca259fa65ff5ff874f2c94/fbd2c/graphql.jpg 1180w,
+/static/907ca8e16fca259fa65ff5ff874f2c94/ff688/graphql.jpg 1226w&quot;
         sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
         style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
         loading=&quot;lazy&quot;
