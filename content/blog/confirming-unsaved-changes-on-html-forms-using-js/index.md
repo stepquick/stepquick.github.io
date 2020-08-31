@@ -36,7 +36,7 @@ In addition to FormData, I also [URLSearchParams().toString()](https://developer
 
 **Note:** This should work with any newer browser, including EdgeHTML based edge, and ie9-11, this function has been around in jQuery for a while.
 
-### Aside: What are edge cases where does this not work?
+### Aside: What are edge cases where this does not work?
 
 This will trigger on form submission too. This will interrupt any navigation away from the page, including form submissions. It will likely always be called before beforeunload events. So I have more JS examples to resolve this, albeit a hack.
 	
