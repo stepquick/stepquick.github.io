@@ -3,9 +3,9 @@ title: "Using bootstrap modals with .NET Core"
 date: 2020-08-31 13:12:00-00:00
 ---
 
-This is part-two of a series of js related stuff I was working on for a project at work. For this project our client wanted to access forms/additional information from one page without having to open another page. I won't go into the positives/negatives of using modals, this is more documenting how I chose to deal with modals on this project. At time of this blog, the version of bootstrap used is 4.3.6, and jQuery is 3.3.1. Since bootstrap at this version number required jQuery this blog includes some jQuery and mostly vanilla js. This setup also uses razor pages, since they were easy to setup.
+This is part-two of a series of js related stuff I was working on for a project at work. For this project our client wanted to access forms/additional information from one page without having to open another page. I won't go into the positives/negatives of using modals, this is more documenting how I chose to deal with modals on this project. At time of this blog, the version of bootstrap used is 4.3.6, and jQuery is 3.3.1. Since bootstrap at this version number required jQuery this blog includes some jQuery and mostly vanilla js. This setup also uses .netcore razor pages, because my job is .netcore and c#.
 
-This took a bit longer to write out than I was expecting, since the first part was posted in January. 
+This took a bit longer to write out than I was expecting, since the first part was posted in January. I suck at writing.
 
 ## Setup
 Here are the general steps I used to flesh this out. We decided on using bootstrap/jquery since it's simple and easy to use. 
@@ -216,25 +216,27 @@ function bindConfirmCancel() {
 }
 ```
 
-What I do is on load of the modal, I save the formdata as a serialized string. You can do this with either `$(formelement).serialize()`, or `new URLStringParams(new FormData(formelement)).toString()`. I chose to just use serialize, since I have to use jQuery anyways. Then the bindConfirmCancel will bind into the modal jQuery library twbs includes to check the modal has a form, and compares the initialFormData with the current modal forms inputs. This will allow a clean way to check if input has changed. I also included a list of filters to remove from the form, because I'm using csrf validation that .netcore encourages you use.
+What I do is on load of the modal, I save the formdata as a serialized string. You can do this with either `$(formelement).serialize()`, or `new URLStringParams(new FormData(formelement)).toString()`. I chose to just use serialize, since I have to use jQuery anyways. The bindConfirmCancel function will use the on hide modal function to compare the initialFormData with the current modal forms inputs. I also included a list of filters to remove from the serialized form input, because I'm using csrf validation that .netcore encourages you use. Since this is different between page requests, including the same page, it makes sense to strip it from the form string, otherwise it will the confirm message.
 
 ##Use
 
 ```
-<script></script>
+<script src="~/modalLoader.js"></script>
+<script>
     (function() {
-        let modalLoader = modalLoader();
+        let modalLoader = ModalLoader();
         modalLoader.init();
     })();
+</script>
 ```
 
 ###Notes
 
-* Modal loading could be faster; it requires waiting for iis/nginx to serve the html and then waiting for js to parse that and return to them dom. In some cases, depending on the data returning, it can get noticeably slower. 
-* The modal needs a loading indication to show it's working. 
-* It's good to make sure you can't have more than one modal at a time loading, I use an if statement and set an `isModalLoading` variable to true at the start of the load, and set to false on finally in case the modal fails to load.
+* Loading the modal html could be faster; it requires waiting for iis/nginx to serve the html and then waiting for js to parse that and return to them dom. In some cases, depending on the data returning, it can get noticeably slower. 
+* The modal should also have a loading indication to show the user it's working.
+* It's good to make sure you can't have more than one modal at a time loading, I use an if statement to check `isModalLoading` and set it to true at the start of the load; I set it to false on finally in case the modal fails to load, since fetch returns a promise, and js promises are awesome.
 * It also doesn't take into account loading animations to indication action. I ended up using additional js functionality to show modal loading/saving.
-* I work with developers that don't like js, and come from most .net backgrounds. I'm basically responsible for understanding the js and keeping it working.
-* This relies on an element existing, otherwise it fails. The fetch functionality doesn't do well with http error codes, so you need to make your own function for dealing with this.
+* I work with developers that don't like js, and come from most .net backgrounds. I'm basically responsible for understanding the js and keeping it working, which I'm ok with, js is awesome, like promises.
+* This relies on an element existing, the div, otherwise it fails. The fetch functionality doesn't do well with http error codes, so you will need to make your own [function](https://www.tjvantoll.com/2015/09/13/fetch-and-errors/) for dealing with this.
 * This doesn't allow you to load more than one modal at a time. It could be adjusted to, but would need more work.
 * Are modals good to use anymore? I don't really like this system anymore, it could be good to consider other ways to deal with this.
