@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Stephen Quick]]></title><description><![CDATA[A web developer based in Houston, TX.]]></description><link>https://stepquick.net</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 31 Aug 2020 18:05:45 GMT</lastBuildDate><item><title><![CDATA[Web Developer, Senior]]></title><description><![CDATA[Providing web support and development to Student Affairs departments such as UA Online, Advising Resource Center, VETs, and the Student…]]></description><link>https://stepquick.net/web-developer-senior/</link><guid isPermaLink="false">https://stepquick.net/web-developer-senior/</guid><content:encoded>&lt;ul&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Stephen Quick]]></title><description><![CDATA[A web developer based in Houston, TX.]]></description><link>https://stepquick.net</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 14 Nov 2020 22:38:01 GMT</lastBuildDate><item><title><![CDATA[Web Developer, Senior]]></title><description><![CDATA[Providing web support and development to Student Affairs departments such as UA Online, Advising Resource Center, VETs, and the Student…]]></description><link>https://stepquick.net/web-developer-senior/</link><guid isPermaLink="false">https://stepquick.net/web-developer-senior/</guid><content:encoded>&lt;ul&gt;
 &lt;li&gt;Providing web support and development to Student Affairs departments such as UA Online, Advising Resource Center, VETs, and the Student Union.&lt;/li&gt;
 &lt;li&gt;Development and maintenance of Student Elections application, with an average of 4000 students per election using AngularJS and PHP.&lt;/li&gt;
 &lt;li&gt;Migration of older projects into source control, and maintenance of legacy projects to find glaring security vulnerabilities&lt;/li&gt;
@@ -36,7 +36,210 @@
 &lt;li&gt;Migrated third party payments system Firstdata, used for our financial applications, to Payeezy for continued support in our applications. &lt;/li&gt;
 &lt;li&gt;Developed group fitness application for Oxford College community to enroll in fitness classes and manage their schedules.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Tools used: Coldfusion, HTML, CSS, Javascript, jQuery, ReactJS, Vagrant, MySQL/MariaDB, Webpack&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Confirming unsaved changes on html forms using JS]]></title><description><![CDATA[For a work project I thought it would be a good idea to implement a check to confirm if there were any unsaved changes for a page, since…]]></description><link>https://stepquick.net/confirming-unsaved-changes-on-html-forms-using-js/</link><guid isPermaLink="false">https://stepquick.net/confirming-unsaved-changes-on-html-forms-using-js/</guid><pubDate>Fri, 24 Jan 2020 13:00:00 GMT</pubDate><content:encoded>&lt;p&gt;For a work project I thought it would be a good idea to implement a check to confirm if there were any unsaved changes for a page, since most of the pages are forms. JS to the rescue; with browsers nowadays, it’s really easy to access forms input fields. So this JS will target newer browsers, but I will include jQuery equivalent that works with older browsers.&lt;/p&gt;
+&lt;p&gt;Tools used: Coldfusion, HTML, CSS, Javascript, jQuery, ReactJS, Vagrant, MySQL/MariaDB, Webpack&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Using bootstrap modals with .NET Core]]></title><description><![CDATA[This is part-two of a series of js related stuff I was working on for a project at work. For this project our client wanted to access forms…]]></description><link>https://stepquick.net/using-bootstrap-modals-with-netcore/</link><guid isPermaLink="false">https://stepquick.net/using-bootstrap-modals-with-netcore/</guid><pubDate>Mon, 31 Aug 2020 13:12:00 GMT</pubDate><content:encoded>&lt;p&gt;This is part-two of a series of js related stuff I was working on for a project at work. For this project our client wanted to access forms/additional information from one page without having to open another page. I won’t go into the positives/negatives of using modals, this is more documenting how I chose to deal with modals on this project. At time of this blog, the version of bootstrap used is 4.3.6, and jQuery is 3.3.1. Since bootstrap at this version number required jQuery this blog includes some jQuery and mostly vanilla js. This setup also uses .netcore razor pages, because my job is .netcore and c#.&lt;/p&gt;
+&lt;p&gt;This took a bit longer to write out than I was expecting, since the first part was posted in January. I suck at writing.&lt;/p&gt;
+&lt;h2&gt;Setup&lt;/h2&gt;
+&lt;p&gt;Here are the general steps I used to flesh this out. We decided on using bootstrap/jquery since it’s simple and easy to use. &lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Add bootstrap js/css files to layout: Easy step, just add these to your netcore project layout file under &lt;code class=&quot;language-text&quot;&gt;pages/shared/_layout.cshtml&lt;/code&gt;. This part is pretty straightforward, and I believe we ended up going with a cdn hosted version since they’re available 99.9% of the time. This app is hosted on an intranet so it doesn’t need outside access to public.&lt;/li&gt;
+&lt;li&gt;Add jquery to layout file: Add to same file as step 1. This is required for this version of bootstrap. TWBS now no longer requires jquery as a dependency, so it might be good for me to come back in the future and redo this tutorial. &lt;/li&gt;
+&lt;li&gt;Added modal functionality to a separate js file: Create a new file under &lt;code class=&quot;language-text&quot;&gt;wwwroot/js&lt;/code&gt;. Mine is just called modalloader.js. It works better on a separate file because when using a cshtml file it’s slower waiting for visual studio to recompile the code. A js file doesn’t require the recompile. Also cleaner to keep the js separate.&lt;/li&gt;
+&lt;li&gt;Reference modal library on page you want to use a modal. I tend to either use module style of js files, but for this example I will use an iife, since they scope the function within that closure, to keep the namespace cleaner.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;Code (modalloader.js)&lt;/h2&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;function ModalLoader() {
+    &amp;#39;use strict&amp;#39;
+
+    const modalContainer = $(&amp;quot;#modal-container&amp;quot;);
+
+    let isModalLoading = false;
+    let isModalSaving = false;
+
+    let initialFormData;
+
+    function init() {
+        loadModalButtons()
+    }
+
+    init();
+
+    function loadModalButtons(){
+        let buttons = document.querySelectorAll(&amp;quot;[data-toggle=&amp;#39;ajax-modal&amp;#39;]&amp;quot;);
+        buttons.forEach(function (button) {
+            button.addEventListener(&amp;quot;click&amp;quot;, async function (e) {
+                e.preventDefault();
+                if (!isModalLoading) {
+                    await loadModal(this.dataset.url);
+                }
+            });
+        });
+    }
+
+    function loadModal(url){
+        isModalLoading = true;
+        await fetch(url).then(response =&amp;gt; response).then(async response =&amp;gt; {
+            await response.text().then(data =&amp;gt; {
+                //this version of bootstrap uses jQuery
+                modalContainer.html(data).find(&amp;quot;.modal&amp;quot;).modal(&amp;quot;show&amp;quot;);
+                overrideSave();
+            }).finally(() =&amp;gt; {
+                isModalLoading = false;
+            });
+        });
+    }
+
+    function overrideSave(parentId = &amp;quot;&amp;quot;) {
+        var modalSaveBtn = document.querySelectorAll(&amp;quot;button[data-save=&amp;#39;modal&amp;#39;]&amp;quot;);
+        if (modalSaveBtn.length) {
+            modalSaveBtn.forEach(async function overrideModalSaveButton(btn) {
+                btn.addEventListener(&amp;quot;click&amp;quot;, async function (e) {
+                    e.preventDefault();
+                    if (!isModalSaving) {
+                        await saveModal(parentId);
+                    }
+                });
+            });
+        }
+
+    }
+
+    async function saveModal() {
+        let saveForm = document.getElementById(&amp;quot;saveForm&amp;quot;);
+        isModalSaving = true;
+        await fetch(saveForm.action, {
+            method: &amp;quot;POST&amp;quot;,
+            body: new FormData(saveForm)
+        }).then(async response =&amp;gt; {
+            await response.text().then(async data =&amp;gt; {
+                const newElement = $(data);
+                let success = newElement.find(&amp;quot;.alert-success&amp;quot;);
+                if (success.length &amp;gt; 0) {
+                    modalContainer.find(&amp;#39;.modal&amp;#39;).empty().modal(&amp;quot;hide&amp;quot;);
+                } else {
+                    modalContainer.find(&amp;#39;.modal-body&amp;#39;).replaceWith(newElement.find(&amp;quot;.modal-body&amp;quot;));
+                    modalContainer.find(&amp;#39;.modal-header&amp;#39;).replaceWith(newElement.find(&amp;quot;.modal-header&amp;quot;));
+                    overrideSave();
+                }
+            }).finally(() =&amp;gt; {
+                isModalSaving = false;
+            });
+        });
+    }
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Here’s a sample of the code I ended up coming up with. The function is somewhat easy to discern, but could do better with comments. I find the div by id called &lt;code class=&quot;language-text&quot;&gt;#modal-container&lt;/code&gt;. Next I run an init function which finds all elements with a &lt;code class=&quot;language-text&quot;&gt;data-toggle&lt;/code&gt; attribute or &lt;code class=&quot;language-text&quot;&gt;ajax-modal&lt;/code&gt; and add a click event listener to run a function called loadModal, passing a &lt;code class=&quot;language-text&quot;&gt;data-url&lt;/code&gt; attribute from the element. &lt;/p&gt;
+&lt;p&gt;These elements are intended to be anchor tags &lt;code class=&quot;language-text&quot;&gt;&amp;lt;a&amp;gt;&amp;lt;/a&amp;gt;&lt;/code&gt;, and I wanted to ensure that if js wasn’t being used I also had an href set with similar href from the data-url that would allow the link to go to a separate page.&lt;/p&gt;
+&lt;p&gt;eg:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;lt;a data-toggle=&amp;quot;ajax-modal&amp;quot; data-url=&amp;quot;/incident/2/victim/create?handler=createPartial&amp;quot; href=&amp;quot;/incident/2/victim/create&amp;quot;&amp;gt;Create Modal&amp;lt;/a&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;This function will fetch the url in data-url, which for my setup I used aspnet razor page code behinds for returning partial view results, which explains the &lt;code class=&quot;language-text&quot;&gt;handler=createPartial&lt;/code&gt; being on the end of the url. &lt;/p&gt;
+&lt;p&gt;I posted a bit of pseudo code to explain how I structured my classes to work with this js.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;CreatePage : Page {
+    public CreatePage(...di here){
+        ...di here
+    }
+
+    //return full page with form.
+    public async PageResult OnGet() {
+        await loadCommonData();
+        return Page();
+    }
+
+    //redirect back to index after creation, otherwise show the onget page with failed validation messages
+    public async PageResult OnPost() {
+        ...do code validation here
+
+        ..return page from onGet if failed.
+        ...run loadCommonData to reload data
+
+        ...redirect back to index
+    }
+
+    //return form partial wrapped by modal instead of full page.
+    public async PartialViewResult OnGetCreatePartial() {
+        await loadCommonData();
+        return PartialViewResult(///form partial returned);
+    }
+
+    //return success modal, otherwise show the ongetcreatepartial with failed validation messages
+    public async PartialViewresult OnPostCreatePartial() {
+        ...do code validation here
+
+        ...return partial view result from onGetCreatePartial if failed.
+        ...run loadCommonData to reload data
+
+        ...return template saying all success
+    }
+
+    private async Task loadCommondata {
+        ...await some service that was di&amp;#39;d. REPO
+    }
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;This is the basic outline of how my razor page code behinds looked when using the modal setup. This site has at least 15 different but similar modal uses, so I chose to do these two pairs of get/posts, one for the page view, and one for returning a modal wrapping a form. That way it works with or without js.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;lt;form method=&amp;quot;post&amp;quot; id=&amp;quot;saveForm&amp;quot;&amp;gt;
+    &amp;lt;input type=&amp;quot;text&amp;quot; name=&amp;quot;Word&amp;quot; /&amp;gt;
+    &amp;lt;select name=&amp;quot;test&amp;quot;&amp;gt;
+        &amp;lt;option value=&amp;quot;test&amp;quot;&amp;gt;Test&amp;lt;/option&amp;gt;
+    &amp;lt;/select&amp;gt;
+    &amp;lt;button type=&amp;quot;submit&amp;quot;&amp;gt;&amp;lt;/button&amp;gt;
+&amp;lt;/form&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Here’s a sample of code layout for the form that is used between both page and the partial. It contains an id of &lt;code class=&quot;language-text&quot;&gt;saveForm&lt;/code&gt; which I use to tie the form into the js. With .netcore, I just need to set the form action to post and it will post to the OnPost version of the get handler, which makes it easy to understand. For the page/modal I do some validation of the dto, which depends on the page/modal, submit to a repo service, and then I return a success modal I use for verifying what to do with the modal. &lt;/p&gt;
+&lt;p&gt;The .netcore OnPost function can be used to return a validated model, so I can have it return the html for the filled out modal, validation errors and all, and use that to swap out html in the open modal making it look seemless. That’s what I’m doing when I check for &lt;code class=&quot;language-text&quot;&gt;success.length&lt;/code&gt;, it’s looking for the success message template I return on successful submission. If it failed, I overwrite the open modal with html from the OnPost return, and then rebind the buttons since the original event listeners are destroyed in the process of updating the modal.&lt;/p&gt;
+&lt;p&gt;I close the modal after this. However at the end of this I tended to have another module of js to reload the page or in the case of the page, I redirected back to the parent page (incident). I may end up making another &lt;/p&gt;
+&lt;h2&gt;Confirm Unsaved Changes&lt;/h2&gt;
+&lt;p&gt;Our client wanted to prevent accidentally closing the modal/page with unsaved changes.&lt;/p&gt;
+&lt;p&gt;Fortunately this module can also work well with my &lt;a href=&quot;/confirming-unsaved-changes-on-html-forms-using-js/&quot; target=&quot;_blank&quot;&gt;previous&lt;/a&gt; entry with making a confirm js library for closing modals. &lt;/p&gt;
+&lt;p&gt;I just needed to add an additional variable, initialFormdata, and add this bindConfirmCancel functionality to loadModal.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;let initialFormData;
+
+function loadModal(url){
+    isModalLoading = true;
+    await fetch(url).then(response =&amp;gt; response).then(async response =&amp;gt; {
+        await response.text().then(data =&amp;gt; {
+            //this version of bootstrap uses jQuery
+            modalContainer.html(data).find(&amp;quot;.modal&amp;quot;).modal(&amp;quot;show&amp;quot;);
+            overrideSave();
+            initialFormData = modalContainer.find(&amp;quot;form&amp;quot;).serialize();
+            bindConfirmCancel();
+        }).finally(() =&amp;gt; {
+            isModalLoading = false;
+        });
+    });
+}
+
+function bindConfirmCancel() {
+    let modal = modalContainer.find(&amp;quot;.modal&amp;quot;);
+    let filters = new Set([&amp;quot;__RequestVerificationToken&amp;quot;]);
+    let arrayWithoutToken = (array) =&amp;gt; array.split(&amp;quot;&amp;amp;&amp;quot;).filter(e =&amp;gt; !filters.has(e.split(&amp;quot;=&amp;quot;)[0])).join(&amp;quot;&amp;amp;&amp;quot;);
+    modal.on(&amp;#39;hide.bs.modal&amp;#39;, function (e) {
+        var form = modal.find(&amp;quot;form&amp;quot;);
+        if (form.length &amp;gt; 0 &amp;amp;&amp;amp; arrayWithoutToken(initialFormData) !== arrayWithoutToken(form.serialize())) {
+            if (!confirm(&amp;quot;You have unsaved changes, are you sure you want to close this?&amp;quot;)) {
+                e.preventDefault();
+                e.stopPropagation();
+                return false;
+            }
+        }
+    });
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;What I do is on load of the modal, I save the formdata as a serialized string. You can do this with either &lt;code class=&quot;language-text&quot;&gt;$(formelement).serialize()&lt;/code&gt;, or &lt;code class=&quot;language-text&quot;&gt;new URLStringParams(new FormData(formelement)).toString()&lt;/code&gt;. I chose to just use serialize, since I have to use jQuery anyways. The bindConfirmCancel function will use the on hide modal function to compare the initialFormData with the current modal forms inputs. I also included a list of filters to remove from the serialized form input, because I’m using csrf validation that .netcore encourages you use. Since this is different between page requests, including the same page, it makes sense to strip it from the form string, otherwise it will the confirm message.&lt;/p&gt;
+&lt;h2&gt;Use&lt;/h2&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;lt;script src=&amp;quot;~/modalLoader.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script&amp;gt;
+    (function() {
+        let modalLoader = ModalLoader();
+        modalLoader.init();
+    })();
+&amp;lt;/script&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;Notes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Loading the modal html could be faster; it requires waiting for iis/nginx to serve the html and then waiting for js to parse that and return to them dom. In some cases, depending on the data returning, it can get noticeably slower. &lt;/li&gt;
+&lt;li&gt;The modal should also have a loading indication to show the user it’s working.&lt;/li&gt;
+&lt;li&gt;It’s good to make sure you can’t have more than one modal at a time loading, I use an if statement to check &lt;code class=&quot;language-text&quot;&gt;isModalLoading&lt;/code&gt; and set it to true at the start of the load; I set it to false on finally in case the modal fails to load, since fetch returns a promise, and js promises are awesome.&lt;/li&gt;
+&lt;li&gt;It also doesn’t take into account loading animations to indication action. I ended up using additional js functionality to show modal loading/saving.&lt;/li&gt;
+&lt;li&gt;I work with developers that don’t like js, and come from most .net backgrounds. I’m basically responsible for understanding the js and keeping it working, which I’m ok with, js is awesome, like promises.&lt;/li&gt;
+&lt;li&gt;This relies on an element existing, the div, otherwise it fails. The fetch functionality doesn’t do well with http error codes, so you will need to make your own &lt;a href=&quot;https://www.tjvantoll.com/2015/09/13/fetch-and-errors/&quot;&gt;function&lt;/a&gt; for dealing with this.&lt;/li&gt;
+&lt;li&gt;This doesn’t allow you to load more than one modal at a time. It could be adjusted to, but would need more work.&lt;/li&gt;
+&lt;li&gt;Are modals good to use anymore? I don’t really like this system anymore, it could be good to consider other ways to deal with this.&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Confirming unsaved changes on html forms using JS]]></title><description><![CDATA[For a work project I thought it would be a good idea to implement a check to confirm if there were any unsaved changes for a page, since…]]></description><link>https://stepquick.net/confirming-unsaved-changes-on-html-forms-using-js/</link><guid isPermaLink="false">https://stepquick.net/confirming-unsaved-changes-on-html-forms-using-js/</guid><pubDate>Fri, 24 Jan 2020 13:00:00 GMT</pubDate><content:encoded>&lt;p&gt;For a work project I thought it would be a good idea to implement a check to confirm if there were any unsaved changes for a page, since most of the pages are forms. JS to the rescue; with browsers nowadays, it’s really easy to access forms input fields. So this JS will target newer browsers, but I will include jQuery equivalent that works with older browsers.&lt;/p&gt;
 &lt;h3&gt;JS: FormData&lt;/h3&gt;
 &lt;p&gt;I chose to use &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/API/FormData&quot;&gt;FormData&lt;/a&gt;, since it will return a collection of all inputs for the form. FormData includes the &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/API/FormData/getAll&quot;&gt;getAll&lt;/a&gt; function that will allow you to inspect all the inputs. I also chose to use a string comparison because it’s simple and I don’t have a lot of fields (5-10) to compare. &lt;/p&gt;
 &lt;p&gt;In addition to FormData, I also &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams/toString&quot;&gt;URLSearchParams().toString()&lt;/a&gt; can take FormData and create the string for me. &lt;/p&gt;
