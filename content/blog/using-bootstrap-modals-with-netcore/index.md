@@ -218,20 +218,19 @@ function bindConfirmCancel() {
 
 What I do is on load of the modal, I save the formdata as a serialized string. You can do this with either `$(formelement).serialize()`, or `new URLStringParams(new FormData(formelement)).toString()`. I chose to just use serialize, since I have to use jQuery anyways. The bindConfirmCancel function will use the on hide modal function to compare the initialFormData with the current modal forms inputs. I also included a list of filters to remove from the serialized form input, because I'm using csrf validation that .netcore encourages you use. Since this is different between page requests, including the same page, it makes sense to strip it from the form string, otherwise it will the confirm message.
 
-##Use
+##Usage:
 
 ```
 <script src="~/modalLoader.js"></script>
 <script>
     (function() {
-        let modalLoader = ModalLoader();
-        modalLoader.init();
+        ModalLoader();
     })();
 </script>
 ```
 
 ###Notes
-
+* Since I run init within the ModalLoader function, I don't need to assign it to a variable, just call the function directly.
 * Loading the modal html could be faster; it requires waiting for iis/nginx to serve the html and then waiting for js to parse that and return to them dom. In some cases, depending on the data returning, it can get noticeably slower. 
 * The modal should also have a loading indication to show the user it's working.
 * It's good to make sure you can't have more than one modal at a time loading, I use an if statement to check `isModalLoading` and set it to true at the start of the load; I set it to false on finally in case the modal fails to load, since fetch returns a promise, and js promises are awesome.
