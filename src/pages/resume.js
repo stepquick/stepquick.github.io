@@ -4,6 +4,7 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm } from "../utils/typography"
+import {dateDiff,getFormattedDate} from "../utils/date"
 
 import "../styles/job.css";
 
@@ -31,7 +32,7 @@ const Resume = React.memo(({data, location}) => {
             </h3>
             <p className="job-location">
               <small>{node.frontmatter.company}, {node.frontmatter.location}</small>
-              <small>{node.frontmatter.startdate} - {node.frontmatter.enddate ?  node.frontmatter.enddate : "Current"}</small>
+              <small>{getFormattedDate(node.frontmatter.startdate)} - {getFormattedDate(node.frontmatter?.enddate) ?? "Current"} ({dateDiff(node.frontmatter.startdate, node.frontmatter?.enddate ?? undefined)})</small>
             </p>
             <div className="job-description"
               dangerouslySetInnerHTML={{
@@ -61,8 +62,8 @@ export const pageQuery = graphql`
         node {
           html
           frontmatter {
-            startdate(formatString: "MM/YYYY")
-            enddate(formatString: "MM/YYYY")
+            startdate(formatString: "YYYY-MM-DD")
+            enddate(formatString: "YYYY-MM-DD")
             title
             location
             company
