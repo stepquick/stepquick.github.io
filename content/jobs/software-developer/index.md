@@ -12,4 +12,5 @@ company: "Harris County DA's Office"
 * Created modal system for VIMS(Victims Information Management System) for DA's Victims Services using js and asp.net partial views, removing the need to reload pages. Secured API calls using CORS, Roles, and managing Auth0 integration for OIDC.
 * Currently develop/maintain the Harris County DA website https://www.harriscountyda.com, a lemp stack using PHP/Drupal 8, Nginx, and Ubuntu.
 * I maintain and upgrade an existing Azure Devops (formerly TFS) installation, as well as created continuous deployment build/release for existing and new projects. Using package management allowed me to create simpler deployment setups for projects that relied on shared projects. Making these projects nuget packages made it easier to build/deploy several projects using Azure Devops.
+
 Tools used: C#, ASP.NET, .Net CORE, SQL, Server administration, AD, RDC, LEMP, Azure DevOps, Auth0, JS/jQuery, Drupal/PHP, Ubuntu, Linux, Twilio, Cerberus FTP, SOAP, Blazor
