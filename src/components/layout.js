@@ -1,71 +1,34 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import { rhythm, scale } from "../utils/typography"
+const Layout = ({ location, title, children }) => {
+  const rootPath = `${__PATH_PREFIX__}/`
+  const isRootPath = location.pathname === rootPath
+  let header
 
-const Layout = ({ location, title, children }) =>  {
-    const rootPath = `${__PATH_PREFIX__}/`
-    let header
-    if (location.pathname === rootPath) {
-      header = (
-        <h1
-          style={{
-            ...scale(1.5),
-            marginBottom: rhythm(1.5),
-            marginTop: 0,
-          }}
-        >
-          <Link
-            style={{
-              boxShadow: `none`,
-              textDecoration: `none`,
-              color: `inherit`,
-            }}
-            className = "gradient-text"
-            to={`/`}
-          >
-            {title}
-          </Link>
-        </h1>
-      )
-    } else {
-      header = (
-        <h3
-          style={{
-            fontFamily: `Montserrat, sans-serif`,
-            marginTop: 0,
-          }}
-        >
-          <Link
-            style={{
-              boxShadow: `none`,
-              textDecoration: `none`,
-              color: `inherit`,
-            }}
-            className = "gradient-text"
-            to={`/`}
-          >
-            {title}
-          </Link>
-        </h3>
-      )
-    }
-    return (
-      <div
-        style={{
-          marginLeft: `auto`,
-          marginRight: `auto`,
-          maxWidth: rhythm(40),
-          padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
-        }}
-      >
-        <header>{header}</header>
-        <main>{children}</main>
-        <footer>
-          © Copyright 2012 - {new Date().getFullYear()}, Stephen Quick
-        </footer>
-      </div>
+  if (isRootPath) {
+    header = (
+      <h1 className="main-heading">
+        <Link to="/" className="gradient-text">{title}</Link>
+      </h1>
+    )
+  } else {
+    header = (
+      <Link className="header-link-home gradient-text" to="/">
+        {title}
+      </Link>
     )
   }
+
+  return (
+    <div className="global-wrapper" data-is-root-path={isRootPath}>
+      <header className="global-header">{header}</header>
+      <main>{children}</main>
+      <footer>
+        © Copyright 2012 - {new Date().getFullYear()}, Stephen Quick
+      </footer>
+    </div>
+  )
+}
 
 export default Layout

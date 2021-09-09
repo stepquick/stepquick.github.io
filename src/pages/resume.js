@@ -3,7 +3,6 @@ import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { rhythm } from "../utils/typography"
 import {dateDiff,getFormattedDate} from "../utils/date"
 
 import "../styles/job.css";
@@ -23,11 +22,7 @@ const Resume = React.memo(({data, location}) => {
         const title = node.frontmatter.title
         return (
           <div key={index}>
-            <h3
-              style={{
-                marginBottom: rhythm(1 / 4),
-              }}
-            >
+            <h3>
               {title}
             </h3>
             <p className="job-location">

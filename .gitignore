@@ -66,8 +66,4 @@ yarn-error.log
 .pnp/
 .pnp.js
 # Yarn Integrity file
-<<<<<<< HEAD
 .yarn-integrity
-=======
-.yarn-integrity
->>>>>>> b6880963112c161e0c3ac49e0e29e8c63f428786

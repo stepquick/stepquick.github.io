@@ -1,3 +1,8 @@
 // custom typefaces
-require('prismjs/themes/prism-solarizedlight.css')
-require("./src/styles/styles.css");
+import "typeface-montserrat";
+import "typeface-merriweather";
+
+import "./src/styles/normalize.css";
+import "./src/styles/styles.css";
+
+import 'prismjs/themes/prism-solarizedlight.css';
