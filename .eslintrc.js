@@ -1,17 +1,6 @@
 module.exports = {
-  env: {
-    browser: true,
-    es6: true,
-  },
-  plugins: ['react'],
   globals: {
-    graphql: false,
+    __PATH_PREFIX__: true,
   },
-  parserOptions: {
-    sourceType: 'module',
-    ecmaFeatures: {
-      ecmaVersion: 2018,
-      jsx: true,
-    },
-  },
+  extends: `react-app`,
 }

@@ -1,4 +1,4 @@
-import React, {useMemo} from "react"
+import React from "react"
 import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
@@ -10,7 +10,7 @@ import "../styles/job.css";
 
 const Resume = React.memo(({data, location}) => {
   const siteTitle = data.site.siteMetadata.title
-  const posts = useMemo(() => data.allMarkdownRemark.edges);
+  const posts = data.allMarkdownRemark.edges;
 
   return (
     <Layout location={location} title={siteTitle}>

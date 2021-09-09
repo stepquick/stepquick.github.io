@@ -16,7 +16,7 @@ Here are the general steps I used to flesh this out. We decided on using bootstr
 
 ## Code (modalloader.js)
 
-```
+```js
 function ModalLoader() {
     'use strict'
 
@@ -103,7 +103,7 @@ Here's a sample of the code I ended up coming up with. The function is somewhat 
 These elements are intended to be anchor tags `<a></a>`, and I wanted to ensure that if js wasn't being used I also had an href set with similar href from the data-url that would allow the link to go to a separate page.
 
 eg:
-```
+```html
 <a data-toggle="ajax-modal" data-url="/incident/2/victim/create?handler=createPartial" href="/incident/2/victim/create">Create Modal</a>
 ```
 
@@ -111,10 +111,10 @@ This function will fetch the url in data-url, which for my setup I used aspnet r
 
 I posted a bit of pseudo code to explain how I structured my classes to work with this js.
 
-```
+```csharp
 CreatePage : Page {
-    public CreatePage(...di here){
-        ...di here
+    public CreatePage(/*di here*/){
+        /////di here
     }
 
     //return full page with form.
@@ -125,12 +125,12 @@ CreatePage : Page {
 
     //redirect back to index after creation, otherwise show the onget page with failed validation messages
     public async PageResult OnPost() {
-        ...do code validation here
+        //do code validation here
 
-        ..return page from onGet if failed.
-        ...run loadCommonData to reload data
+        //return page from onGet if failed.
+        //run loadCommonData to reload data
 
-        ...redirect back to index
+        //redirect back to index
     }
 
     //return form partial wrapped by modal instead of full page.
@@ -141,23 +141,23 @@ CreatePage : Page {
 
     //return success modal, otherwise show the ongetcreatepartial with failed validation messages
     public async PartialViewresult OnPostCreatePartial() {
-        ...do code validation here
+        //do code validation here
 
-        ...return partial view result from onGetCreatePartial if failed.
-        ...run loadCommonData to reload data
+        //return partial view result from onGetCreatePartial if failed.
+        //run loadCommonData to reload data
 
-        ...return template saying all success
+        //return template saying all success
     }
 
     private async Task loadCommondata {
-        ...await some service that was di'd. REPO
+        //await some service that was di'd. REPO
     }
 }
 ```
 
 This is the basic outline of how my razor page code behinds looked when using the modal setup. This site has at least 15 different but similar modal uses, so I chose to do these two pairs of get/posts, one for the page view, and one for returning a modal wrapping a form. That way it works with or without js.
 
-```
+```html
 <form method="post" id="saveForm">
     <input type="text" name="Word" />
     <select name="test">
@@ -181,7 +181,7 @@ Fortunately this module can also work well with my <a href="/confirming-unsaved-
 
 I just needed to add an additional variable, initialFormdata, and add this bindConfirmCancel functionality to loadModal.
 
-```
+```js
 let initialFormData;
 
 function loadModal(url){
@@ -220,7 +220,7 @@ What I do is on load of the modal, I save the formdata as a serialized string. Y
 
 ##Usage:
 
-```
+```html
 <script src="~/modalLoader.js"></script>
 <script>
     (function() {
