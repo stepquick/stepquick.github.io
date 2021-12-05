@@ -1,6 +1,7 @@
 ---
 title: "Software Developer"
 startdate: 2018-04-01
+enddate: 2021-12-03
 location: "Houston, TX"
 company: "Harris County DA's Office"
 ---
