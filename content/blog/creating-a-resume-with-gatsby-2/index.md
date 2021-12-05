@@ -32,7 +32,7 @@ company: "Emory University"
 I will be using the dates for ordering the content, as well as using enddate value to determine what is my current job. I chose to go simpler and did not include a category filter on the each markdown file. I will be using graphql to filter by path, which works for my example.
 
 For this to work, I did the same as Samuel W and added to my `gatsby-config.js`:
-```
+```js
 {
 	resolve: `gatsby-source-filesystem`,
 	options: {
