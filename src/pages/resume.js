@@ -3,33 +3,39 @@ import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import {dateDiff,getFormattedDate} from "../utils/date"
+import { dateDiff, getFormattedDate } from "../utils/date"
 
-import "../styles/job.css";
+import "../styles/job.css"
 
-const Resume = React.memo(({data, location}) => {
+const Resume = React.memo(({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title
-  const posts = data.allMarkdownRemark.edges;
+  const posts = data.allMarkdownRemark.edges
 
   return (
     <Layout location={location} title={siteTitle}>
       <h1>Resume</h1>
-      <SEO
-        title="Resume"
-        keywords={[`resume`, `developer`, `web`]}
-      />
+      <SEO title="Resume" keywords={[`resume`, `developer`, `web`]} />
       {posts.map(({ node }, index) => {
         const title = node.frontmatter.title
         return (
           <div key={index}>
-            <h3>
-              {title}
-            </h3>
+            <h3>{title}</h3>
             <p className="job-location">
-              <small>{node.frontmatter.company}, {node.frontmatter.location}</small>
-              <small>{getFormattedDate(node.frontmatter.startdate)} - {getFormattedDate(node.frontmatter?.enddate) ?? "Current"} ({dateDiff(node.frontmatter.startdate, node.frontmatter?.enddate ?? undefined)})</small>
+              <small>
+                {node.frontmatter.company}, {node.frontmatter.location}
+              </small>
+              <small>
+                {getFormattedDate(node.frontmatter.startdate)} -{" "}
+                {getFormattedDate(node.frontmatter?.enddate) ?? "Current"} (
+                {dateDiff(
+                  node.frontmatter.startdate,
+                  node.frontmatter?.enddate ?? undefined
+                )}
+                )
+              </small>
             </p>
-            <div className="job-description"
+            <div
+              className="job-description"
               dangerouslySetInnerHTML={{
                 __html: node.html,
               }}
@@ -39,7 +45,7 @@ const Resume = React.memo(({data, location}) => {
       })}
     </Layout>
   )
-});
+})
 
 export default Resume
 
@@ -51,8 +57,9 @@ export const pageQuery = graphql`
       }
     }
     allMarkdownRemark(
-        sort: { fields: [frontmatter___startdate], order: DESC },
-        filter: { fileAbsolutePath: { regex: "/jobs/"} }) {
+      sort: { frontmatter: { startdate: DESC } }
+      filter: { fileAbsolutePath: { regex: "/jobs/" } }
+    ) {
       edges {
         node {
           html

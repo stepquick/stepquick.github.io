@@ -25,7 +25,6 @@ const BlogIndex = ({ data, location }) => {
 
   return (
     <Layout location={location} title={siteTitle}>
-      <Seo title="All posts" />
       <Bio />
       <ol style={{ listStyle: `none` }}>
         {posts.map(post => {
@@ -40,7 +39,11 @@ const BlogIndex = ({ data, location }) => {
               >
                 <header>
                   <h2>
-                    <Link to={post.fields.slug} itemProp="url" className="gradient-text">
+                    <Link
+                      to={post.fields.slug}
+                      itemProp="url"
+                      className="gradient-text"
+                    >
                       <span itemProp="headline">{title}</span>
                     </Link>
                   </h2>
@@ -65,6 +68,8 @@ const BlogIndex = ({ data, location }) => {
 
 export default BlogIndex
 
+export const Head = () => <Seo title="Home" />
+
 export const pageQuery = graphql`
   query {
     site {
@@ -72,7 +77,10 @@ export const pageQuery = graphql`
         title
       }
     }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }, filter: { fileAbsolutePath: { regex: "/blog/"} } ) {
+    allMarkdownRemark(
+      sort: { frontmatter: { date: DESC } }
+      filter: { fileAbsolutePath: { regex: "/blog/" } }
+    ) {
       nodes {
         excerpt
         fields {
