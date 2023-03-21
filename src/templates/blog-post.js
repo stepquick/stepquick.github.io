@@ -5,10 +5,11 @@ import Bio from "../components/bio"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
-const BlogPostTemplate = ({ data, location }) => {
-  const post = data.markdownRemark
-  const siteTitle = data.site.siteMetadata?.title || `Title`
-  const { previous, next } = data
+const BlogPostTemplate = ({
+  data: { previous, next, site, markdownRemark: post },
+  location,
+}) => {
+  const siteTitle = site.siteMetadata?.title || `Title`
 
   return (
     <Layout location={location} title={siteTitle}>
@@ -60,8 +61,6 @@ const BlogPostTemplate = ({ data, location }) => {
   )
 }
 
-export default BlogPostTemplate
-
 export const Head = ({ data: { markdownRemark: post } }) => {
   return (
     <Seo
@@ -70,6 +69,8 @@ export const Head = ({ data: { markdownRemark: post } }) => {
     />
   )
 }
+
+export default BlogPostTemplate
 
 export const pageQuery = graphql`
   query BlogPostBySlug(

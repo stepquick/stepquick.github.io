@@ -2,7 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 import { dateDiff, getFormattedDate } from "../utils/date"
 
 import "../styles/job.css"
@@ -14,7 +14,6 @@ const Resume = React.memo(({ data, location }) => {
   return (
     <Layout location={location} title={siteTitle}>
       <h1>Resume</h1>
-      <SEO title="Resume" keywords={[`resume`, `developer`, `web`]} />
       {posts.map(({ node }, index) => {
         const title = node.frontmatter.title
         return (
@@ -48,6 +47,8 @@ const Resume = React.memo(({ data, location }) => {
 })
 
 export default Resume
+
+export const Head = () => <Seo title="Resume" keywords={[`resume`, `developer`, `web`]} />
 
 export const pageQuery = graphql`
   query {
