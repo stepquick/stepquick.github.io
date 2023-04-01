@@ -13,7 +13,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   // Get all markdown blog posts sorted by date
   const result = await graphql(`
     {
-      allMarkdownRemark(sort: { frontmatter: { date: ASC } }, limit: 1000) {
+      allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/blog/" } }, sort: { frontmatter: { date: ASC } }, limit: 1000) {
         nodes {
           id
           fields {
@@ -89,11 +89,17 @@ exports.createSchemaCustomization = ({ actions }) => {
     type SiteSiteMetadata {
       author: Author
       siteUrl: String
+      social: Social
     }
 
     type Author {
       name: String
       summary: String
+    }
+
+    type Social {
+      linkedin: String
+      github: String
     }
 
     type MarkdownRemark implements Node {

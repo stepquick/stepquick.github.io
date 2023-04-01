@@ -9,7 +9,11 @@ module.exports = {
       summary: `A web developer based in Salem, OR.`
     },
     description: `A blog about things I find interesting or helped me solve issues.`,
-    siteUrl: `https://stepquick.net/`
+    siteUrl: `https://stepquick.net/`,
+    social: {
+      linkedin: `https://www.linkedin.com/in/stepquick`,
+      github: `https://github.com/stepquick`
+    },
   },
   plugins: [
     `gatsby-plugin-image`,

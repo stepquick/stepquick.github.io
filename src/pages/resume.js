@@ -7,10 +7,7 @@ import { dateDiff, getFormattedDate } from "../utils/date"
 
 import "../styles/job.css"
 
-const Resume = React.memo(({ data, location }) => {
-  const siteTitle = data.site.siteMetadata.title
-  const posts = data.allMarkdownRemark.edges
-
+const Resume = ({ data : {site : {siteMetadata: {title: siteTitle}}, allMarkdownRemark: { edges: posts}}, location }) => {
   return (
     <Layout location={location} title={siteTitle}>
       <h1>Resume</h1>
@@ -44,11 +41,13 @@ const Resume = React.memo(({ data, location }) => {
       })}
     </Layout>
   )
-})
+}
 
 export default Resume
 
-export const Head = () => <Seo title="Resume" keywords={[`resume`, `developer`, `web`]} />
+export const Head = () => (
+  <Seo title="Resume"/>
+)
 
 export const pageQuery = graphql`
   query {

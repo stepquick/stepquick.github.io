@@ -18,6 +18,10 @@ const Bio = () => {
             name
             summary
           }
+          social {
+            linkedin
+            github
+          }
         }
       }
     }
@@ -25,7 +29,7 @@ const Bio = () => {
 
   // Set these values by editing "siteMetadata" in gatsby-config.js
   const author = data.site.siteMetadata?.author
-
+  const social = data.site.siteMetadata?.social
   return (
     <div className="bio">
       <StaticImage
@@ -40,13 +44,29 @@ const Bio = () => {
       <div>
         {author?.name && (
           <p>
-            Written by <strong>{author.name}</strong> {author?.summary || null}
+            Written by <strong>{author.name}</strong>. {author?.summary || null}
           </p>
         )}
         <p>
-          <a href="/resume" style={{ marginRight: "1em" }}>Resume.</a>
-          <a href="https://www.linkedin.com/in/stepquick" target="_blank" rel="noreferrer" style={{ marginRight: "1em" }}>LinkedIn.</a>
-          <a href="https://github.com/stepquick" rel="noreferrer" target="_blank" style={{ marginRight: "1em" }}>Github.</a>
+          <a href="/resume" style={{ marginRight: "1em" }}>
+            Resume.
+          </a>
+          <a
+            href={`${social?.linkedin ?? ''}`}
+            target="_blank"
+            rel="noreferrer"
+            style={{ marginRight: "1em" }}
+          >
+            LinkedIn.
+          </a>
+          <a
+            href={`${social?.github ?? ''}`}
+            rel="noreferrer"
+            target="_blank"
+            style={{ marginRight: "1em" }}
+          >
+            Github.
+          </a>
         </p>
       </div>
     </div>

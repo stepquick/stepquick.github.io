@@ -5,10 +5,14 @@ import Bio from "../components/bio"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
-const BlogIndex = ({ data, location }) => {
-  const siteTitle = data.site.siteMetadata?.title || `Title`
-  const posts = data.allMarkdownRemark.nodes
-
+const BlogIndex = ({
+  data: {
+    site: {siteMetadata : {title}},
+    allMarkdownRemark: { nodes: posts },
+  },
+  location,
+}) => {
+  const siteTitle = title || `Title`
   if (posts.length === 0) {
     return (
       <Layout location={location} title={siteTitle}>
