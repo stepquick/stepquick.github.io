@@ -7,35 +7,39 @@ import { dateDiff, getFormattedDate } from "../utils/date"
 
 import "../styles/job.css"
 
-const Resume = ({ data : {site : {siteMetadata: {title: siteTitle}}, allMarkdownRemark: { edges: posts}}, location }) => {
+const Resume = ({ data: { site: { siteMetadata: { title: siteTitle } }, allMarkdownRemark: { group: jobs } } }) => {
+  jobs.sort((x, y) => x.edges[0].node.frontmatter.startdate < y.edges[0].node.frontmatter.startdate);
   return (
-    <Layout location={location} title={siteTitle}>
+    <Layout title={siteTitle} location="resume">
       <h1>Resume</h1>
-      {posts.map(({ node }, index) => {
-        const title = node.frontmatter.title
+      {jobs.map(({ fieldValue: company, edges }, index) => {
+        let { location } = edges[0].node.frontmatter;
         return (
           <div key={index}>
-            <h3>{title}</h3>
-            <p className="job-location">
-              <small>
-                {node.frontmatter.company}, {node.frontmatter.location}
-              </small>
-              <small>
-                {getFormattedDate(node.frontmatter.startdate)} -{" "}
-                {getFormattedDate(node.frontmatter?.enddate) ?? "Current"} (
-                {dateDiff(
-                  node.frontmatter.startdate,
-                  node.frontmatter?.enddate ?? undefined
-                )}
-                )
-              </small>
-            </p>
-            <div
-              className="job-description"
-              dangerouslySetInnerHTML={{
-                __html: node.html,
-              }}
-            />
+            <div  style={{display: 'flex', alignItems: 'center', justifyContent: 'space-between'}}>
+              <h3 style={{margin: 0}}>{company}</h3>
+              <span>({location})</span>
+            </div>
+            {edges.map(({ node: { frontmatter: { title, startdate, enddate }, html } }, ind) => {
+              return (<div key={ind}>
+                <p className="job-location">
+                  <h5>
+                    {title}
+                  </h5>
+                  <h5>
+                    {getFormattedDate(startdate)} -{" "}
+                    {getFormattedDate(enddate ?? "") ?? "Current"} (
+                    {dateDiff(
+                      startdate,
+                      enddate ?? undefined
+                    )}
+                    )
+                  </h5>
+                </p>
+                <p dangerouslySetInnerHTML={{ __html: html }} />
+              </div>)
+            })}
+            <hr style={{marginBottom: '2em'}}/>
           </div>
         )
       })}
@@ -46,20 +50,22 @@ const Resume = ({ data : {site : {siteMetadata: {title: siteTitle}}, allMarkdown
 export default Resume
 
 export const Head = () => (
-  <Seo title="Resume"/>
+  <Seo title="Resume" />
 )
 
 export const pageQuery = graphql`
-  query {
-    site {
-      siteMetadata {
-        title
-      }
+query {
+  site {
+    siteMetadata{
+      title
     }
-    allMarkdownRemark(
-      sort: { frontmatter: { startdate: DESC } }
-      filter: { fileAbsolutePath: { regex: "/jobs/" } }
-    ) {
+  }
+  allMarkdownRemark(
+    sort: {frontmatter: {startdate: DESC}}
+    filter: {fileAbsolutePath: {regex: "/jobs/"}}
+  ) {
+    group(field: {frontmatter: {company: SELECT}}) {
+      fieldValue
       edges {
         node {
           html
@@ -74,4 +80,5 @@ export const pageQuery = graphql`
       }
     }
   }
+}
 `

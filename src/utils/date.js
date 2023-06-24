@@ -20,9 +20,9 @@ export const dateDiff = (startDate, endDate = today()) => {
     months += 12
   }
 
-  return `${years ? `${years} year${years > 1 ? "s" : ""},` : ""} ${
-    months ? `${months} month${months > 1 ? "s" : ""}` : ""
-  }`
+  return `${years ? `${years} year${years > 1 ? "s" : ""}` : ""}${
+    months ? `, ${months} month${months >= 1 ? "s" : ""}` : ""
+  }`.trim()
 }
 
 function today() {

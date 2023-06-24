@@ -1,6 +1,6 @@
 ---
 title: "Web Developer, Senior"
-startdate: 2012-08-01
+startdate: 2015-09-01
 enddate: 2016-10-01
 location: "Tucson, AZ"
 company: "University of Arizona"

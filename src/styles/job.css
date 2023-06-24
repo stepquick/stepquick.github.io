@@ -10,8 +10,14 @@
     font-size: .90em;
 }
 
-.job-location {
-    margin-bottom: .75em;
-    display: flex;
-    justify-content: space-between;
+.job-location h5 {
+    margin: 1em 0;
+}
+
+@media screen and (min-width: 1064px) {
+    .job-location {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: .75em;
+    }
 }

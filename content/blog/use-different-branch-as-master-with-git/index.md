@@ -11,7 +11,7 @@ I came across this as I found it to be important. Currently [Degree Search](http
 
 At this point I no longer wanted the current version to be what I work on anymore, so I decided to change branches. However there doesn't appear to be very straightforward, especially since the 5.0 branch doesn't have a shared history from master, I pushed it remotely from my local dev environment.
 
-###Note: please make a backup branch of master before doing this, it's easier this way
+### Note: please make a backup branch of master before doing this, it's easier this way
 
 Following this [Stack Overflow](http://stackoverflow.com/a/2763118/1612852) I was able to find something that not only merged the master history, but also replaced the files with my current dev branch. While on the master branch I ran these commands:
 
