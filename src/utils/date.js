@@ -10,7 +10,7 @@ export const dateDiff = (startDate, endDate = today()) => {
   var years, months
   // months
   months = month - mm
-  if (day < dd) {
+  if (day <= dd) {
     months--
   }
   // years
@@ -21,7 +21,7 @@ export const dateDiff = (startDate, endDate = today()) => {
   }
 
   return `${years ? `${years} year${years > 1 ? "s" : ""}` : ""}${
-    months ? `, ${months} month${months >= 1 ? "s" : ""}` : ""
+    months ? `${years > 0 ? ", " : ""} ${months} month${months >= 1 ? "s" : ""}` : ""
   }`.trim()
 }
 
