@@ -1,5 +1,5 @@
 // custom typefaces
-import "@fontsource/montserrat/variable.css"
+import "@fontsource/montserrat/cyrillic-ext-400.css"
 import "@fontsource/merriweather"
 
 import "./src/styles/normalize.css";
