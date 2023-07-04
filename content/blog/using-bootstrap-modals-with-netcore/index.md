@@ -173,7 +173,7 @@ The .netcore OnPost function can be used to return a validated model, so I can h
 
 I close the modal after this. However at the end of this I tended to have another module of js to reload the page or in the case of the page, I redirected back to the parent page (incident). I may end up making another 
 
-##Confirm Unsaved Changes
+## Confirm Unsaved Changes
 
 Our client wanted to prevent accidentally closing the modal/page with unsaved changes.
 
@@ -218,7 +218,7 @@ function bindConfirmCancel() {
 
 What I do is on load of the modal, I save the formdata as a serialized string. You can do this with either `$(formelement).serialize()`, or `new URLStringParams(new FormData(formelement)).toString()`. I chose to just use serialize, since I have to use jQuery anyways. The bindConfirmCancel function will use the on hide modal function to compare the initialFormData with the current modal forms inputs. I also included a list of filters to remove from the serialized form input, because I'm using csrf validation that .netcore encourages you use. Since this is different between page requests, including the same page, it makes sense to strip it from the form string, otherwise it will the confirm message.
 
-##Usage:
+## Usage:
 
 ```html
 <script src="~/modalLoader.js"></script>
@@ -229,7 +229,7 @@ What I do is on load of the modal, I save the formdata as a serialized string. Y
 </script>
 ```
 
-###Notes
+### Notes
 * Since I run init within the ModalLoader function, I don't need to assign it to a variable, just call the function directly.
 * Loading the modal html could be faster; it requires waiting for iis/nginx to serve the html and then waiting for js to parse that and return to them dom. In some cases, depending on the data returning, it can get noticeably slower. 
 * The modal should also have a loading indication to show the user it's working.

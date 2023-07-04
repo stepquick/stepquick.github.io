@@ -367,3 +367,22 @@
 ol, ul {
     list-style-position: inside;
 }
+.bio a:first-child {
+  padding-left: 0;
+}
+.bio a {
+  text-decoration: none;
+  font-size: 0.85em;
+  padding: 1em;
+  margin-right: 1em;
+}
+
+.bio a:hover {
+  filter: brightness(50%);
+}
+
+.bio svg {
+  margin-right: 0.25em;
+  position: relative;
+  top: 2px;
+}

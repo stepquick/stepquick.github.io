@@ -6,7 +6,7 @@ module.exports = {
     title: `Stephen Quick`,
     author: {
       name: `Stephen Quick`,
-      summary: `A web developer based in Salem, OR.`
+      summary: `A web developer based in Oregon, USA.`
     },
     description: `A blog about things I find interesting or helped me solve issues.`,
     siteUrl: `https://stepquick.net/`,
