@@ -28,7 +28,7 @@
     "@fontsource/montserrat": "^5.0.3"
   },
   "devDependencies": {
-    "prettier": "2.8.8"
+    "prettier": "3.0.0"
   },
   "homepage": "https://github.com/stepquick/stepquick.github.io",
   "keywords": [
